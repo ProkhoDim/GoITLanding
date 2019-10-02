@@ -1,4 +1,35 @@
-#GoITLanding
+# GoITLanding
+
+# Порядок работы с Гит-ветками
+
+- Выкачиваем ветку к себе:
+```plain
+git clone https://github.com/ProkhoDim/GoITLanding.git
+```
+- переходим в локальный репозиторий:
+```plain
+cd GoITLanding
+```
+или
+```plain
+ПКМ во вкладке Explorer --> Open in Terminal
+```
+- переходим в ветку dev:
+```plain
+git checkout dev
+```
+- создаём из ветки dev ветку, в которой будете работать:
+```plain
+git checkout -b имя_вашей_ветки
+```
+- Делаем свои дела не портя работу других и не засоряя лишними коммитами гитхаб
+- По окончанию работы делаем финальный коммит и пушим его
+![banner.png](https://i.ibb.co/2tX2gRk/banner.png)
+первый пуш обязательно должен быть таким!
+```plain
+git push -u origin имя_вашей_ветки
+```
+- пишем @DmitrijProkhorenko в Slack о проделанной работе ;)
 
 # Gulp Starter Kit - basic boilerplate
 
