@@ -1,0 +1,57 @@
+/* ОБЯЗАТЕЛЬНО ПРОВЕРЬТЕ ПУТЬ ПРИ ПУЛЕ И ОСОБЕННО - ПРИ ФИНАЛЬНОМ БИЛДЕ !!!!*/
+
+@font-face {
+  font-family: 'Acrom', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  src: url('../../fonts/Acrom-Bold.woff2') format('woff2'),
+    url('../../fonts/Acrom-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Acrom', sans-serif;
+  font-style: normal;
+  font-weight: bolder;
+  src: url('../../fonts/Acrom-ExtraBold.woff2') format('woff2'),
+    url('../../fonts/Acrom-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Acrom', sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  src: url('../../fonts/Acrom-Light.woff2') format('woff2'),
+    url('../../fonts/Acrom-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Acrom', sans-serif;
+  font-style: normal;
+  font-weight: medium;
+  src: url('../../fonts/Acrom-Medium.woff2') format('woff2'),
+    url('../../fonts/Acrom-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Acrom', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/Acrom-Regular.woff2') format('woff2'),
+    url('../../fonts/Acrom-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  src: url('../../fonts/Futura-Bold.woff2') format('woff2'),
+    url('../../fonts/Futura-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Minion Pro', serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/MinionPro-Regular.woff2') format('woff2'),
+    url('../../fonts/MinionPro-Regular.woff') format('woff');
+}

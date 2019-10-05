@@ -1,4 +1,16 @@
 /*
    Import partials below
 */
-@import './normalize';
+@import 'utils/normalize';
+@import 'base/module-base';
+
+/*
+  ЭТОТ СТИЛЬ ЧИСТО ДЛЯ ПРОВЕРКИ ПРАВИЛЬНОСТИ ПОДЛКЮЧЕНИЯ ШРИФТОВ! 
+*/
+h1 {
+  font: {
+    family: $main_font;
+    size: 30px;
+  }
+  color: $cg_light;
+}
