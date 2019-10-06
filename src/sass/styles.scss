@@ -1,4 +1,8 @@
 /*
    Import partials below
 */
-@import './normalize';
+@import 'normalize';
+@import 'utils/variables';
+
+@import 'base/global';
+@import 'layout/global';
