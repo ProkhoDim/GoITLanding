@@ -1,7 +1,20 @@
+.container {
+  width: 448px;
+  margin: 0 auto;
+}
+
+.wrap {
+  width: 250px;
+  margin: auto;
+}
+
+.examples {
+  margin-bottom: 35px;
+}
+
 .heading {
   text: {
     transform: uppercase;
-    align: center;
   }
   font: {
     family: 'Acrom', sans-serif;
@@ -10,16 +23,33 @@
   }
   line-height: 24px;
   color: $dark_main;
+
+  &-box {
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }
 
 .section-text {
+  position: relative;
   font: {
     family: 'Acrom', sans-serif;
-    size: 14px;
+    size: 13px;
     weight: bold;
   }
   color: $dark_main;
   line-height: 20px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    background-color: $dark_main;
+    left: -25px;
+    top: 8px;
+    width: 16px;
+    height: 3px;
+  }
 
   &--mark {
     color: $lite_main;
@@ -30,6 +60,9 @@
 .examples-box {
   display: flex;
   justify-content: space-between;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
   box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
 
   &__name {
@@ -41,11 +74,13 @@
     }
     color: $dark_main;
     line-height: 10px;
+    padding-top: 10px;
     text-transform: uppercase;
   }
 
   &__content {
     width: 65%;
+    text-align: justify;
     font: {
       family: 'Acrom', sans-serif;
       size: 10px;
@@ -57,7 +92,58 @@
 }
 
 .section-image {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*MEDIA*/
+
+@media (min-width: 768px) {
+  .container {
+    width: 636px;
+  }
+
+  .examples {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    margin-bottom: 98px;
+    background-color: rgb(232, 232, 232);
+    height: 450px;
+
+    &-box {
+      margin-top: 30px;
+    }
+  }
+
+  .heading {
+    font-size: 28px;
+    line-height: 1.5;
+
+    &-box {
+      width: 170px;
+      margin: 0 auto;
+    }
+  }
+
+  .section-text {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 715px;
+  }
+
+  .examples {
+    background-color: transparent;
+    margin-bottom: 135px;
+
+    &-box {
+      margin-top: 70px;
+    }
+  }
 }

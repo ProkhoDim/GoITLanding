@@ -1,23 +1,25 @@
 <section class="examples container">
-  <h2 class="heading">[ Смотри, как обычные люди ... ]</h2>
-  <p class="section-text wrap">
-    — Которые даже в школе не изучали программирование, без гениальных навыков в
-    математике, невероятных талантов природных способностей и блата
-    <span class="section-text--mark">сделали свой прорыв в IT! </span>
-  </p>
-  <div class="examples-box wrap">
+  <div class="heading-box">
+    <h2 class="heading">[ Смотри, как обычные люди ... ]</h2>
+    <p class="section-text">
+      Которые даже в школе не изучали программирование, без гениальных навыков в
+      математике, невероятных талантов природных способностей и блата
+      <span class="section-text--mark">сделали свой прорыв в IT! </span>
+    </p>
+  </div>
+  <div class="examples-box">
     <div class="examples-box__name">
-      <img
-        class="examples-box__img"
-        srcset="
-          images/mob/avatar-slider.png     55w,
-          images/mob/avatar-slider@2x.png 109w
-        "
-        sizes="55px"
-        src="images/mob/avatar-slider.png"
-        alt="student photo"
-        height="55"
-      />
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="images/tab/avatar.png 1x, images/tab/avatar@2x.png 2x"
+        />
+        <img
+          src="images/mob/avatar-slider.png"
+          alt="student photo"
+          srcset="images/mob/avatar-slider@2x.png 2x"
+        />
+      </picture>
       <p class="examples-box__name">Nina Moroshnichenko</p>
     </div>
     <p class="examples-box__content">
