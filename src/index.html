@@ -1,4 +1,5 @@
-
+<!DOCTYPE html>
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -9,10 +10,12 @@
 </head>
 
 <body>
+  <!-- HEADER -->
   <header>
     <div class="container page--header">
       <a class="page-logo" href="http://goit.ua">
-        <img src="../src/images/logo.png" alt="logo">
+        <img srcset="../build/images/logo.png 66w, ../build/images/logo.png@2x.png 132w" sizes="66px"
+          src="../build/images/logo.png" alt="logo" height="23">
       </a>
 
       <div class="page-menu">
@@ -23,7 +26,7 @@
 
       <div class="page-wrap">
         <div class="page-heading">
-          <h2 class="page-heading__title">[ Пошаговый Видео-курс_ ]</h2>
+          <h1 class="page-heading__title">[ Пошаговый Видео-курс_ ]</h1>
           <p class="page-heading__text">«Старт в карьере web-разработчика с 0» для
             тех, кто давно хотел зарабатывать больше
             работая в IT, но не знал, где реализовать себя
@@ -44,9 +47,81 @@
 
       <button class="page-button" type="button">Приобрести курс</button>
 
+      <ul class="page-socials">
+        <li>
+          <a href="https://www.facebook.com/goITclub">
+            <svg>
+              <use href="../build/images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
 
+        <li>
+          <a href="https://twitter.com/hashtag/codenewbie?src=rela">
+            <svg>
+              <use href="../build/images/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </header>
+
+  <!-- MAIN-FOOTER -->
+
+  <footer>
+    <div class="container main-footer">
+      <a class="page-logo" href="http://goit.ua">
+        <img srcset="../build/images/logo.png 66w, ../build/images/logo.png@2x.png 132w" sizes="66px"
+          src="../build/images/logo.png" alt="logo" height="23">
+      </a>
+
+      <div class="footer-address">
+        <h3 class="footer-address_title">Адрес:</h3>
+        <p class="footer-address_text">Киев, бул. Леси Украинки, 26</p>
+      </div>
+
+      <div class="footer-info">
+        <h3 class="footer-info_title">Адрес:</h3>
+        <a href="info@goit.ua">info@goit.ua</a>
+        <a href="+380933432127" class="footer-info_tel">+38 093 343 21 27</a>
+      </div>
+
+      <ul class="footer-socials">
+        <li class="footer-socials_item">
+          <a href="https://www.facebook.com/goITclub/">[ Facebook ]</a>
+        </li>
+        <li class="footer-socials_item">
+          <a href="https://www.instagram.com/explore/tags/goit/">[ Instagramm ]</a>
+        </li>
+        <li class="footer-socials_item">
+          <a href="https://www.youtube.com/watch?v=_QcTk3FBDLI&t=2s">[ Youtube ]</a>
+        </li>
+      </ul>
+
+      <button class="page-button" type="button">заказать звонок</button>
+    </div>
+  </footer>
+
+  <footer>
+    <div class="container secondary-footer">
+      <ul>
+        <li>
+          <a href="#">Политика конфиденциальности</a>
+        </li>
+        <li>
+          <a href="#">Отказ от ответственности</a>
+        </li>
+        <li>
+          <a href="#">Согласие с рассылкой</a>
+        </li>
+      </ul>
+
+      <svg>
+        <use href="../build/images/sprite.svg#icon-ra"></use>
+      </svg>
+    </div>
+  </footer>
   <script src="js/scripts.min.js"></script>
 </body>
 
