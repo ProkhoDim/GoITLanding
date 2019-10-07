@@ -48,12 +48,13 @@
   line-height: 20px;
   font-weight: 500;
   color: $dark_main;
+  padding-left: 30px;
 
   &:before {
     position: absolute;
     content: '';
     top: 5px;
-    left: -40px;
+    left: 0px;
     display: inline-block;
     background-color: $dark-main;
     width: 25px;
@@ -85,7 +86,7 @@
   color: $dark_main;
   text-transform: uppercase;
   margin-top: 35px;
-  width: 165px;
+  width: 175px;
 }
 
 .awards-list__item-text {
@@ -103,6 +104,48 @@
     line-height: 20px;
     font-weight: 900;
     color: $dark_main;
-  }  
+  }
 }
 
+// awards-pseudo
+.it-awards{
+  position: relative;
+  width: 260px;
+}
+
+.it-awards::before {
+  content: '';
+  position: absolute;
+  background-image: url('/images/mob/award-1@1x.png');
+  width: 60px;
+  height: 140px;
+  left: 250px;
+}
+
+.best-edu15{
+  position: relative;
+  width: 235px;
+}
+
+.best-edu15::before{
+  content: '';
+  position: absolute;
+  background-image: url('/images/mob/award-2@1x.png');
+  width: 70px;
+  height: 110px;
+  left: 235px;
+}
+
+.best-edu16{
+  position: relative;
+  width: 235px;
+}
+
+.best-edu16::before{
+  content: '';
+  position: absolute;
+  background-image: url('/images/mob/award-3@1x.png');
+  width: 70px;
+  height: 110px;
+  left: 235px;
+}
