@@ -1,6 +1,27 @@
 .bonus {
 }
 
+section {
+  margin-bottom: 70px;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+
+  &--small {
+    width: 300px;
+  }
+
+  &--middle {
+    width: 360px;
+  }
+
+  &--large {
+    width: 460px;
+  }
+}
+
 .section_title {
   text-transform: uppercase;
   font-size: 18px;
@@ -14,16 +35,42 @@
   }
 }
 
-.list {
-  &--item {
+.mark-list {
+  margin: 20px;
+
+  &_item {
+    padding-left: 10px;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: $main_font;
+    counter-increment: count-ol;
+    list-style-type: decimal-leading-zero;
+
+    .&_item::after {
+      content: '';
+      position: absolute;
+      display: block;
+      z-index: 1;
+      font-size: 20px;
+      width: 10px;
+      height: 10px;
+      background-color: $marker;
+      top: 22px;
+      left: -10px;
+      transform: translateX(-100%);
+    }
   }
 
-  &--item-title {
+  &_item-title {
     text-transform: uppercase;
     font-size: 14px;
     color: $dark_main;
     font-weight: 900;
     line-height: 22px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
   }
 }
 
@@ -42,6 +89,40 @@
     color: $lite_main;
     background-color: $dark_main;
   }
+
+  &--accent {
+    color: $accent;
+    font-weight: 500;
+  }
+
+  &--mark {
+    color: $dark_main;
+    font-weight: 500;
+    background-color: $marker;
+  }
+}
+
+.text--bold::before {
+  content: '97';
+  color: $dark_main;
+  height: 3px;
+  width: 20px;
+  font-weight: 700;
+  margin-left: -20px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.form-client {
+  width: 370px;
+  height: 350px;
+  box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
+  background-color: $lite_main;
+}
+
+.reg-info {
+  padding: 65px;
+  position: relative;
 }
 
 .form_name {
@@ -49,6 +130,11 @@
   color: $p_text;
   font-weight: 700;
   line-height: 12px;
+  margin-bottom: 13px;
+}
+
+input {
+  border: none;
 }
 
 .form_info {
@@ -56,6 +142,16 @@
   color: $dark_main;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 20px;
+}
+
+.form_info::after {
+  height: 2px;
+  width: 246px;
+  margin-top: 8px;
+  color: $p_text;
+  position: absolute;
+  z-index: 1;
 }
 
 .btn {
@@ -63,11 +159,14 @@
   color: $lite_main;
   font-weight: 900;
   background-color: $accent;
-  box-shadow: $btn_shadow;
+  box-shadow: 0px 5px 6px 0px $btn_shadow;
   line-height: 12px;
+  border: none;
+  cursor: pointer;
   text-transform: uppercase;
   min-width: 176px;
   min-height: 33px;
+  display: block;
 
   &--small {
     padding: 20px 10px;

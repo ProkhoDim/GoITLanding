@@ -1,24 +1,76 @@
 .final-result {
 }
 
-.title {
+section {
+  margin-bottom: 70px;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+
+  &--small {
+    width: 300px;
+  }
+
+  &--middle {
+    width: 360px;
+  }
+
+  &--large {
+    width: 460px;
+  }
+}
+
+.section_title {
   text-transform: uppercase;
   font-size: 18px;
   color: $dark_main;
   font-weight: 900;
   line-height: 24px;
+
+  &--negative {
+    color: $lite_main;
+    background-color: $dark_main;
+  }
 }
 
-.list {
-  &--item {
+.mark-list {
+  margin: 20px;
+
+  &_item {
+    padding-left: 10px;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: $main_font;
+    counter-increment: count-ol;
+    list-style-type: decimal-leading-zero;
+
+    .&_item::after {
+      content: '';
+      position: absolute;
+      display: block;
+      z-index: 1;
+      font-size: 20px;
+      width: 10px;
+      height: 10px;
+      background-color: $marker;
+      top: 22px;
+      left: -10px;
+      transform: translateX(-100%);
+    }
   }
 
-  &--item-title {
+  &_item-title {
     text-transform: uppercase;
     font-size: 14px;
     color: $dark_main;
     font-weight: 900;
     line-height: 22px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
   }
 }
 
@@ -28,10 +80,39 @@
   font-weight: 400;
   line-height: 20px;
 
+  &--bold {
+    color: $dark_main;
+    font-weight: 500;
+  }
+
+  &--negative {
+    color: $lite_main;
+    background-color: $dark_main;
+  }
+
   &--accent {
     color: $accent;
     font-weight: 500;
   }
+
+  &--mark {
+    color: $dark_main;
+    font-weight: 500;
+    background-color: $marker;
+  }
+}
+
+.text--accent::before {
+  content: '2F';
+  color: $dark_main;
+  font-weight: 700;
+  height: 18px;
+  width: 12px;
+  margin-left: -20px;
+  display: inline-block;
+  vertical-align: bottom;
+  position: absolute;
+  z-index: 1;
 }
 
 .btn {
@@ -39,8 +120,10 @@
   color: $lite_main;
   font-weight: 900;
   background-color: $accent;
-  box-shadow: $btn_shadow;
+  box-shadow: 0px 5px 6px 0px $btn_shadow;
   line-height: 12px;
+  border: none;
+  cursor: pointer;
   text-transform: uppercase;
   min-width: 176px;
   min-height: 33px;
