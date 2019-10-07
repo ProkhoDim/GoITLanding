@@ -1,0 +1,34 @@
+.heading {
+  text: {
+    transform: uppercase;
+    align: center;
+  }
+  font: {
+    family: 'Acrom', sans-serif;
+    size: 18px;
+    weight: 900;
+  }
+  line-height: 24px;
+  color: $dark_main;
+}
+
+.section-text {
+  font: {
+    family: 'Acrom', sans-serif;
+    size: 14px;
+    weight: bold;
+  }
+  color: $dark_main;
+  line-height: 20px;
+
+  &--mark {
+    color: $lite_main;
+    background-color: $dark_main;
+  }
+}
+
+.section-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
