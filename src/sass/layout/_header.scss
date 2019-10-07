@@ -5,9 +5,183 @@
     top: 14px;
     bottom: 38px;
   }
-  min-height: 614px;
   width: 100%;
+  min-height: 614px;
   height: 100%;
-  background-color: #181c27;
-  background-image: url('/GoITLanding/build/images/mob/')
+  background: no-repeat url('/GoITLanding/build/images/mob/blur.png') top center;
+  object-fit: cover;
+  background-color: $bg_footer;
+}
+
+.page--header {
+  display: block;
+  position: relative;
+}
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.page-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  width: 30px;
+  height: 19px;
+  cursor: pointer;
+
+  &_line:nth-child(1) {
+    display: block;
+    width: 22px;
+    height: 3px;
+    background-color: $lite_main;
+    border-radius: 1px;
+    margin-bottom: 5px;
+  }
+
+  &_line:nth-child(2) {
+    display: block;
+    width: 16px;
+    height: 3px;
+    background-color: $lite_main;
+    border-radius: 1px;
+    margin-bottom: 5px;
+  }
+
+  &_line:nth-child(3) {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: $lite_main;
+    border-radius: 1px;
+  }
+}
+
+.page-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &__title {
+    width: 250px;
+    margin-bottom: 40px;
+    font: {
+      size: 30px;
+      weight: 900;
+    }
+    color: $lite_main;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    display: block;
+    position: relative;
+    width: 380px;
+    font: {
+      size: 14px;
+      family: $main_font;
+      weight: 700;
+    }
+    color: $lite_main;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+    &::before {
+      display: block;
+      position: absolute;
+      top: 4px;
+      left: -18px;
+      content: '<';
+      width: 9px;
+      height: 9px;
+      color: $arrows;
+      font: {
+        size: 23px;
+        weight: 700;
+      }
+      line-height: 11.71px;
+      text-transform: uppercase;
+    }
+
+    &::after {
+      display: block;
+      position: absolute;
+      bottom: 8px;
+      right: -18px;
+      content: '/>';
+      width: 9px;
+      height: 9px;
+      color: $arrows;
+      font: {
+        size: 23px;
+        weight: 700;
+      }
+      line-height: 11.71px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.page-title {
+  color: $goit_color;
+  font: {
+    family: $main_font;
+    size: 120px;
+    weight: 900;
+  }
+  line-height: 70px;
+  text: {
+    transform: uppercase;
+    align: center;
+  }
+  margin: 0 0 40px 0;
+}
+
+.page-chance {
+  display: block;
+  margin: 0 auto;
+  width: 344px;
+
+  &__start {
+    font: {
+      size: 14px;
+      weight: 700;
+    }
+    color: $lite_main;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  &__income {
+    color: $header_text;
+    font: {
+      family: $main_font;
+      size: 14px;
+      weight: 400;
+    }
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 36px;
+  }
+}
+
+.realization {
+  display: none;
+}
+
+.page-button {
+  display: block;
+  border: none;
+  margin: 0 auto;
+}
+
+.page-socials {
+  display: none;
 }
