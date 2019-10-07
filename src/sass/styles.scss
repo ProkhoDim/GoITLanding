@@ -1,13 +1,8 @@
 /*
    Import partials below
 */
-@import 'normalize';
-@import 'utils/variables';
-
-@import 'base/global';
-<<<<<<< HEAD
-@import 'layout/global';
-@import 'base/global';
-=======
->>>>>>> 03ccc60b3ae29adda55be90af100defefc6e88e2
-@import 'layout/global';
+@import './normalize.scss';
+@import './utils/variables';
+@import './componets/global';
+@import './base/global';
+@import './layout/global';

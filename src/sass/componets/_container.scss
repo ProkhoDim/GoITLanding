@@ -1,0 +1,18 @@
+.container {
+  width: 448px;
+  margin: 0 auto;
+}
+
+/*MEDIA*/
+
+@media (min-width: 768px) {
+  .container {
+    width: 636px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 715px;
+  }
+}
