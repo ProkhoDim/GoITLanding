@@ -1,39 +1,217 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>GoITLanding</title>
-    <link rel="stylesheet" href="css/styles.min.css" />
-  </head>
 
-  <body>
-    <div class="page">
-      //= html/header.html
-      //= html/section_reason.html
-      //= html/section_facts.html
-      //= html/section_futures.html
-      //= html/section_examples.html
-      //= html/section_warnings.html
-      //= html/section_because.html
-      //= html/section_career-web.html
-      //= html/section_steps.html
-      //= html/section_possibility.html
-      //= html/section_awards.html
-      //= html/section_course.html
-      //= html/section_profession.html
-      //= html/section_get-now.html
-      //= html/section_final-result.html
-      //= html/section_video-course.html
-      //= html/section_bonus.html
-      //= html/section_important.html
-      //= html/section_doit.html
-      <footer>
-      //= html/main-footer.html
-      //= html/secondary-footer.html
-      </footer>
-      
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>GoITLanding</title>
+  <link rel="stylesheet" href="../build/css/styles.min.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header class="header">
+    <div class="container page--header">
+      <div class="page-nav">
+        <a class="page-logo" href="http://goit.ua">
+          <img srcset="../build/images/mob/Logo.png 66w, ../build/images/mob/Logo.png@2x.png 132w" sizes="66px"
+            src="../build/images/mob/Logo" alt="logo" height="23">
+        </a>
+
+        <div class="page-menu">
+          <div class="page-menu_line"></div>
+          <div class="page-menu_line"></div>
+          <div class="page-menu_line"></div>
+        </div>
+      </div>
+
+      <div class="main-wrap">
+
+        <div class="page-wrap">
+          <div class="page-heading">
+            <h2 class="page-heading__title">[ Пошаговый Видео-курс_ ]</h2>
+            <p class="page-heading__text">«Старт в карьере web-разработчика с 0» для
+              тех, кто давно хотел зарабатывать больше
+              работая в IT, но не знал, где реализовать себя
+            </p>
+          </div>
+
+          <h1 class="page-title">GoIt</h1>
+
+          <div class="page-chance">
+            <p class="page-chance__start">Открой для себя способ начать карьеру в сфере IT</p>
+            <p class="page-chance__income">/ Без математического склада ума, работая в комфортных условиях
+              по приятному графику над интересными задачами и получая доход в $$$.
+            </p>
+          </div>
+
+
+
+          <p class="realization">«Старт в карьере web-разработчика с 0» для тех, кто давно хотел
+            зарабатывать больше работая в IT, но не знал, где реализовать себя
+          </p>
+        </div>
+
+
+      </div>
+
+
+      <button class="page-button btn" type="button">Приобрести курс</button>
+
+      <ul class="page-socials">
+        <li>
+          <a href="https://www.facebook.com/goITclub">
+            <svg>
+              <use href="../build/images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://twitter.com/hashtag/codenewbie?src=rela">
+            <svg>
+              <use href="../build/images/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
-  </body>
+  </header>
+
+  <!-- SECTION IMPORTANT -->
+
+  <section class="important">
+    <div class="container important-block">
+      <h2 class="important-title">[ Важно ! ]</h2>
+      <div class="important-wrap">
+        <div class="important-wrap__box">
+          <div class="value-wrap">
+            <p class="important__value">[ Ценность видео-курса и бонусов ]</p>
+            <p class="important__value-price">1835 грн</p>
+
+          </div>
+
+          <div class="today-wrap">
+            <p class="today__price">
+              <span>[ Цена</span>
+              <span> Сегодня ]</span>
+            </p>
+
+            <p class="today__price-total">399
+              <span> грн.</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="present-wrap">
+        <h3 class="present__title">
+          Эта цена — наш подарок для первых 150 человек, решивших улучшить жизнь свою
+          и своих семей через IT
+        </h3>
+        <p class="present__price">Ведь наша цель — создать бренд Украины как сильной IT страны!</p>
+        <p class="present__copy">
+          Однако как только первые 150 «копий» курса разойдется — цена поднимется.
+        </p>
+        <button type="button" class="present__button  btn">Забрать видео-курс за 399 грн</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION DOIT -->
+
+  <section class="do-it">
+    <div class="container">
+      <h2>[ Действуй — регистрируйся, оплачивай_ ]</h2>
+      <p>И получи доступ к твоему видео-курсу уже сегодня!</p>
+      <button>Забрать видео-курс</button>
+      <div>
+        <p>
+          <span>P. S. :</span>Да, сейчас ты можешь закрыть эту страницу… Подумать,
+          “это не для меня”, “я слишком стар”, “я слишком молод”, “как-то в другой
+          раз, не сейчас”. И… почти ничего не измениться.
+        </p>
+        <p>
+          Останется ненавистная работа, денег все так же не будет хватать. Добавится
+          больше ескуки, разочарования, усталости…
+        </p>
+        <p>
+          <span>Или ты можешь сейчас зарегистрироваться на видео-курс</span> и
+          открыть для себя новый путь в классную профессию, интересную жизнь, путь к
+          большим деньгам и статусу.
+        </p>
+      </div>
+      <p>Выбор за тобой...</p>
+    </div>
+  </section>
+
+  <!-- MAIN-FOOTER -->
+
+  <footer>
+    <div class="container main-footer">
+      <a class="page-logo" href="http://goit.ua">
+        <img srcset="../build/images/mob/Logo.png 66w, ../build/images/mob/Logo.png@2x.png 132w" sizes="66px"
+          src="../build/images/mob/Logo" alt="logo" height="23">
+      </a>
+
+      <div class="footer-address">
+        <h3 class="footer-address_title">Адрес:</h3>
+        <p class="footer-address_text">Киев, бул. Леси Украинки, 26</p>
+      </div>
+
+      <div class="footer-info">
+        <h3 class="footer-info_title">Адрес:</h3>
+        <a href="info@goit.ua">info@goit.ua</a>
+        <a href="+380933432127" class="footer-info_tel">+38 093 343 21 27</a>
+      </div>
+
+      <ul class="footer-socials">
+        <li class="footer-socials_item">
+          <a href="https://www.facebook.com/goITclub/">[ Facebook ]</a>
+        </li>
+        <li class="footer-socials_item">
+          <a href="https://www.instagram.com/explore/tags/goit/">[ Instagramm ]</a>
+        </li>
+        <li class="footer-socials_item">
+          <a href="https://www.youtube.com/watch?v=_QcTk3FBDLI&t=2s">[ Youtube ]</a>
+        </li>
+      </ul>
+
+      <button class="page-button" type="button">заказать звонок</button>
+    </div>
+  </footer>
+
+  <!-- SECONDARY-FOOTER -->
+
+  <footer>
+    <div class="container secondary-footer">
+      <ul>
+        <li>
+          <a href="#">Политика конфиденциальности</a>
+        </li>
+        <li>
+          <a href="#">Отказ от ответственности</a>
+        </li>
+        <li>
+          <a href="#">Согласие с рассылкой</a>
+        </li>
+      </ul>
+
+      <a href="#">
+        <img srcset="../build/images/mob/icon-ra.png 14w, ../build/images/mob/icon-ra.png@2x.png 28w" sizes="14px"
+          src="../build/images/mob/icon-ra.png" alt="logo" height="8">
+      </a>
+
+    </div>
+  </footer>
+
+  <script src="js/scripts.min.js"></script>
+
+</body>
+
 </html>
