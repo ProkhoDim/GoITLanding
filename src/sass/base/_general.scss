@@ -1,0 +1,51 @@
+.container {
+  text-align: center;
+  margin: 0 auto;
+
+  &--small {
+    width: 300px;
+  }
+
+  &--middle {
+    width: 360px;
+  }
+  
+  &--large {
+    width: 460px;
+  }
+}
+
+.text {
+  font-size: 14px;
+  color: $p_text;
+  font-weight: 400;
+  line-height: 20px;
+
+  &--bold {
+    color: $dark_main;
+    font-weight: 500;
+  }
+
+  &--negative {
+    color: $lite_main;
+    background-color: $dark_main;
+  }
+
+  &--accent {
+    color: $accent;
+    font-weight: 500;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: $dark_main;
+  font-weight: 900;
+  line-height: 24px;
+
+  &--negative {
+    color: $lite_main;
+    background-color: $dark_main;
+  }
+}
