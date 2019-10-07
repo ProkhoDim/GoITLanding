@@ -1,7 +1,7 @@
 .bonus {
 }
 
-.title {
+.section_title {
   text-transform: uppercase;
   font-size: 18px;
   color: $dark_main;
@@ -66,4 +66,22 @@
   box-shadow: $btn_shadow;
   line-height: 12px;
   text-transform: uppercase;
+  min-width: 176px;
+  min-height: 33px;
+
+  &--small {
+    padding: 20px 10px;
+  }
+
+  &--middle {
+    padding: 28px 12px;
+  }
+
+  &--large {
+    padding: 40px 12px;
+  }
+
+  &--header {
+    padding: 36px 19px;
+  }
 }

@@ -9,7 +9,7 @@
   &--middle {
     width: 360px;
   }
-  
+
   &--large {
     width: 460px;
   }
@@ -35,9 +35,46 @@
     color: $accent;
     font-weight: 500;
   }
+
+  &--mark {
+    color: $dark_main;
+    font-weight: 500;
+    background-color: $marker;
+  }
 }
 
-.title {
+
+.btn {
+  font-size: 8px;
+  color: $lite_main;
+  font-weight: 900;
+  background-color: $accent;
+  box-shadow: $btn_shadow;
+  line-height: 12px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  min-width: 176px;
+  min-height: 33px;
+
+  &--small {
+    padding: 20px 10px;
+  }
+
+  &--middle {
+    padding: 28px 12px;
+  }
+
+  &--large {
+    padding: 40px 12px;
+  }
+
+  &--header {
+    padding: 36px 19px;
+  }
+}
+
+.section_title {
   text-transform: uppercase;
   font-size: 18px;
   color: $dark_main;
@@ -49,3 +86,4 @@
     background-color: $dark_main;
   }
 }
+
