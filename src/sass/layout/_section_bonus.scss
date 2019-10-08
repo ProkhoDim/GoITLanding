@@ -41,16 +41,19 @@
   font-weight: 400;
   line-height: 12px;
   margin-bottom: 20px;
+  border-bottom: 1px;
+  border-bottom-color: $p_text;
+  border-bottom-width: 245px;
 }
 
-.form_info::after {
+/*.form_info::after {
   height: 2px;
   width: 246px;
   margin-top: 8px;
   color: $p_text;
   position: absolute;
   z-index: 1;
-}
+}*/
 
 .btn {
   font-size: 8px;
@@ -81,4 +84,19 @@
   &--header {
     padding: 36px 19px;
   }
+
+  &:hover,
+  &:focus {
+    color: $accent;
+    background-color: $lite_main;
+    border: 2px solid $accent;
+  }
+}
+
+input:not(#subject):focus {
+  outline: 2px solid red;
+}
+
+input:not(#subject):not(#button):valid {
+  outline: 2px solid green;
 }
