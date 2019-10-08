@@ -36,6 +36,7 @@
 }
 
 .form_info {
+  width: 245px;
   font-size: 10px;
   color: $dark_main;
   font-weight: 400;
@@ -48,7 +49,7 @@
 
 /*.form_info::after {
   height: 2px;
-  width: 246px;
+  width: 245px;
   margin-top: 8px;
   color: $p_text;
   position: absolute;
