@@ -1,11 +1,16 @@
 .steps-list {
+  margin-bottom: 40px;
+
   &__item {
+    margin-bottom: 30px;
+
     &-title {
       text-transform: uppercase;
       color: $dark_main;
       font-weight: 700;
       line-height: 21px;
       font-size: 13px;
+      margin-bottom: 16px;
     }
 
     &-text {
@@ -20,6 +25,8 @@
   line-height: 19px;
   position: relative;
   font-weight: 500;
+  
+
   &::before {
     content: '';
     position: absolute;
@@ -32,4 +39,8 @@
     background-color: $dark_main;
     padding-right: 10px;
   }
+}
+
+.line-before{
+  margin-bottom: 44px;
 }

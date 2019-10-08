@@ -1,9 +1,14 @@
 .final-list {
+  margin-bottom: 40px;
+
   &__item {
+    margin-bottom: 30px;
+
     &-title {
       font-size: 13px;
       line-height: 19px;
       font-weight: 700;
+      margin-bottom: 16px;
     }
 
     &-text {
@@ -15,6 +20,7 @@
 }
 
 .load-more {
+  margin-bottom: 32px;
   font-size: 13px;
   line-height: 19px;
   position: relative;
