@@ -93,11 +93,13 @@
 .o-list {
   counter-reset: count;
   list-style-type: none;
+  margin-bottom: 40px;
 
   &__itm {
     counter-increment: count;
     position: relative;
     padding-left: 50px;
+    margin-bottom: 30px;
 
     &::before {
       content: '0' counter(count) '.';
