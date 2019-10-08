@@ -11,6 +11,8 @@
   width: 218px;
 
   &__title {
+    display: block;
+    position: relative;
     color: $dark_main;
     font: {
       family: $main_font;
@@ -20,6 +22,12 @@
     line-height: 24px;
     text-transform: uppercase;
     margin-bottom: 18px;
+
+    &::before {
+      content: 'go';
+      display: block;
+      position: absolute;
+    }
   }
 
   &__text {
@@ -34,17 +42,6 @@
     line-height: 19.5px;
     padding-left: 20px;
     margin-bottom: 33px;
-
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 10px;
-      left: -20px;
-      width: 17px;
-      height: 4px;
-      background-color: $dark_main;
-    }
   }
 
   &__button {

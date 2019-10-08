@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+body {
+  counter-reset: awards-list__item;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type='checkbox'].visually-hidden,
 input[type='radio'].visually-hidden {

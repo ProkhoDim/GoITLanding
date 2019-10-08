@@ -12,6 +12,8 @@
 }
 
 .reason-answers {
+  display: block;
+  position: relative;
   margin: 0 auto;
   width: 280px;
 
@@ -56,6 +58,25 @@
       padding: 0 3px;
     }
   }
+}
+
+.reason-answers::before {
+  display: block;
+  position: absolute;
+  content: 'YOU';
+  top: -115px;
+  left: -65px;
+  width: 70px;
+  height: 210px;
+  color: $pe_color;
+  font: {
+    family: $main_font;
+    size: 100px;
+    weight: 900;
+  }
+  line-height: 200px;
+  text-transform: uppercase;
+  transform: rotateZ(90deg);
 }
 
 .reason-answers__list {

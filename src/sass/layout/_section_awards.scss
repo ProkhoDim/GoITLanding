@@ -122,15 +122,37 @@
   left: 215px;
 }
 
+.it-awards::after,
+.best-edu15::after,
+.best-edu16::after {
+  content: '0' counter(awards-list__item) '_';
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: -3px;
+  transform: rotateZ(-90deg);
+  width: 38px;
+  height: 72px;
+  color: $pe_color;
+  counter-increment: awards-list__item;
+  font: {
+    family: $bg_font;
+    size: 50px;
+    weight: 700;
+  }
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
 .it-awards {
   position: relative;
-  width: 260px;
+  width: 235px;
 }
 
 .it-awards::before {
   content: '';
   position: absolute;
-  background-image: url('/images/mob/award-1@1x.png');
+  background-image: url('/GoITLanding/src/images/mob/award-1@1x.png');
   width: 60px;
   height: 140px;
   left: 250px;
@@ -144,7 +166,7 @@
 .best-edu15::before {
   content: '';
   position: absolute;
-  background-image: url('/images/mob/award-2@1x.png');
+  background-image: url('/GoITLanding/src/images/mob/award-2@1x.png');
   width: 70px;
   height: 110px;
   left: 235px;
@@ -158,7 +180,7 @@
 .best-edu16::before {
   content: '';
   position: absolute;
-  background-image: url('/images/mob/award-3@1x.png');
+  background-image: url('/GoITLanding/src/images/mob/award-3@1x.png');
   width: 70px;
   height: 110px;
   left: 235px;
