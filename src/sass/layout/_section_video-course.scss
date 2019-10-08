@@ -1,0 +1,70 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  &--small {
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  &--middle {
+    width: 360px;
+    margin: 0 auto;
+  }
+  &--large {
+    width: 460px;
+    margin: 0 auto;
+  }
+}
+
+.video-course {
+  font-family: $main_font;
+  text-align: start;
+  &__img {
+    margin: 20px auto;
+  }
+  &-title {
+    text-transform: uppercase;
+    width: 240px;
+    font-weight: 900;
+    margin: 15px 0;
+    &--clear {
+      text-transform: uppercase;
+      width: 380px;
+      font-size: 14px;
+      font-weight: 900;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 40px;
+      margin-bottom: 25px;
+    }
+    &-price {
+    }
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: $dark_main;
+  font-weight: 900;
+  line-height: 24px;
+}
+
+.position {
+  width: 300px;
+  margin: auto;
+}
+
+.today-wrap {
+  margin: 0 auto;
+}
