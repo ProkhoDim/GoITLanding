@@ -1,47 +1,29 @@
-.bonus {
-}
+.bonus-list {
+  &__item {
+    &-title {
+      font-size: 13px;
+      line-height: 22px;
+      font-weight: 700;
+    }
 
-.title {
-  text-transform: uppercase;
-  font-size: 18px;
-  color: $dark_main;
-  font-weight: 900;
-  line-height: 24px;
-
-  &--negative {
-    color: $lite_main;
-    background-color: $dark_main;
+    &-text {
+      font-size: 12px;
+      line-height: 18px;
+      color: $p_text;
+    }
   }
 }
 
-.list {
-  &--item {
-  }
-
-  &--item-title {
-    text-transform: uppercase;
-    font-size: 14px;
-    color: $dark_main;
-    font-weight: 900;
-    line-height: 22px;
-  }
+.form-client {
+  width: 370px;
+  height: 350px;
+  box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
+  background-color: $lite_main;
 }
 
-.text {
-  font-size: 14px;
-  color: $p_text;
-  font-weight: 400;
-  line-height: 20px;
-
-  &--bold {
-    color: $dark_main;
-    font-weight: 500;
-  }
-
-  &--negative {
-    color: $lite_main;
-    background-color: $dark_main;
-  }
+.reg-info {
+  padding: 65px;
+  position: relative;
 }
 
 .form_name {
@@ -49,6 +31,7 @@
   color: $p_text;
   font-weight: 700;
   line-height: 12px;
+  margin-bottom: 13px;
 }
 
 .form_info {
@@ -56,6 +39,16 @@
   color: $dark_main;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 20px;
+}
+
+.form_info::after {
+  height: 2px;
+  width: 246px;
+  margin-top: 8px;
+  color: $p_text;
+  position: absolute;
+  z-index: 1;
 }
 
 .btn {
@@ -63,7 +56,28 @@
   color: $lite_main;
   font-weight: 900;
   background-color: $accent;
-  box-shadow: $btn_shadow;
+  box-shadow: 0px 5px 6px 0px $btn_shadow;
   line-height: 12px;
+  border: none;
+  cursor: pointer;
   text-transform: uppercase;
+  min-width: 176px;
+  min-height: 33px;
+  display: block;
+
+  &--small {
+    padding: 20px 10px;
+  }
+
+  &--middle {
+    padding: 28px 12px;
+  }
+
+  &--large {
+    padding: 40px 12px;
+  }
+
+  &--header {
+    padding: 36px 19px;
+  }
 }

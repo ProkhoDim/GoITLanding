@@ -6,9 +6,10 @@
     bottom: 38px;
   }
   width: 100%;
+  min-width: 480px;
   min-height: 614px;
   height: 100%;
-  background: no-repeat url('/GoITLanding/build/images/mob/blur.png') top center;
+  background: no-repeat url('../../images/mob/blur.png') top center;
   object-fit: cover;
   background-color: $bg_footer;
 }
@@ -81,23 +82,18 @@
   &__text {
     display: block;
     position: relative;
-    width: 380px;
-    font: {
-      size: 14px;
-      family: $main_font;
-      weight: 700;
-    }
+    font-size: 14px;
+    width: 365px;
+    font-weight: 700;
     color: $lite_main;
-    line-height: 20px;
+    text-align: center;
     text-transform: uppercase;
     margin-bottom: 30px;
 
-    &::before {
+    &::before,
+    &::after {
       display: block;
       position: absolute;
-      top: 4px;
-      left: -18px;
-      content: '<';
       width: 9px;
       height: 9px;
       color: $arrows;
@@ -109,21 +105,16 @@
       text-transform: uppercase;
     }
 
+    &::before {
+      top: 4px;
+      left: -18px;
+      content: '<';
+    }
+
     &::after {
-      display: block;
-      position: absolute;
       bottom: 8px;
       right: -18px;
       content: '/>';
-      width: 9px;
-      height: 9px;
-      color: $arrows;
-      font: {
-        size: 23px;
-        weight: 700;
-      }
-      line-height: 11.71px;
-      text-transform: uppercase;
     }
   }
 }
@@ -185,4 +176,3 @@
 .page-socials {
   display: none;
 }
-

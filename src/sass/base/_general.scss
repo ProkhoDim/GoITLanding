@@ -1,29 +1,26 @@
-.container {
-  text-align: center;
+.page-container {
+  min-width: 450px;
+  width: 450px;
   margin: 0 auto;
-
-  &--small {
-    width: 300px;
-  }
-
-  &--middle {
-    width: 360px;
-  }
-  
-  &--large {
-    width: 460px;
-  }
+  font-family: $main_font;
 }
 
 .text {
   font-size: 14px;
   color: $p_text;
-  font-weight: 400;
   line-height: 20px;
+  &--light {
+    font-weight: 300;
+  }
+
+  &--semi-bold {
+    color: $dark_main;
+    font-weight: 500;
+  }
 
   &--bold {
     color: $dark_main;
-    font-weight: 500;
+    font-weight: 700;
   }
 
   &--negative {
@@ -34,6 +31,17 @@
   &--accent {
     color: $accent;
     font-weight: 500;
+  }
+
+  &--upper-bold {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &--mark {
+    color: $dark_main;
+    font-weight: 500;
+    background-color: $marker;
   }
 }
 
@@ -47,5 +55,77 @@
   &--negative {
     color: $lite_main;
     background-color: $dark_main;
+  }
+
+  &--list {
+    text-transform: uppercase;
+    color: $dark_main;
+    font-weight: 900;
+    line-height: 20px;
+    font-size: 14px;
+  }
+}
+
+.newline {
+  width: max-content;
+  display: block;
+  margin: 1px auto 1px 0;
+}
+
+.line-before {
+  position: relative;
+  padding-left: 36px;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 20px;
+    height: 2px;
+    background-color: $dark_main;
+  }
+}
+
+.o-list {
+  counter-reset: count;
+  list-style-type: none;
+
+  &__itm {
+    counter-increment: count;
+    position: relative;
+    padding-left: 50px;
+
+    &::before {
+      content: '0' counter(count) '.';
+      font-family: $main_font;
+      font-size: 20px;
+      font-weight: 900;
+      top: 0px;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      z-index: 1;
+      left: 0;
+    }
+
+    &::after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      top: 25px;
+      left: 20px;
+      background-color: $marker;
+    }
+  }
+}
+
+.u-list {
+  padding-left: 20px;
+  &__item {
+    list-style-type: square;
   }
 }

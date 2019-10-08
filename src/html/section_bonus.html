@@ -1,31 +1,54 @@
-<section class="bonus container">
-  <h2 class="title--negative">[ Плюс получи бонусы_ ]</h2>
-  <p class="text--bold"><span class="line">&mdash;</span>Которые помогут тебе быстрее стартовать карьеру разработчика:</p>
-  <ol class="list">
-    <li class="list_item">
-      <h3 class="list_item-title">PDF «Карта профессий в IT»</h3>
-      <p class="section-text">
-        Чтобы видеть, куда дальше двигаться и какие перспективы тебя ожидают —
-        <span class="section-text--negative">ценность 215 грн</span>
-      </p>
-    </li>
-    <li class="list_item">
-      <h3 class="list_item-title">PDF «Переводчик с IT-языка на человеческий»</h3>
-      <p class="section-text">
-        Чтобы ты смог быстро стать своим в «тусовке» —
-        <span class="section-text--negative">ценность 320 грн</span>
-      </p>
-    </li>
-  </ol>
+<section class="bonus">
   <div class="">
-  <form action="#">
-    <p><label for="name" class="form_name">Имя</label></p>
-    <input type="text" id="name" class="form_info" placeholder="Как вас зовут?"/>
-    <p><label for ="tel" class="form_name">Телефон</label></p>
-    <input type="tel" id="tel" class="form_info" placeholder="Ваш номер телефона" />
-    <p><label for="email" class="form_name">E-mail</label></p>
-    <input type="email" id="email" class="form_info" placeholder="Адрес электронного ящика"/>
-    <button>Приобрести видео-курс</button>
-  </form>
-</div>
+    <h2 class="title title--negative container container--sm">
+      [ Плюс получи бонусы_ ]
+    </h2>
+    <p class="text container container--s line-before">
+      Которые помогут тебе быстрее стартовать карьеру разработчика:
+    </p>
+    <ol class="bonus-list o-list container container--l">
+      <li class="bonus-list__item o-list__itm">
+        <h3 class="bonus-list__item-title">PDF «Карта профессий в IT»</h3>
+        <p class="bonus-list__item-text">
+          Чтобы видеть, куда дальше двигаться и какие перспективы тебя ожидают —
+          <span class="text--negative">ценность 215 грн</span>
+        </p>
+      </li>
+      <li class="bonus-list__item o-list__itm">
+        <h3 class="bonus-list__item-title">
+          PDF «Переводчик с IT-языка на человеческий»
+        </h3>
+        <p class="bonus-list__item-text">
+          Чтобы ты смог быстро стать своим в «тусовке» —
+          <span class="text--negative">ценность 320 грн</span>
+        </p>
+      </li>
+    </ol>
+  </div>
+  <div class="form-client container">
+    <form action="#" class="reg-info">
+      <p><label for="name" class="form_name">Имя</label></p>
+      <input
+        type="text"
+        id="name"
+        class="form_info"
+        placeholder="Как вас зовут?"
+      />
+      <p><label for="tel" class="form_name">Телефон</label></p>
+      <input
+        type="tel"
+        id="tel"
+        class="form_info"
+        placeholder="Ваш номер телефона"
+      />
+      <p><label for="email" class="form_name">E-mail</label></p>
+      <input
+        type="email"
+        id="email"
+        class="form_info"
+        placeholder="Адрес электронного ящика"
+      />
+      <button class="btn">Приобрести видео-курс</button>
+    </form>
+  </div>
 </section>

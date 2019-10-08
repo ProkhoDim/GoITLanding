@@ -3,12 +3,7 @@
 */
 @import 'normalize';
 @import 'utils/variables';
-
+@import 'utils/placeholders';
+@import 'components/global';
 @import 'base/global';
 @import 'layout/global';
-@import 'base/fonts';
-@import 'base/container';
-
-// components
-
-@import 'components/btn';

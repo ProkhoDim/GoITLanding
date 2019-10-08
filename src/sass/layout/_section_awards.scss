@@ -1,0 +1,165 @@
+.awards-title__secondary-wrapper {
+  margin: 0 auto;
+  max-width: 283px;
+}
+
+.awards-title {
+  font-family: $main_font;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 900;
+  color: $dark_main;
+  text-transform: uppercase;
+  margin-top: 80px;
+
+  &__secondary {
+    font-family: $main_font;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 900;
+    color: $dark_main;
+    text-transform: uppercase;
+    margin: 23px 0 18px;
+  }
+
+  &__secondary--modify {
+    font-family: $main_font;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: none;
+    color: $p_text;
+  }
+}
+
+.awards-photo {
+  margin: 40px 0 60px;
+}
+
+.awards-list-wrapper {
+  margin: 0 auto;
+  width: 300px;
+}
+
+.awards-online-learn {
+  position: relative;
+  font-family: $main_font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: $dark_main;
+  padding-left: 30px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 0px;
+    display: inline-block;
+    background-color: $dark-main;
+    width: 25px;
+    height: 3px;
+    margin: 3px 15px 3px 0;
+  }
+}
+
+.awards-list-title {
+  display: inline-block;
+  font-family: $main_font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: $lite_main;
+  background-color: $dark_main;
+  margin-top: 40px;
+}
+
+.awards-list {
+  list-style-type: none;
+}
+
+.awards-list__item-title {
+  font-family: $main_font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 900;
+  color: $dark_main;
+  text-transform: uppercase;
+  margin-top: 35px;
+  width: 190px;
+}
+
+.awards-list__item-text {
+  font-family: $main_font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $p_text;
+  margin-top: 10px;
+
+  &--modify {
+    display: block;
+    font-family: $main_font;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 900;
+    color: $dark_main;
+  }
+}
+
+// awards-pseudo
+
+.oon-logo {
+  position: relative;
+}
+
+.oon-logo::before {
+  content: '';
+  position: absolute;
+  background-image: url('/images/mob/emblem.png');
+  height: 68px;
+  width: 80px;
+  left: 215px;
+}
+
+.it-awards {
+  position: relative;
+  width: 260px;
+}
+
+.it-awards::before {
+  content: '';
+  position: absolute;
+  background-image: url('/images/mob/award-1@1x.png');
+  width: 60px;
+  height: 140px;
+  left: 250px;
+}
+
+.best-edu15 {
+  position: relative;
+  width: 235px;
+}
+
+.best-edu15::before {
+  content: '';
+  position: absolute;
+  background-image: url('/images/mob/award-2@1x.png');
+  width: 70px;
+  height: 110px;
+  left: 235px;
+}
+
+.best-edu16 {
+  position: relative;
+  width: 235px;
+}
+
+.best-edu16::before {
+  content: '';
+  position: absolute;
+  background-image: url('/images/mob/award-3@1x.png');
+  width: 70px;
+  height: 110px;
+  left: 235px;
+}

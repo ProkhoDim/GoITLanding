@@ -1,0 +1,127 @@
+.block_doit {
+  padding: 14px 0 42px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.action {
+  display: block;
+  position: relative;
+  width: 218px;
+
+  &__title {
+    color: $dark_main;
+    font: {
+      family: $main_font;
+      size: 18px;
+      weight: 900;
+    }
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    display: block;
+    position: relative;
+    color: $dark_main;
+    font: {
+      family: $main_font;
+      size: 14px;
+      weight: 500;
+    }
+    line-height: 19.5px;
+    padding-left: 20px;
+    margin-bottom: 33px;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: -20px;
+      width: 17px;
+      height: 4px;
+      background-color: $dark_main;
+    }
+  }
+
+  &__button {
+    border: none;
+    margin-bottom: 42px;
+  }
+}
+
+.choice {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+
+  &__p-s {
+    display: block;
+    color: $dark_main;
+    font: {
+      family: $main_font;
+      size: 20px;
+      weight: 900;
+    }
+    line-height: 23.99px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  &__closed {
+    color: $dark_main;
+    font: {
+      family: $main_font;
+      size: 14px;
+      weight: 700;
+    }
+    line-height: 19.5px;
+    margin-bottom: 24px;
+  }
+
+  &__bad-job {
+    color: $p_text;
+    font: {
+      family: $main_font;
+      size: 14px;
+      weight: 400;
+    }
+    line-height: 19.5px;
+    letter-spacing: -0.51px;
+    margin-bottom: 24px;
+  }
+
+  &__way {
+    color: $p_text;
+    font-family: $main_font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.5px;
+    margin-bottom: 26px;
+
+    & span {
+      color: $dark_main;
+      font: {
+        family: $main_font;
+        size: 14px;
+        weight: 700;
+      }
+      line-height: 19.5px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.choice__your {
+  color: $accent-text;
+  font: {
+    family: $main_font;
+    size: 14px;
+    weight: 500;
+  }
+  line-height: 19.5px;
+  text-align: right;
+}

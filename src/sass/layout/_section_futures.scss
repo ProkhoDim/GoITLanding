@@ -1,0 +1,53 @@
+.full-future {
+  &__title {
+    margin-bottom: 30px;
+    padding-top: 35px;
+  }
+  &__descr {
+    margin-bottom: 10px;
+  }
+  &__text {
+    margin-bottom: 50px;
+    &--marked {
+      background-color: $marker;
+    }
+  }
+}
+
+.futures {
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__facts {
+    margin: 0 auto 45px;
+    position: relative;
+    padding-left: 25px;
+    width: 55%;
+    font-weight: 500;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 10px;
+      transform: translateX(-25px);
+      display: block;
+      width: 14px;
+      height: 3px;
+      background-color: $dark_main;
+    }
+  }
+}
+
+.futures-list {
+  &__item {
+    margin-bottom: 30px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+}
+
+.content-image {
+  width: 100%;
+  height: auto;
+}

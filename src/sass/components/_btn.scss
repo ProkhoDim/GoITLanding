@@ -1,4 +1,4 @@
-.btn {
+.btn-header {
   box-shadow: 0 5px 6px $btn_shadow;
   background-color: $accent;
   color: $lite_main;
@@ -7,9 +7,12 @@
     size: 10px;
     weight: 900;
   }
+  margin: 0 auto;
   line-height: 18px;
   text-transform: uppercase;
   letter-spacing: 1.11px;
   padding: 16px 32px;
+  border: none;
+  display: block;
   cursor: pointer;
 }
