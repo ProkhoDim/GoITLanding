@@ -16,8 +16,8 @@ img {
     margin: 0 auto;
     padding: 0 15px;
   }
-  &--middle {
-    width: 360px;
+  &--m {
+    width: 300px;
     margin: 0 auto;
   }
   &--large {
@@ -47,24 +47,53 @@ img {
       margin-top: 40px;
       margin-bottom: 25px;
     }
-    &-price {
+  }
+}
+
+.video-position {
+  margin-bottom: 25px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  &__arrows {
+    display: block;
+    margin-bottom: 6px;
+  }
+  &__cost {
+    position: relative;
+    bottom: -30px;
+    &::before {
+      position: absolute;
+      content: '1 300 грн';
+      text-decoration: line-through;
+      font-size: 17px;
+      font-weight: 900;
+      color: $p_text;
+      top: -40px;
+    }
+  }
+  &__title {
+    font-size: 36px;
+    &--uah {
+      font-size: 19px;
     }
   }
 }
 
+.arrows {
+  color: $dark_main;
+  background-color: $arrows;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
 .title {
   text-transform: uppercase;
-  font-size: 18px;
   color: $dark_main;
   font-weight: 900;
   line-height: 24px;
-}
-
-.position {
-  width: 300px;
-  margin: auto;
-}
-
-.today-wrap {
-  margin: 0 auto;
 }
