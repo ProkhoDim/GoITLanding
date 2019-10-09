@@ -1,3 +1,15 @@
+.examples {
+  margin-bottom: 70px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__title-descr {
+    margin-bottom: 40px;
+  }
+}
+
 .examples-box {
   width: 300px;
   padding: 15px;

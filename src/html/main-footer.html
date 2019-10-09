@@ -1,13 +1,18 @@
 <footer class="main-footer">
-  <div class="block-footer">
+  <div class="block-footer  page-container">
     <a class="page-logo" href="http://goit.ua">
-      <img
-        srcset="images/mob/Logo.png 66w, images/mob/Logo.png@2x.png 132w"
-        sizes="66px"
-        src="images/mob/Logo.png"
-        alt="logo"
-        height="23"
-      />
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="images/mob/Logo.png 1x, images/tab/Logo@2x.png 2x"
+        />
+        <img
+          class="content-image"
+          src="images/mob/Logo.png"
+          alt="logo"
+          srcset="images/mob/Logo@2x.png 2x"
+        />
+      </picture>
     </a>
 
     <div class="footer-address">

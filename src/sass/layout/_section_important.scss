@@ -128,7 +128,6 @@
 }
 
 .present__title {
-//   margin: 0 auto;
   width: 280px;
   color: $dark_main;
   font: {
@@ -179,6 +178,5 @@
 }
 
 .present__button {
-  border: none;
-  font-size: 10px;
+  font-size: 10px!important;
 }

@@ -1,22 +1,39 @@
 .video-course {
+  margin-bottom: 50px;
   &__img {
-    margin: 20px auto;
+    margin-bottom: 20px;
   }
-  &__title {
-    margin-top: 40px;
-    margin-bottom: 25px;
-  }
-}
 
-.video-position {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  width: 230px;
-  margin-bottom: 25px;
+  &__subtitle {
+    &-wrap {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-start;
+      width: 230px;
+      margin-bottom: 15px;
+    }
+
+    &-text {
+      padding: 3px 4px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+
+    &-descr {
+      margin-bottom: 35px;
+    }
+  }
 
   &__text {
-    padding: 3px 4px;
+    &:first-child {
+      margin-bottom: 25px;
+    }
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -24,7 +41,6 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 50px;
   &__arrows {
     display: block;
     margin-bottom: 6px;
@@ -56,4 +72,21 @@
   font-size: 17px;
   font-weight: 500;
   line-height: 21px;
+}
+
+.vc-list {
+  margin-bottom: 70px;
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    &:nth-last-of-type(n + 2) {
+      margin-bottom: 30px;
+    }
+
+    &-title {
+      margin-bottom: 15px;
+    }
+  }
 }

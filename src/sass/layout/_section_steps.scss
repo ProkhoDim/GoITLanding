@@ -1,12 +1,70 @@
+.steps {
+  margin-bottom: 55px;
+  &__title {
+    margin-bottom: 20px;
+    width: 210px;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      content: '4';
+      display: block;
+      position: absolute;
+      top: 77px;
+      left: -70px;
+      width: 115px;
+      height: 146px;
+      color: $bg_text;
+      font: {
+        family: $main_font;
+        size: 208px;
+        weight: 900;
+      }
+      line-height: 83px;
+      text-transform: uppercase;
+    }
+
+    &::after {
+      content: 'stap';
+      display: block;
+      position: absolute;
+      top: -5px;
+      right: 75px;
+      width: 41px;
+      height: 143px;
+      color: $bg_text;
+      font: {
+        family: $main_font;
+        size: 55px;
+        weight: 900;
+      }
+      transform: rotateZ(90deg);
+      line-height: 200px;
+      text-transform: uppercase;
+    }
+    &-descr {
+      margin-bottom: 60px;
+    }
+  }
+}
+
 .steps-list {
+  margin-bottom: 40px;
+
   &__item {
     align-self: flex-start;
+
+    &:nth-last-of-type(n + 2) {
+      margin-bottom: 30px;
+    }
+
     &-title {
       text-transform: uppercase;
       color: $dark_main;
       font-weight: 700;
       line-height: 21px;
       font-size: 13px;
+      margin-bottom: 15px;
     }
 
     &-text {

@@ -1,3 +1,10 @@
+.page-container {
+  min-width: 450px;
+  width: 450px;
+  margin: 0 auto;
+  font-family: $main_font;
+}
+
 .container {
   // margin: 0 auto;
   display: flex;
