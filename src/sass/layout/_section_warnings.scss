@@ -1,0 +1,29 @@
+.warnings {
+  margin-bottom: 70px;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 35px;
+  }
+}
+
+.warnings-list {
+  width: 335px;
+
+  &__item {
+    &:nth-last-of-type(n + 2) {
+      margin-bottom: 15px;
+    }
+    &-title {
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      font-size: 13px;
+      line-height: 19px;
+    }
+  }
+}

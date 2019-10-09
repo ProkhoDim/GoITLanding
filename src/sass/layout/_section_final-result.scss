@@ -1,0 +1,50 @@
+.final-result {
+  margin-bottom: 65px;
+  &__title {
+    margin-bottom: 45px;
+  }
+
+  &__accent {
+    margin-bottom: 35px;
+  }
+}
+
+.final-list {
+  margin-bottom: 50px;
+  &__item {
+    &:nth-last-of-type(n + 2) {
+      margin-bottom: 30px;
+    }
+
+    &-title {
+      font-size: 13px;
+      line-height: 19px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    &-text {
+      font-size: 13px;
+      line-height: 19px;
+      color: $p_text;
+    }
+  }
+}
+
+.load-more {
+  font-size: 13px;
+  line-height: 19px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 5px;
+    left: -20px;
+    width: 20px;
+    height: 2px;
+    transform: rotateZ(-60deg);
+    background-color: $dark_main;
+    padding-right: 10px;
+  }
+}

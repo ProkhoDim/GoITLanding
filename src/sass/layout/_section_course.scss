@@ -1,0 +1,42 @@
+.course {
+  margin-bottom: 65px;
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    font-size: 13px;
+    line-height: 19px;
+    width: 260px;
+    padding-left: 25px;
+    color: $dark_main;
+    position: relative;
+    margin-bottom: 40px;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 16px;
+      height: 3px;
+      background-color: $dark_main;
+    }
+  }
+
+  &__image {
+    margin-bottom: 35px;
+  }
+
+  &-list {
+    &__item {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+    }
+  }
+}

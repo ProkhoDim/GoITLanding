@@ -1,0 +1,90 @@
+.because {
+  margin-bottom: 35px;
+
+  &__title {
+    margin-bottom: 15px;
+    &-wrap {
+      margin-bottom: 20px;
+      display: flex;
+      flex-flow: row wrap;
+      align-self: flex-start;
+      width: 170px;
+    }
+
+    &-lines {
+      padding: 0 3px;
+    }
+  }
+
+  &__text {
+    &:first-child {
+      margin-bottom: 15px;
+    }
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.many-people {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.half-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.picture-tab {
+  display: none;
+}
+
+.because-pic {
+  padding-top: 30px;
+  margin-bottom: 15px;
+}
+
+.But-if-you-dont {
+  display: flex;
+  flex-flow: row wrap;
+  align-self: flex-start;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+// @media screen and(min-width: 768px) {
+//   .because {
+//     width: 630px;
+//     display: flex;
+//     justify-content: space-between;
+//     flex-direction: column;
+//   }
+
+//   .many-people {
+//     flex-direction: row;
+//   }
+
+//   .half-2 {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//   }
+
+//   .picture-tab {
+//     display: block;
+//   }
+
+//   .picture-mob {
+//     display: none;
+//   }
+
+//   .however,
+//   .but {
+//     display: flex;
+//     flex-direction: row;
+//   }
+// }

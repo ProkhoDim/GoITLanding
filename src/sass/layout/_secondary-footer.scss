@@ -1,0 +1,39 @@
+.secondary-footer {
+  background-color: $bg_lawbar;
+}
+
+.block__secondary-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.security {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & a {
+      @extend %link;
+      color: $law_info;
+      font: {
+        family: $main_font;
+        size: 6px;
+        weight: 300;
+      }
+      line-height: 16px;
+      letter-spacing: 0.92px;
+    }
+  }
+}
+
+.logo__secondary-footer {
+  @extend %link;
+}

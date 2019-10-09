@@ -1,0 +1,46 @@
+.profession {
+  margin-bottom: 47px;
+  &__title {
+    margin-bottom: 20px;
+    &-wrap {
+      width: 220px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 40px;
+  }
+
+  &__title-descr {
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 500;
+    width: 260px;
+    padding-left: 25px;
+    color: $dark_main;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 16px;
+      height: 3px;
+      background-color: $dark_main;
+    }
+  }
+
+  &__text {
+    &-title {
+      margin-bottom: 16px;
+      align-self: flex-start;
+    }
+
+    &-descr {
+      width: 220px;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.reason {
+  margin-bottom: 75px;
+}
+
+.reason-questions {
+  max-width: 425px;
+  margin-bottom: 25px;
+}
+
+.reason-questions__photo {
+  margin-bottom: 45px;
+}
+
+.reason-answers {
+  width: 280px;
+  display: block;
+  position: relative;
+
+  &__probably {
+    font-family: $main_font;
+    font-size: 14px;
+    font-weight: 900;
+    color: $dark_main;
+    margin-right: -20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      background-color: $dark-main;
+      width: 25px;
+      height: 3px;
+      margin: 3px 15px 3px 0;
+    }
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: 'YOU';
+    top: -130px;
+    left: -65px;
+    width: 70px;
+    height: 210px;
+    color: $pe_color;
+    font: {
+      family: $main_font;
+      size: 100px;
+      weight: 900;
+    }
+    line-height: 200px;
+    text-transform: uppercase;
+    transform: rotateZ(90deg);
+  }
+
+  &__if-you {
+    align-self: flex-start;
+    font-family: $main_font;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    font-family: $main_font;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: $dark_main;
+    margin-bottom: 45px;
+
+    &--blk-backgrd {
+      color: $lite_main;
+      background-color: $dark_main;
+      padding: 0 3px;
+    }
+  }
+}
+
+.reason-answers__list {
+  list-style-type: none;
+  max-width: 390px;
+
+  &-item {
+    position: relative;
+    font-family: $main_font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $p_text;
+    margin-bottom: 25px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+      background-color: $dark_main;
+      top: 6px;
+      left: -15px;
+    }
+
+    &--bold-text {
+      font-weight: 800;
+      color: $dark_main;
+    }
+  }
+}
+
+.reason-answers__afterword {
+  font-family: $main_font;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: $accent;
+  text-align: center;
+  max-width: 292px;
+  margin: 0 auto;
+}

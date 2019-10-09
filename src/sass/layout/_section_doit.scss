@@ -1,0 +1,101 @@
+.block_doit {
+  padding: 14px 0 42px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.action {
+  display: block;
+  position: relative;
+  width: 218px;
+
+  &__title {
+    margin-bottom: 18px;
+    display: block;
+    position: relative;
+  }
+
+  &::before {
+    content: 'go';
+    width: 73px;
+    height: 150px;
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: -75px;
+    transform: rotateZ(90deg);
+    color: $bg_text;
+    font: {
+      family: $main_font;
+      size: 110px;
+      weight: 900;
+    }
+    line-height: 200px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 33px;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: -20px;
+      width: 17px;
+      height: 4px;
+      background-color: $dark_main;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    border: none;
+    margin-bottom: 42px;
+  }
+}
+
+.choice {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+
+  &__p-s {
+    display: block;
+    color: $dark_main;
+    font: {
+      family: $main_font;
+      size: 20px;
+      weight: 900;
+    }
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  &__closed {
+    margin-bottom: 24px;
+  }
+
+  &__bad-job {
+    letter-spacing: -0.51px;
+    margin-bottom: 24px;
+  }
+
+  &__way {
+    margin-bottom: 26px;
+
+    & span {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.choice__your {
+  text-align: right;
+}

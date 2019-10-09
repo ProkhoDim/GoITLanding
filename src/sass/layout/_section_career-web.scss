@@ -1,0 +1,39 @@
+.career-web {
+  margin-bottom: 50px;
+
+  &__title {
+    margin-bottom: 10px;
+
+    &-image {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__image {
+    padding: 25px 0;
+  }
+
+  &__descr {
+    width: 310px;
+    &-title {
+      padding-left: 20px;
+      position: relative;
+      margin-bottom: 25px;
+
+      &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        background-color: $dark_main;
+        width: 8px;
+        height: 8px;
+        top: 0;
+        left: 0;
+        transform: translateY(8px);
+      }
+    }
+
+    &-text {
+    }
+  }
+}

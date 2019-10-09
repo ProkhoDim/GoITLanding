@@ -1,0 +1,92 @@
+.video-course {
+  margin-bottom: 50px;
+  &__img {
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    &-wrap {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-start;
+      width: 230px;
+      margin-bottom: 15px;
+    }
+
+    &-text {
+      padding: 3px 4px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+
+    &-descr {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__text {
+    &:first-child {
+      margin-bottom: 25px;
+    }
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  &__arrows {
+    display: block;
+    margin-bottom: 6px;
+  }
+  &__cost {
+    position: relative;
+    bottom: -30px;
+    &::before {
+      position: absolute;
+      content: '1 300 грн';
+      text-decoration: line-through;
+      font-size: 17px;
+      font-weight: 900;
+      color: $p_text;
+      top: -40px;
+    }
+  }
+  &__title {
+    font-size: 36px;
+    &--uah {
+      font-size: 19px;
+    }
+  }
+}
+
+.arrows {
+  color: $dark_main;
+  background-color: $arrows;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.vc-list {
+  margin-bottom: 70px;
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    &:nth-last-of-type(n + 2) {
+      margin-bottom: 30px;
+    }
+
+    &-title {
+      margin-bottom: 15px;
+    }
+  }
+}

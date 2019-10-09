@@ -1,0 +1,45 @@
+.page-container {
+  min-width: 450px;
+  width: 450px;
+  margin: 0 auto;
+  font-family: $main_font;
+}
+
+.container {
+  // margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--xxs {
+    width: 180px;
+  }
+
+  &--xs {
+    width: 200px;
+  }
+
+  &--s {
+    width: 260px;
+  }
+
+  &--sm {
+    width: 270px;
+  }
+
+  &--m {
+    width: 300px;
+  }
+
+  &--l {
+    width: 335px;
+  }
+
+  &--xl {
+    width: 360px;
+  }
+
+  &--xxl {
+    width: 380px;
+  }
+}

@@ -1,0 +1,35 @@
+.o-list {
+  counter-reset: count;
+  list-style-type: none;
+
+  &__itm {
+    counter-increment: count;
+    position: relative;
+    padding-left: 50px;
+
+    &::before {
+      content: '0' counter(count) '.';
+      font-family: $main_font;
+      font-size: 20px;
+      font-weight: 900;
+      top: 0px;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      z-index: 1;
+      left: 0;
+    }
+
+    &::after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      top: 25px;
+      left: 20px;
+      background-color: $marker;
+    }
+  }
+}
