@@ -10,6 +10,25 @@
   position: relative;
   width: 218px;
 
+  &::before {
+    content: 'go';
+    width: 73px;
+    height: 150px;
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: -75px;
+    transform: rotateZ(90deg);
+    color: $bg_text;
+    font: {
+      family: $main_font;
+      size: 110px;
+      weight: 900;
+    }
+    line-height: 200px;
+    text-transform: uppercase;
+  }
+
   &__title {
     display: block;
     position: relative;
@@ -22,12 +41,6 @@
     line-height: 24px;
     text-transform: uppercase;
     margin-bottom: 18px;
-
-    &::before {
-      content: 'go';
-      display: block;
-      position: absolute;
-    }
   }
 
   &__text {
@@ -42,6 +55,17 @@
     line-height: 19.5px;
     padding-left: 20px;
     margin-bottom: 33px;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: -20px;
+      width: 17px;
+      height: 4px;
+      background-color: $dark_main;
+    }
   }
 
   &__button {
