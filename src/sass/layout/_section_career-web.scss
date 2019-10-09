@@ -1,10 +1,12 @@
 .heading {
+  width: 188px;
+  margin-bottom: 11px;
   text: {
     transform: uppercase;
     align: center;
   }
   font: {
-    family: 'Acrom', sans-serif;
+    family: $main_font;
     size: 18px;
     weight: 900;
   }
@@ -13,8 +15,10 @@
 }
 
 .section-text {
+  width: 278px;
+  margin-bottom: 26px;
   font: {
-    family: 'Acrom', sans-serif;
+    family: $main_font;
     size: 14px;
     weight: bold;
   }

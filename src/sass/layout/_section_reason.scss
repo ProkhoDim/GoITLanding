@@ -21,11 +21,11 @@
   width: 280px;
 
   &__probably {
+    width: 300px;
     font-family: $main_font;
     font-size: 14px;
     font-weight: 900;
     color: $dark_main;
-    // margin-right: -20px;
     text-transform: uppercase;
     margin-bottom: 15px;
 
@@ -35,7 +35,7 @@
       background-color: $dark-main;
       width: 25px;
       height: 3px;
-      margin: 3px 15px 3px 0;
+      // margin: 3px 15px 3px 0;
     }
   }
 
@@ -50,6 +50,7 @@
   }
 
   &__title {
+    width: 290px;
     font-family: $main_font;
     font-size: 20px;
     font-weight: 900;
@@ -68,7 +69,8 @@
 
 .reason-answers__list {
   list-style-type: none;
-  max-width: 390px;
+  width: 395px;
+  margin: 0 auto;
 
   &-item {
     position: relative;

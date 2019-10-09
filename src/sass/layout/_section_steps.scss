@@ -1,6 +1,22 @@
+.block-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steps-title {
+  margin-bottom: 21px;
+
+  &__four {
+    width: 200px;
+  }
+}
+
 .steps-list {
   &__item {
     align-self: flex-start;
+    margin-bottom: 33px;
+
     &-title {
       text-transform: uppercase;
       color: $dark_main;
@@ -21,6 +37,8 @@
   line-height: 19px;
   position: relative;
   font-weight: 500;
+  margin-bottom: 45px;
+
   &::before {
     content: '';
     position: absolute;
