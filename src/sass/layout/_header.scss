@@ -9,7 +9,7 @@
   min-width: 480px;
   min-height: 614px;
   height: 100%;
-  background: no-repeat url('../../images/mob/blur.png') top center;
+  background: no-repeat url('../images/mob/blur.png') top center;
   object-fit: cover;
   background-color: $bg_footer;
 }
@@ -68,7 +68,7 @@
   position: relative;
 
   &__title {
-    width: 250px;
+    width: 260px;
     margin-bottom: 40px;
     font: {
       size: 30px;
@@ -112,7 +112,7 @@
     }
 
     &::after {
-      bottom: 8px;
+      bottom: 20px;
       right: -18px;
       content: '/>';
     }
