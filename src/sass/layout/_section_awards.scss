@@ -1,8 +1,3 @@
-.awards-title__secondary-wrapper {
-  margin: 0 auto;
-  max-width: 283px;
-}
-
 .awards-title {
   font-family: $main_font;
   font-size: 20px;
@@ -36,11 +31,6 @@
   margin: 40px 0 60px;
 }
 
-.awards-list-wrapper {
-  margin: 0 auto;
-  width: 300px;
-}
-
 .awards-online-learn {
   position: relative;
   font-family: $main_font;
@@ -63,19 +53,15 @@
   }
 }
 
-.awards-list-title {
+.awards-list__title {
   display: inline-block;
-  font-family: $main_font;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 500;
-  color: $lite_main;
-  background-color: $dark_main;
+  align-self: flex-start;
   margin-top: 40px;
 }
 
 .awards-list {
   list-style-type: none;
+  align-self: flex-start;
 }
 
 .awards-list__item-title {

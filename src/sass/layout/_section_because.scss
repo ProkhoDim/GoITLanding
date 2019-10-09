@@ -1,18 +1,57 @@
-.heading {
-  text-align: center;
-}
-
-.section-image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .because__title {
-  font-size: 14px;
-  font-weight: 700;
-  color: $lite_main;
-  background-color: $dark_main;
-  text-transform: uppercase;
   padding: 3px 0;
+  align-self: flex-start;
+}
+
+.many-people {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.half-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.picture-tab {
+  display: none;
+}
+
+.But-if-you-dont {
+  width: 200px;
+}
+
+@media screen and(min-width: 768px) {
+  .because {
+    width: 630px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .many-people {
+    flex-direction: row;
+  }
+
+  .half-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .picture-tab {
+    display: block;
+  }
+
+  .picture-mob {
+    display: none;
+  }
+
+  .however,
+  .but {
+    display: flex;
+    flex-direction: row;
+  }
 }

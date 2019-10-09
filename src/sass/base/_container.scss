@@ -1,5 +1,8 @@
 .container {
-  margin: 0 auto;
+  // margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &--xxs {
     width: 180px;

@@ -1,10 +1,5 @@
 .reason-questions {
-  font-family: $main_font;
-  font-size: 14px;
-  font-weight: 500;
-  color: $dark_main;
   max-width: 425px;
-  margin: 55px 0 25px;
 }
 
 .reason-questions__photo {
@@ -12,7 +7,6 @@
 }
 
 .reason-answers {
-  margin: 0 auto;
   width: 280px;
 
   &__probably {
@@ -20,6 +14,8 @@
     font-size: 14px;
     font-weight: 900;
     color: $dark_main;
+    margin-right: -20px;
+    text-transform: uppercase;
     margin-bottom: 15px;
 
     &::before {
@@ -33,6 +29,7 @@
   }
 
   &__if-you {
+    align-self: flex-start;
     font-family: $main_font;
     font-size: 14px;
     font-weight: 900;
@@ -60,7 +57,6 @@
 
 .reason-answers__list {
   list-style-type: none;
-  margin: 0 auto;
   max-width: 390px;
 
   &-item {

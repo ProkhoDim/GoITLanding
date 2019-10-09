@@ -47,7 +47,8 @@
   }
 }
 
-.content-image {
-  width: 100%;
-  height: auto;
+@media screen and(max-width: 768px) {
+  .futures-list {
+    align-self: flex-start;
+  }
 }
