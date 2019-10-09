@@ -110,7 +110,29 @@
 
 .it-awards {
   position: relative;
-  width: 260px;
+  width: 235px;
+}
+
+.it-awards::after,
+.best-edu15::after,
+.best-edu16::after {
+  content: '0' counter(awards-list__item) '_';
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: -3px;
+  transform: rotateZ(-90deg);
+  width: 38px;
+  height: 72px;
+  color: $pe_color;
+  counter-increment: awards-list__item;
+  font: {
+    family: $bg_font;
+    size: 50px;
+    weight: 700;
+  }
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .it-awards::before {

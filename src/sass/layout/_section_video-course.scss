@@ -1,0 +1,59 @@
+.video-course {
+  &__img {
+    margin: 20px auto;
+  }
+  &__title {
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+}
+
+.video-position {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  width: 230px;
+  margin-bottom: 25px;
+
+  &__text {
+    padding: 3px 4px;
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 50px;
+  &__arrows {
+    display: block;
+    margin-bottom: 6px;
+  }
+  &__cost {
+    position: relative;
+    bottom: -30px;
+    &::before {
+      position: absolute;
+      content: '1 300 грн';
+      text-decoration: line-through;
+      font-size: 17px;
+      font-weight: 900;
+      color: $p_text;
+      top: -40px;
+    }
+  }
+  &__title {
+    font-size: 36px;
+    &--uah {
+      font-size: 19px;
+    }
+  }
+}
+
+.arrows {
+  color: $dark_main;
+  background-color: $arrows;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 21px;
+}

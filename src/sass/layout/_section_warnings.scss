@@ -1,0 +1,13 @@
+.warnings-list {
+  width: 335px;
+
+  &__item {
+    &-title {
+    }
+
+    &-text {
+      font-size: 13px;
+      line-height: 19px;
+    }
+  }
+}

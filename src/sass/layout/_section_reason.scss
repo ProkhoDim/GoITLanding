@@ -8,6 +8,8 @@
 
 .reason-answers {
   width: 280px;
+  display: block;
+  position: relative;
 
   &__probably {
     font-family: $main_font;
@@ -26,6 +28,25 @@
       height: 3px;
       margin: 3px 15px 3px 0;
     }
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: 'YOU';
+    top: -130px;
+    left: -65px;
+    width: 70px;
+    height: 210px;
+    color: $pe_color;
+    font: {
+      family: $main_font;
+      size: 100px;
+      weight: 900;
+    }
+    line-height: 200px;
+    text-transform: uppercase;
+    transform: rotateZ(90deg);
   }
 
   &__if-you {

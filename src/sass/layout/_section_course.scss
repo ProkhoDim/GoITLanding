@@ -1,0 +1,19 @@
+.course__text {
+  font-size: 13px;
+  line-height: 19px;
+  width: 260px;
+  padding-left: 25px;
+  color: $dark_main;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 16px;
+    height: 3px;
+    background-color: $dark_main;
+  }
+}

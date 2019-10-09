@@ -12,6 +12,27 @@
 
   &__title {
     margin-bottom: 18px;
+    display: block;
+    position: relative;
+  }
+
+  &::before {
+    content: 'go';
+    width: 73px;
+    height: 150px;
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: -75px;
+    transform: rotateZ(90deg);
+    color: $bg_text;
+    font: {
+      family: $main_font;
+      size: 110px;
+      weight: 900;
+    }
+    line-height: 200px;
+    text-transform: uppercase;
   }
 
   &__text {

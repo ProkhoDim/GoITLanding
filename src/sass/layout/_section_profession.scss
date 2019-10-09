@@ -1,28 +1,31 @@
-.heading {
-  text: {
-    transform: uppercase;
-    align: center;
+.profession__title {
+  &-wrap {
+    width: 220px;
   }
-  font: {
-    family: 'Acrom', sans-serif;
-    size: 18px;
-    weight: 900;
-  }
-  line-height: 24px;
-  color: $dark_main;
+  
 }
 
-.section-text {
-  font: {
-    family: 'Acrom', sans-serif;
-    size: 14px;
-    weight: bold;
-  }
+.profession__title-descr {
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 500;
+  width: 260px;
+  padding-left: 25px;
   color: $dark_main;
-  line-height: 20px;
+  position: relative;
 
-  &--mark {
-    color: $lite_main;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 16px;
+    height: 3px;
     background-color: $dark_main;
   }
+}
+
+.profession__text-descr {
+  width: 220px;
 }

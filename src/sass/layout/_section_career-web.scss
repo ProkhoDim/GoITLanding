@@ -1,28 +1,22 @@
-.heading {
-  text: {
-    transform: uppercase;
-    align: center;
-  }
-  font: {
-    family: 'Acrom', sans-serif;
-    size: 18px;
-    weight: 900;
-  }
-  line-height: 24px;
-  color: $dark_main;
-}
+.career-web__descr {
+  width: 310px;
+  &-title {
+    padding-left: 20px;
+    position: relative;
 
-.section-text {
-  font: {
-    family: 'Acrom', sans-serif;
-    size: 14px;
-    weight: bold;
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      background-color: $dark_main;
+      width: 8px;
+      height: 8px;
+      top: 0;
+      left: 0;
+      transform: translateY(8px);
+    }
   }
-  color: $dark_main;
-  line-height: 20px;
 
-  &--mark {
-    color: $lite_main;
-    background-color: $dark_main;
+  &-text {
   }
 }
