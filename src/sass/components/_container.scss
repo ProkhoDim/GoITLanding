@@ -43,3 +43,25 @@
     width: 380px;
   }
 }
+
+@media (min-width: 768px) {
+  .page-container {
+    min-width: 642px;
+    width: 642px;
+  }
+
+  .container {
+    width: 635px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page-container {
+    min-width: 1125px;
+    width: 1125px;
+  }
+
+  .container {
+    width: 715px;
+  }
+}

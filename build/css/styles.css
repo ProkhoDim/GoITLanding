@@ -939,6 +939,8 @@ input {
   display: none;
 }
 
+/* MEDIA RULES */
+
 .reason {
   margin-bottom: 75px;
 }
@@ -2401,8 +2403,38 @@ input {
   letter-spacing: 0.92px;
 }
 
+@media (min-width: 768px) {
+  .page-container {
+    min-width: 642px;
+    width: 642px;
+  }
+
+  .container {
+    width: 635px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page-container {
+    min-width: 1125px;
+    width: 1125px;
+  }
+
+  .container {
+    width: 715px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .futures-list {
     align-self: flex-start;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .header {
+    background: no-repeat url("../../images/mob/blur@2x.png") top center;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 }
