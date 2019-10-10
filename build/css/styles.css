@@ -2477,13 +2477,6 @@ input {
 }
 
 @media (min-width: 992px) {
-  .page-container {
-    min-width: 732px;
-    width: 732px;
-  }
-}
-
-@media (min-width: 1200px) {
   .text {
     font-size: 9px;
     color: #3f4144;
@@ -2550,6 +2543,11 @@ input {
     font-weight: 900;
     line-height: 20px;
     font-size: 14px;
+  }
+
+  .page-container {
+    min-width: 732px;
+    width: 732px;
   }
 }
 
