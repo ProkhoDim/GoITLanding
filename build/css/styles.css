@@ -2401,6 +2401,158 @@ input {
   letter-spacing: 0.92px;
 }
 
+@media (min-width: 768px) {
+  .text {
+    font-size: 8px;
+    color: #3f4144;
+    line-height: 13px;
+  }
+
+  .text--light {
+    font-weight: 300;
+  }
+
+  .text--semi-bold {
+    color: black;
+    font-weight: 500;
+  }
+
+  .text--bold {
+    color: black;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 14px;
+  }
+
+  .text--negative {
+    color: white;
+    background-color: black;
+    font-size: 9px;
+    line-height: 14px;
+  }
+
+  .text--accent {
+    color: #ff6b08;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .text--upper-bold {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .text--mark {
+    color: black;
+    font-weight: 500;
+    background-color: #16ebfe;
+  }
+
+  .title {
+    text-transform: uppercase;
+    font-size: 27px;
+    color: black;
+    font-weight: 900;
+    line-height: 34px;
+  }
+
+  .title--negative {
+    color: white;
+    background-color: black;
+  }
+
+  .title--list {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 900;
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  .page-container {
+    min-width: 660px;
+    width: 660px;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-container {
+    min-width: 732px;
+    width: 732px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text {
+    font-size: 9px;
+    color: #3f4144;
+    line-height: 13px;
+  }
+
+  .text--light {
+    font-weight: 300;
+  }
+
+  .text--semi-bold {
+    color: black;
+    font-weight: 500;
+  }
+
+  .text--bold {
+    color: black;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .text--negative {
+    color: white;
+    background-color: black;
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .text--accent {
+    color: #ff6b08;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .text--upper-bold {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .text--mark {
+    color: black;
+    font-weight: 500;
+    background-color: #16ebfe;
+  }
+
+  .title {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: black;
+    font-weight: 900;
+    line-height: 37px;
+  }
+
+  .title--negative {
+    color: white;
+    background-color: black;
+  }
+
+  .title--list {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 900;
+    line-height: 20px;
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .futures-list {
     align-self: flex-start;

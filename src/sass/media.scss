@@ -1,44 +1,25 @@
-.text {
-  font-size: 14px;
-  color: $p_text;
-  line-height: 20px;
-  &--light {
-    font-weight: 300;
-  }
-
-  &--semi-bold {
-    color: $dark_main;
-    font-weight: 500;
-  }
-
-  &--bold {
-    color: $dark_main;
-    font-weight: 700;
-  }
-
-  &--negative {
-    color: $lite_main;
-    background-color: $dark_main;
-  }
-
-  &--accent {
-    color: $accent;
-    font-weight: 500;
-  }
-
-  &--upper-bold {
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-
-  &--mark {
-    color: $dark_main;
-    font-weight: 500;
-    background-color: $marker;
-  }
-}
-
 @media (min-width: 768px) {
+  .title {
+    text-transform: uppercase;
+    font-size: 27px;
+    color: $dark_main;
+    font-weight: 900;
+    line-height: 34px;
+
+    &--negative {
+      color: $lite_main;
+      background-color: $dark_main;
+    }
+
+    &--list {
+      text-transform: uppercase;
+      color: $dark_main;
+      font-weight: 900;
+      line-height: 20px;
+      font-size: 14px;
+    }
+  }
+
   .text {
     font-size: 8px;
     color: $p_text;
@@ -88,6 +69,27 @@
 }
 
 @media (min-width: 1200px) {
+  .title {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: $dark_main;
+    font-weight: 900;
+    line-height: 37px;
+
+    &--negative {
+      color: $lite_main;
+      background-color: $dark_main;
+    }
+
+    &--list {
+      text-transform: uppercase;
+      color: $dark_main;
+      font-weight: 900;
+      line-height: 20px;
+      font-size: 14px;
+    }
+  }
+
   .text {
     font-size: 9px;
     color: $p_text;
