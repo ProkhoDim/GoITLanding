@@ -3,59 +3,157 @@
   width: 450px;
   margin: 0 auto;
   font-family: $main_font;
+
 }
 
 .container {
-  // margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   &--xxs {
     width: 180px;
+    background-color: red;
   }
 
   &--xs {
     width: 200px;
+    background-color: lime;
   }
 
   &--s {
     width: 260px;
+    background-color: yellow;
   }
 
   &--sm {
     width: 270px;
+    background-color: green;
   }
 
   &--m {
     width: 300px;
+    background-color: blue;
   }
 
   &--l {
     width: 335px;
+    background-color: blueviolet;
   }
 
   &--xl {
     width: 360px;
+    background-color: skyblue;
   }
 
   &--xxl {
     width: 380px;
+    background-color: palevioletred;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .page-container {
     min-width: 660px;
     width: 660px;
   }
-  
+
+  .container {
+    // justify-content: space-between;
+    // flex-flow: row wrap;
+    // align-items: center;
+
+    &--xxs {
+      width: 180px;
+      background-color: red;
+    }
+
+    &--xs {
+      width: 200px;
+      background-color: lime;
+    }
+
+    &--s {
+      width: 260px;
+      background-color: yellow;
+    }
+
+    &--sm {
+      width: 270px;
+      background-color: green;
+    }
+
+    &--m {
+      width: 300px;
+      background-color: blue;
+    }
+
+    &--l {
+      width: 335px;
+      background-color: blueviolet;
+    }
+
+    &--xl {
+      width: 360px;
+      background-color: skyblue;
+    }
+
+    &--xxl {
+      width: 380px;
+      background-color: palevioletred;
+    }
+  }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .page-container {
     min-width: 732px;
     width: 732px;
   }
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--xxs {
+      width: 180px;
+      background-color: red;
+    }
+
+    &--xs {
+      width: 200px;
+      background-color: lime;
+    }
+
+    &--s {
+      width: 260px;
+      background-color: yellow;
+    }
+
+    &--sm {
+      width: 270px;
+      background-color: green;
+    }
+
+    &--m {
+      width: 300px;
+      background-color: blue;
+    }
+
+    &--l {
+      width: 335px;
+      background-color: blueviolet;
+    }
+
+    &--xl {
+      width: 360px;
+      background-color: skyblue;
+    }
+
+    &--xxl {
+      width: 380px;
+      background-color: palevioletred;
+    }
+  }
 }

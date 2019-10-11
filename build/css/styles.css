@@ -587,6 +587,13 @@ input {
   padding: 16px 40px;
 }
 
+.btn:hover,
+.btn:focus {
+  color: #ff6b08;
+  background-color: white;
+  border: 2px solid #ff6b08;
+}
+
 .line-before {
   position: relative;
   padding-left: 36px;
@@ -742,34 +749,42 @@ input {
 
 .container--xxs {
   width: 180px;
+  background-color: red;
 }
 
 .container--xs {
   width: 200px;
+  background-color: lime;
 }
 
 .container--s {
   width: 260px;
+  background-color: yellow;
 }
 
 .container--sm {
   width: 270px;
+  background-color: green;
 }
 
 .container--m {
   width: 300px;
+  background-color: blue;
 }
 
 .container--l {
   width: 335px;
+  background-color: blueviolet;
 }
 
 .container--xl {
   width: 360px;
+  background-color: skyblue;
 }
 
 .container--xxl {
   width: 380px;
+  background-color: palevioletred;
 }
 
 .header {
@@ -948,7 +963,7 @@ input {
   margin-bottom: 25px;
 }
 
-.reason-questions__photo {
+.reason-questionss__photo {
   margin-bottom: 45px;
 }
 
@@ -1001,6 +1016,7 @@ input {
   font-weight: 900;
   line-height: 20px;
   text-transform: uppercase;
+  margin-left: 10px;
   margin-bottom: 25px;
 }
 
@@ -1059,7 +1075,6 @@ input {
   color: #ff6b08;
   text-align: center;
   max-width: 292px;
-  margin: 0 auto;
 }
 
 .facts {
@@ -1274,7 +1289,7 @@ input {
 }
 
 .because {
-  margin-bottom: 35px;
+  margin-bottom: 60px;
 }
 
 .because__title {
@@ -1331,11 +1346,11 @@ input {
 }
 
 .career-web {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .career-web__title {
-  margin-bottom: 10px;
+  margin-bottom: 36px;
 }
 
 .career-web__title-image {
@@ -1369,7 +1384,7 @@ input {
 }
 
 .steps {
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 
 .steps__title {
@@ -1948,6 +1963,18 @@ input {
   margin-bottom: 15px;
 }
 
+.bonus {
+  margin-bottom: 60px;
+  /*.form_info::after {
+    height: 2px;
+    width: 245px;
+    margin-top: 8px;
+    color: $p_text;
+    position: absolute;
+    z-index: 1;
+   }*/
+}
+
 .bonus__title {
   margin-bottom: 20px;
 }
@@ -1977,19 +2004,19 @@ input {
   margin-bottom: 25px;
 }
 
-.form-client {
+.bonus .form-client {
   width: 370px;
   height: 350px;
   box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
   background-color: white;
 }
 
-.reg-info {
+.bonus .reg-info {
   padding: 65px;
   position: relative;
 }
 
-.form_name {
+.bonus .form_name {
   font-size: 8px;
   color: #3f4144;
   font-weight: 700;
@@ -1997,21 +2024,16 @@ input {
   margin-bottom: 13px;
 }
 
-.form_info {
+.bonus .form_info {
+  width: 245px;
   font-size: 10px;
   color: black;
   font-weight: 400;
   line-height: 12px;
   margin-bottom: 20px;
-}
-
-.form_info::after {
-  height: 2px;
-  width: 246px;
-  margin-top: 8px;
-  color: #3f4144;
-  position: absolute;
-  z-index: 1;
+  border-bottom: 1px;
+  border-bottom-color: #3f4144;
+  border-bottom-width: 245px;
 }
 
 .important-block {
@@ -2401,7 +2423,7 @@ input {
   letter-spacing: 0.92px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .text {
     font-size: 8px;
     color: #3f4144;
@@ -2449,6 +2471,93 @@ input {
     background-color: #16ebfe;
   }
 
+  .page-container {
+    min-width: 660px;
+    width: 660px;
+  }
+
+  .container--xxs {
+    width: 180px;
+    background-color: red;
+  }
+
+  .container--xs {
+    width: 200px;
+    background-color: lime;
+  }
+
+  .container--s {
+    width: 260px;
+    background-color: yellow;
+  }
+
+  .container--sm {
+    width: 270px;
+    background-color: green;
+  }
+
+  .container--m {
+    width: 300px;
+    background-color: blue;
+  }
+
+  .container--l {
+    width: 335px;
+    background-color: blueviolet;
+  }
+
+  .container--xl {
+    width: 360px;
+    background-color: skyblue;
+  }
+
+  .container--xxl {
+    width: 380px;
+    background-color: palevioletred;
+  }
+
+  .reason {
+    display: flex;
+    margin-bottom: 90px;
+  }
+
+  .reason-content {
+    display: flex;
+  }
+
+  .reason-questions {
+    max-width: 205px;
+  }
+
+  .reason-answers__afterword {
+    align-self: flex-end;
+    width: 180px;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: left;
+  }
+
+  .reason-answers__list {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    max-width: 660px;
+  }
+
+  .reason-answers__list-item {
+    width: 144px;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 13px;
+    margin-bottom: 30px;
+  }
+
+  .reason-answers__list-item::before {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
   .title {
     text-transform: uppercase;
     font-size: 27px;
@@ -2470,9 +2579,105 @@ input {
     font-size: 14px;
   }
 
-  .page-container {
-    min-width: 660px;
-    width: 660px;
+  .steps {
+    margin-bottom: 90px;
+  }
+
+  .steps__title {
+    width: 215px;
+    margin-bottom: 40px;
+    width: 210px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .steps__title::before {
+    content: '4';
+    display: block;
+    position: absolute;
+    top: 77px;
+    left: -70px;
+    width: 115px;
+    height: 146px;
+    color: #f7f7f7;
+    font-family: "Acrom", "Arial", sans-serif;
+    font-size: 208px;
+    font-weight: 900;
+    line-height: 83px;
+    text-transform: uppercase;
+  }
+
+  .steps__title::after {
+    content: 'stap';
+    display: block;
+    position: absolute;
+    top: -5px;
+    right: 75px;
+    width: 41px;
+    height: 143px;
+    color: #f7f7f7;
+    font-family: "Acrom", "Arial", sans-serif;
+    font-size: 55px;
+    font-weight: 900;
+    transform: rotateZ(90deg);
+    line-height: 200px;
+    text-transform: uppercase;
+  }
+
+  .steps__title-descr {
+    width: 220px;
+    margin-bottom: 60px;
+  }
+
+  .steps-list {
+    margin-bottom: 40px;
+  }
+
+  .steps-list__item {
+    width: 165px;
+    align-self: flex-start;
+  }
+
+  .steps-list__item:nth-last-of-type(n + 2) {
+    margin-bottom: 30px;
+  }
+
+  .steps-list__item-title {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+    line-height: 13px;
+    font-size: 8px;
+    margin-bottom: 18px;
+  }
+
+  .steps-list__item-text {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .and-more {
+    font-size: 15px;
+    line-height: 19px;
+    position: relative;
+    font-weight: 500;
+  }
+
+  .and-more::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 15px;
+    left: -30px;
+    width: 30px;
+    height: 2px;
+    transform: rotateZ(-60deg);
+    background-color: black;
+    padding-right: 10px;
+  }
+
+  .bonus {
+    margin-bottom: 95px;
   }
 
   .bonus__title {
@@ -2587,9 +2792,8 @@ input {
     font-size: 14px;
   }
 
-  .page-container {
-    min-width: 732px;
-    width: 732px;
+  .bonus {
+    margin-bottom: 125px;
   }
 
   .bonus__title {
@@ -2632,6 +2836,96 @@ input {
     height: 328px;
     box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
     background-color: white;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page-container {
+    min-width: 732px;
+    width: 732px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container--xxs {
+    width: 180px;
+    background-color: red;
+  }
+
+  .container--xs {
+    width: 200px;
+    background-color: lime;
+  }
+
+  .container--s {
+    width: 260px;
+    background-color: yellow;
+  }
+
+  .container--sm {
+    width: 270px;
+    background-color: green;
+  }
+
+  .container--m {
+    width: 300px;
+    background-color: blue;
+  }
+
+  .container--l {
+    width: 335px;
+    background-color: blueviolet;
+  }
+
+  .container--xl {
+    width: 360px;
+    background-color: skyblue;
+  }
+
+  .container--xxl {
+    width: 380px;
+    background-color: palevioletred;
+  }
+
+  .reason {
+    margin-bottom: 125px;
+    display: flex;
+  }
+
+  .reason-box {
+    width: 732px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  -questions {
+    max-width: 225px;
+  }
+
+  .reason-answers__afterword {
+    align-self: flex-end;
+    width: 145px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .reason-answers__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    max-width: 530px;
+  }
+
+  .reason-answers__list-item {
+    width: 165px;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 13px;
+    margin-bottom: 20px;
   }
 }
 

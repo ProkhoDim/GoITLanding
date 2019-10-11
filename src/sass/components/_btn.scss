@@ -46,4 +46,12 @@
   &--extra-large {
     padding: 16px 40px;
   }
+
+  &:hover,
+  &:focus {
+    color: $accent;
+    background-color: $lite_main;
+    border: 2px solid $accent;
+  }
+
 }
