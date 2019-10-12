@@ -55,3 +55,25 @@
   }
 
 }
+
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: 8px;
+  
+    &--middle {
+      padding: 12px 9px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .btn {
+    font-size: 9px;
+  
+
+    &--middle {
+      padding: 17px 10px;
+    }
+  }
+
+}

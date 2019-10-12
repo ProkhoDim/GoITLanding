@@ -59,9 +59,9 @@
   }
 
   .container {
-    // justify-content: space-between;
-    // flex-flow: row wrap;
-    // align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
 
     &--xxs {
       width: 180px;
@@ -112,8 +112,8 @@
   }
 
   .container {
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-flow: row wrap;
     align-items: center;
 
     &--xxs {
