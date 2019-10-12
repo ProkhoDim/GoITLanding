@@ -6,6 +6,20 @@
 
 }
 
+@media (min-width: 768px) {
+  .page-container {
+    min-width: 660px;
+    width: 660px;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-container {
+    min-width: 732px;
+    width: 732px;
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -155,5 +169,27 @@
       width: 380px;
       background-color: palevioletred;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .page-container {
+    min-width: 642px;
+    width: 642px;
+  }
+
+  .container {
+    width: 635px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page-container {
+    min-width: 1125px;
+    width: 1125px;
+  }
+
+  .container {
+    width: 715px;
   }
 }
