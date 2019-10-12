@@ -939,6 +939,8 @@ input {
   display: none;
 }
 
+/* MEDIA RULES */
+
 .reason {
   margin-bottom: 75px;
 }
@@ -2554,5 +2556,13 @@ input {
 @media screen and (max-width: 768px) {
   .futures-list {
     align-self: flex-start;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .header {
+    background: no-repeat url("../../images/mob/blur@2x.png") top center;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 }
