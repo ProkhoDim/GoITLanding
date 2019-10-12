@@ -381,49 +381,49 @@ template {
   font-family: 'Acrom';
   font-style: normal;
   font-weight: 300;
-  src: url("fonts/Acrom-Light.woff2") format("woff2"), url("fonts/Acrom-Light.woff") format("woff");
+  src: url("../fonts/Acrom-Light.woff2") format("woff2"), url("../fonts/Acrom-Light.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Acrom';
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/Acrom-Regular.woff2") format("woff2"), url("fonts/Acrom-Regular.woff") format("woff");
+  src: url("../fonts/Acrom-Regular.woff2") format("woff2"), url("../fonts/Acrom-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Acrom';
   font-style: normal;
   font-weight: 500;
-  src: url("fonts/Acrom-Medium.woff2") format("woff2"), url("fonts/Acrom-Medium.woff") format("woff");
+  src: url("../fonts/Acrom-Medium.woff2") format("woff2"), url("../fonts/Acrom-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Acrom';
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/Futura-Bold.woff2") format("woff2"), url("fonts/Futura-Bold.woff") format("woff");
+  src: url("../fonts/Futura-Bold.woff2") format("woff2"), url("../fonts/Futura-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Acrom';
   font-style: normal;
   font-weight: 900;
-  src: url("fonts/Acrom-ExtraBold.woff2") format("woff2"), url("fonts/Acrom-ExtraBold.woff") format("woff");
+  src: url("../fonts/Acrom-ExtraBold.woff2") format("woff2"), url("../fonts/Acrom-ExtraBold.woff") format("woff");
 }
 
 @font-face {
   font-family: 'MinionPro';
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/MinionPro-Regular.woff2") format("woff2"), url("fonts/MinionPro-Regular.woff") format("woff");
+  src: url("../fonts/MinionPro-Regular.woff2") format("woff2"), url("../fonts/MinionPro-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Futura';
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/Futura-Bold.woff2") format("woff2"), url("fonts/Futura-Bold.woff") format("woff");
+  src: url("../fonts/Futura-Bold.woff2") format("woff2"), url("../fonts/Futura-Bold.woff") format("woff");
 }
 
 * {
@@ -778,7 +778,7 @@ input {
   padding-top: 14px;
   padding-bottom: 38px;
   width: 100%;
-  min-width: 480px;
+  min-width: 450px;
   min-height: 614px;
   height: 100%;
   background: no-repeat url("../../images/mob/blur.png") top center;
@@ -2404,24 +2404,152 @@ input {
 }
 
 @media (min-width: 768px) {
-  .page-container {
-    min-width: 642px;
-    width: 642px;
+  .text {
+    font-size: 8px;
+    color: #3f4144;
+    line-height: 13px;
   }
 
-  .container {
-    width: 635px;
+  .text--light {
+    font-weight: 300;
+  }
+
+  .text--semi-bold {
+    color: black;
+    font-weight: 500;
+  }
+
+  .text--bold {
+    color: black;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 14px;
+  }
+
+  .text--negative {
+    color: white;
+    background-color: black;
+    font-size: 9px;
+    line-height: 14px;
+  }
+
+  .text--accent {
+    color: #ff6b08;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .text--upper-bold {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .text--mark {
+    color: black;
+    font-weight: 500;
+    background-color: #16ebfe;
+  }
+
+  .title {
+    text-transform: uppercase;
+    font-size: 27px;
+    color: black;
+    font-weight: 900;
+    line-height: 34px;
+  }
+
+  .title--negative {
+    color: white;
+    background-color: black;
+  }
+
+  .title--list {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 900;
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  .page-container {
+    min-width: 660px;
+    width: 660px;
   }
 }
 
-@media screen and (min-width: 992px) {
-  .page-container {
-    min-width: 1125px;
-    width: 1125px;
+@media (min-width: 992px) {
+  .text {
+    font-size: 9px;
+    color: #3f4144;
+    line-height: 13px;
   }
 
-  .container {
-    width: 715px;
+  .text--light {
+    font-weight: 300;
+  }
+
+  .text--semi-bold {
+    color: black;
+    font-weight: 500;
+  }
+
+  .text--bold {
+    color: black;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .text--negative {
+    color: white;
+    background-color: black;
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .text--accent {
+    color: #ff6b08;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .text--upper-bold {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .text--mark {
+    color: black;
+    font-weight: 500;
+    background-color: #16ebfe;
+  }
+
+  .title {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: black;
+    font-weight: 900;
+    line-height: 37px;
+  }
+
+  .title--negative {
+    color: white;
+    background-color: black;
+  }
+
+  .title--list {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 900;
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  .page-container {
+    min-width: 732px;
+    width: 732px;
   }
 }
 

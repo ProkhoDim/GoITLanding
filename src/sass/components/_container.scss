@@ -5,6 +5,20 @@
   font-family: $main_font;
 }
 
+@media (min-width: 768px) {
+  .page-container {
+    min-width: 660px;
+    width: 660px;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-container {
+    min-width: 732px;
+    width: 732px;
+  }
+}
+
 .container {
   // margin: 0 auto;
   display: flex;
