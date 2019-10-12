@@ -174,13 +174,39 @@
 
 .page-socials {
   display: none;
-  // display: block;
+}
+
+.content-photo {
+  display: none;
 }
 
 @media (min-width: 768px) {
   .page-container {
     min-width: 660px;
     width: 660px;
+  }
+
+  .page--header {
+    display: block;
+    position: relative;
+
+    &::before {
+      content: '01 _';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: rotateZ(-90deg);
+      color: $lite_main;
+      font: {
+        family: $main_font;
+        size: 16px;
+        weight: 500;
+      }
+      line-height: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
   }
 
   .header {
@@ -194,23 +220,10 @@
     min-width: 480px;
     min-height: 475px;
     height: 100%;
-    background: no-repeat url('../images/mob/blur.png') center bottom;
+    background: no-repeat url('../images/mob/blur.png') center center;
     object-fit: cover;
     background-color: $bg_footer;
-
-    // &::before {
-    //   display: block;
-    //   position: relative;
-    //   top: 0;
-    //   right: 0;
-    //   background: no-repeat url('../images/tab/header.png') center center;
-    //   object-fit: cover;
-    //   min-width: 466px;
-    //   width: 100%;
-    //   min-height: 636px;
-    //   height: 100%;
-    //   z-index: 100;
-    // }
+    overflow: hidden;
   }
 
   .page-nav {
@@ -223,6 +236,7 @@
   }
 
   .page-heading {
+    z-index: 10;
     width: 400px;
     margin-right: 76px;
 
@@ -230,7 +244,6 @@
       display: block;
       position: relative;
       width: 390px;
-      // margin-right: 76px;
       font: {
         size: 45px;
         weight: 900;
@@ -286,6 +299,7 @@
   .page-chance {
     display: inline-block;
     width: 200px;
+    z-index: 10;
 
     &__start {
       font: {
@@ -330,7 +344,6 @@
     height: 11px;
     bottom: 0;
     right: 0;
-    // @extend %list;
 
     &__item {
       display: block;
@@ -340,11 +353,97 @@
         display: block;
         position: absolute;
         right: 0;
-        bottom: 160px;
+        bottom: 140px;
         width: 10px;
         height: 10px;
         fill: $lite_main;
       }
+    }
+  }
+
+  .content-photo {
+    display: block;
+    position: absolute;
+    bottom: -200px;
+    top: 100px;
+    right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-container {
+    min-width: 732px;
+    width: 732px;
+  }
+
+  .header {
+    display: block;
+    position: relative;
+    padding: {
+      top: 24px;
+      bottom: 38px;
+    }
+    width: 100%;
+    min-width: 480px;
+    min-height: 475px;
+    height: 100%;
+    background: no-repeat url('../images/mob/blur.png') center center;
+    object-fit: cover;
+    background-color: $bg_footer;
+    overflow: hidden;
+  }
+
+  .page-logo {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -110px;
+  }
+
+  .page-menu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: -110px;
+  }
+
+  .page-socials {
+    display: flex;
+    position: relative;
+
+    &__item {
+      display: inline-block;
+      position: relative;
+
+      &-icon {
+        display: inline-block;
+        position: absolute;
+        right: -810px;
+        bottom: 0;
+      }
+    }
+  }
+
+  .page--header {
+    display: block;
+    position: relative;
+
+    &::before {
+      content: '01 _';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: -124px;
+      transform: rotateZ(-90deg);
+      color: $lite_main;
+      font: {
+        family: $main_font;
+        size: 16px;
+        weight: 500;
+      }
+      line-height: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
     }
   }
 }
