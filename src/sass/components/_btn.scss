@@ -46,4 +46,34 @@
   &--extra-large {
     padding: 16px 40px;
   }
+
+  &:hover,
+  &:focus {
+    color: $accent;
+    background-color: $lite_main;
+    border: 2px solid $accent;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: 8px;
+  
+    &--middle {
+      padding: 12px 9px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .btn {
+    font-size: 9px;
+  
+
+    &--middle {
+      padding: 17px 10px;
+    }
+  }
+
 }

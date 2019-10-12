@@ -1,5 +1,5 @@
 .steps {
-  margin-bottom: 55px;
+  margin-bottom: 60px;
   &__title {
     margin-bottom: 20px;
     width: 210px;
@@ -91,4 +91,108 @@
     background-color: $dark_main;
     padding-right: 10px;
   }
+}
+
+@media (min-width: 768px){
+  .steps {
+    margin-bottom: 90px;
+    &__title {
+      width: 215px;
+      margin-bottom: 40px;
+      width: 210px;
+      margin: 0 auto;
+      position: relative;
+  
+      &::before {
+        content: '4';
+        display: block;
+        position: absolute;
+        top: 77px;
+        left: -70px;
+        width: 115px;
+        height: 146px;
+        color: $bg_text;
+        font: {
+          family: $main_font;
+          size: 208px;
+          weight: 900;
+        }
+        line-height: 83px;
+        text-transform: uppercase;
+      }
+  
+      &::after {
+        content: 'stap';
+        display: block;
+        position: absolute;
+        top: -5px;
+        right: 75px;
+        width: 41px;
+        height: 143px;
+        color: $bg_text;
+        font: {
+          family: $main_font;
+          size: 55px;
+          weight: 900;
+        }
+        transform: rotateZ(90deg);
+        line-height: 200px;
+        text-transform: uppercase;
+      }
+      &-descr {
+        width: 220px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+  
+  .steps-list {
+    margin-bottom: 40px;
+  
+    &__item {
+      width: 165px;
+      align-self: flex-start;
+  
+      &:nth-last-of-type(n + 2) {
+        margin-bottom: 30px;
+      }
+  
+      &-title {
+        text-transform: uppercase;
+        color: $dark_main;
+        font-weight: 700;
+        line-height: 13px;
+        font-size: 8px;
+        margin-bottom: 18px;
+      }
+  
+      &-text {
+        font-size: 13px;
+        line-height: 19px;
+      }
+    }
+  }
+  
+  .and-more {
+    font-size: 15px;
+    line-height: 19px;
+    position: relative;
+    font-weight: 500;
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 15px;
+      left: -30px;
+      width: 30px;
+      height: 2px;
+      transform: rotateZ(-60deg);
+      background-color: $dark_main;
+      padding-right: 10px;
+    }
+  }
+}
+
+@media (min-width: 992px){
+  
 }

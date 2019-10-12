@@ -1,8 +1,9 @@
 .career-web {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 
   &__title {
-    margin-bottom: 10px;
+  
+    margin-bottom: 36px;
 
     &-image {
       margin-bottom: 10px;
@@ -15,6 +16,7 @@
 
   &__descr {
     width: 310px;
+
     &-title {
       padding-left: 20px;
       position: relative;
@@ -37,3 +39,5 @@
     }
   }
 }
+
+
