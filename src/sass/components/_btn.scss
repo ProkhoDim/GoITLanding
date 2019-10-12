@@ -51,7 +51,7 @@
   &:focus {
     color: $accent;
     background-color: $lite_main;
-    border: 2px solid $accent;
+    outline: 2px solid $accent;
   }
 
 }

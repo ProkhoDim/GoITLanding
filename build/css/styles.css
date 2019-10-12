@@ -591,7 +591,7 @@ input {
 .btn:focus {
   color: #ff6b08;
   background-color: white;
-  border: 2px solid #ff6b08;
+  outline: 2px solid #ff6b08;
 }
 
 .line-before {
@@ -786,6 +786,8 @@ input {
   width: 380px;
   background-color: palevioletred;
 }
+
+/*MEDIA*/
 
 .header {
   display: block;
@@ -1303,7 +1305,7 @@ input {
   display: flex;
   flex-flow: row wrap;
   align-self: flex-start;
-  width: 170px;
+  width: 150px;
 }
 
 .because__title-lines {
@@ -1316,6 +1318,17 @@ input {
 
 .because__text:last-child {
   margin-bottom: 40px;
+}
+
+.however {
+  display: flex;
+  order: -1;
+}
+
+.text-wrap {
+  display: flex;
+  flex-flow: column;
+  width: 250px;
 }
 
 .many-people {
@@ -2500,42 +2513,34 @@ input {
 
   .container--xxs {
     width: 180px;
-    background-color: red;
   }
 
   .container--xs {
     width: 200px;
-    background-color: lime;
   }
 
   .container--s {
     width: 260px;
-    background-color: yellow;
   }
 
   .container--sm {
     width: 270px;
-    background-color: green;
   }
 
   .container--m {
     width: 300px;
-    background-color: blue;
   }
 
   .container--l {
     width: 335px;
-    background-color: blueviolet;
   }
 
   .container--xl {
-    width: 360px;
-    background-color: skyblue;
+    width: 315px;
   }
 
   .container--xxl {
-    width: 380px;
-    background-color: palevioletred;
+    width: 260px;
   }
 
   .reason {
@@ -2576,6 +2581,48 @@ input {
 
   .reason-answers__list-item::before {
     display: none;
+  }
+
+  .because {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .because__title-wrap {
+    width: 95px;
+  }
+
+  .because__text-wrap {
+    width: 178px;
+  }
+
+  .because__text:last-child {
+    margin-bottom: 15px;
+  }
+
+  .many-people {
+    width: 660px;
+    justify-content: space-between;
+  }
+
+  .half-2 {
+    width: 660px;
+    flex-direction: inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .however {
+    display: flex;
+    order: 1;
+  }
+
+  .but {
+    order: 1;
+  }
+
+  .But-if-you-dont {
+    width: 118px;
   }
 
   .final-result {
@@ -2828,43 +2875,35 @@ input {
   }
 
   .container--xxs {
-    width: 180px;
-    background-color: red;
+    width: 200px;
   }
 
   .container--xs {
     width: 200px;
-    background-color: lime;
   }
 
   .container--s {
     width: 260px;
-    background-color: yellow;
   }
 
   .container--sm {
     width: 270px;
-    background-color: green;
   }
 
   .container--m {
     width: 300px;
-    background-color: blue;
   }
 
   .container--l {
     width: 335px;
-    background-color: blueviolet;
   }
 
   .container--xl {
-    width: 360px;
-    background-color: skyblue;
+    width: 354px;
   }
 
   .container--xxl {
-    width: 380px;
-    background-color: palevioletred;
+    width: 340px;
   }
 
   .reason {
@@ -2902,6 +2941,26 @@ input {
     font-weight: 400;
     line-height: 13px;
     margin-bottom: 20px;
+  }
+
+  .many-people {
+    width: 7140px;
+  }
+
+  .because__title-wrap {
+    width: 100px;
+  }
+
+  .because__text-wrap {
+    width: 198px;
+  }
+
+  .But-if-you-dont {
+    width: 130px;
+  }
+
+  .half-2 {
+    width: 734px;
   }
 
   .final-result {

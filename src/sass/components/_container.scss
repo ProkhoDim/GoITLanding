@@ -3,21 +3,6 @@
   width: 450px;
   margin: 0 auto;
   font-family: $main_font;
-
-}
-
-@media (min-width: 768px) {
-  .page-container {
-    min-width: 660px;
-    width: 660px;
-  }
-}
-
-@media (min-width: 992px) {
-  .page-container {
-    min-width: 732px;
-    width: 732px;
-  }
 }
 
 .container {
@@ -66,6 +51,8 @@
   }
 }
 
+/*MEDIA*/
+
 @media screen and (min-width: 768px) {
   .page-container {
     min-width: 660px;
@@ -79,42 +66,34 @@
 
     &--xxs {
       width: 180px;
-      background-color: red;
     }
 
     &--xs {
       width: 200px;
-      background-color: lime;
     }
 
     &--s {
       width: 260px;
-      background-color: yellow;
     }
 
     &--sm {
       width: 270px;
-      background-color: green;
     }
 
     &--m {
       width: 300px;
-      background-color: blue;
     }
 
     &--l {
       width: 335px;
-      background-color: blueviolet;
     }
 
     &--xl {
-      width: 360px;
-      background-color: skyblue;
+      width: 315px;
     }
 
     &--xxl {
-      width: 380px;
-      background-color: palevioletred;
+      width: 260px;
     }
   }
 }
@@ -131,65 +110,35 @@
     align-items: center;
 
     &--xxs {
-      width: 180px;
-      background-color: red;
+      width: 200px;
     }
 
     &--xs {
       width: 200px;
-      background-color: lime;
     }
 
     &--s {
       width: 260px;
-      background-color: yellow;
     }
 
     &--sm {
       width: 270px;
-      background-color: green;
     }
 
     &--m {
       width: 300px;
-      background-color: blue;
     }
 
     &--l {
       width: 335px;
-      background-color: blueviolet;
     }
 
     &--xl {
-      width: 360px;
-      background-color: skyblue;
+      width: 354px;
     }
 
     &--xxl {
-      width: 380px;
-      background-color: palevioletred;
+      width: 340px;
     }
-  }
-}
-
-@media (min-width: 768px) {
-  .page-container {
-    min-width: 642px;
-    width: 642px;
-  }
-
-  .container {
-    width: 635px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .page-container {
-    min-width: 1125px;
-    width: 1125px;
-  }
-
-  .container {
-    width: 715px;
   }
 }
