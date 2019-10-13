@@ -28,9 +28,7 @@
     }
 
     &-text {
-      font-size: 13px;
-      line-height: 19px;
-      color: $p_text;
+
     }
   }
 }
@@ -113,6 +111,7 @@
   }
 
   .final-wrap{
+    width: 330px;
     position: relative;
   }
 
@@ -176,8 +175,13 @@
     height: 100%;
   }
 
-  .box{
-    position: absolute;
+  .final-wrap{
+    width: 370px;
+ 
+  }
+
+  .final-box{
+
     bottom: 15%;
     right: 0%;
   }

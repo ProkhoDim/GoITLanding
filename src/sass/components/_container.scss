@@ -44,7 +44,7 @@
     width: 360px;
     background-color: skyblue;
   }
-  
+
   &--xxl {
     width: 380px;
     background-color: palevioletred;
@@ -91,11 +91,10 @@
     }
 
     &--xxl {
-      width: 380px;
+      width: 260px;
     }
   }
 }
-
 @media screen and (min-width: 992px) {
   .page-container {
     min-width: 732px;
@@ -108,7 +107,7 @@
     align-items: center;
 
     &--xxs {
-      width: 180px;
+      width: 200px;
     }
 
     &--xs {
@@ -134,7 +133,7 @@
     &--xl {
       width: 360px;
     }
-
+    
     &--xxl {
       width: 340px;
     }

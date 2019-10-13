@@ -381,49 +381,49 @@ template {
   font-family: 'Acrom';
   font-style: normal;
   font-weight: 300;
-  src: url("fonts/Acrom-Light.woff2") format("woff2"), url("fonts/Acrom-Light.woff") format("woff");
+  src: url("../fonts/Acrom-Light.woff2") format("woff2"), url("../fonts/Acrom-Light.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Acrom';
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/Acrom-Regular.woff2") format("woff2"), url("fonts/Acrom-Regular.woff") format("woff");
+  src: url("../fonts/Acrom-Regular.woff2") format("woff2"), url("../fonts/Acrom-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Acrom';
   font-style: normal;
   font-weight: 500;
-  src: url("fonts/Acrom-Medium.woff2") format("woff2"), url("fonts/Acrom-Medium.woff") format("woff");
+  src: url("../fonts/Acrom-Medium.woff2") format("woff2"), url("../fonts/Acrom-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Acrom';
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/Futura-Bold.woff2") format("woff2"), url("fonts/Futura-Bold.woff") format("woff");
+  src: url("../fonts/Futura-Bold.woff2") format("woff2"), url("../fonts/Futura-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Acrom';
   font-style: normal;
   font-weight: 900;
-  src: url("fonts/Acrom-ExtraBold.woff2") format("woff2"), url("fonts/Acrom-ExtraBold.woff") format("woff");
+  src: url("../fonts/Acrom-ExtraBold.woff2") format("woff2"), url("../fonts/Acrom-ExtraBold.woff") format("woff");
 }
 
 @font-face {
   font-family: 'MinionPro';
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/MinionPro-Regular.woff2") format("woff2"), url("fonts/MinionPro-Regular.woff") format("woff");
+  src: url("../fonts/MinionPro-Regular.woff2") format("woff2"), url("../fonts/MinionPro-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Futura';
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/Futura-Bold.woff2") format("woff2"), url("fonts/Futura-Bold.woff") format("woff");
+  src: url("../fonts/Futura-Bold.woff2") format("woff2"), url("../fonts/Futura-Bold.woff") format("woff");
 }
 
 * {
@@ -794,7 +794,7 @@ input {
   padding-top: 14px;
   padding-bottom: 38px;
   width: 100%;
-  min-width: 480px;
+  min-width: 450px;
   min-height: 614px;
   height: 100%;
   background: no-repeat url("../../images/mob/blur.png") top center;
@@ -953,6 +953,8 @@ input {
 .page-socials {
   display: none;
 }
+
+/* MEDIA RULES */
 
 .reason {
   margin-bottom: 75px;
@@ -1846,12 +1848,6 @@ input {
   margin-bottom: 15px;
 }
 
-.final-list__item-text {
-  font-size: 13px;
-  line-height: 19px;
-  color: #3f4144;
-}
-
 .load-more {
   width: 200px;
   font-size: 13px;
@@ -1972,14 +1968,6 @@ input {
 
 .bonus {
   margin-bottom: 60px;
-  /*.form_info::after {
-    height: 2px;
-    width: 245px;
-    margin-top: 8px;
-    color: $p_text;
-    position: absolute;
-    z-index: 1;
-   }*/
 }
 
 .bonus__title {
@@ -2012,20 +2000,17 @@ input {
 }
 
 .bonus .form-client {
-  width: 370px;
-  height: 350px;
+  width: 360px;
+  height: 330px;
   box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
   background-color: white;
 }
 
 .bonus .reg-info {
-  padding: 65px;
+  padding: 60px;
 }
 
 .bonus .form_name {
-  /*font-size: 8px;
-    color: $p_text;
-    line-height: 12px;*/
   font-weight: 700;
   margin-bottom: 13px;
 }
@@ -2525,7 +2510,7 @@ input {
   }
 
   .container--xxl {
-    width: 380px;
+    width: 260px;
   }
 
   .reason {
@@ -2621,6 +2606,7 @@ input {
   }
 
   .final-wrap {
+    width: 330px;
     position: relative;
   }
 
@@ -2780,6 +2766,7 @@ input {
   }
 
   .bonus-wrap {
+    width: 260px;
     margin-bottom: 25px;
   }
 
@@ -2817,7 +2804,7 @@ input {
   }
 
   .container--xxs {
-    width: 180px;
+    width: 200px;
   }
 
   .container--xs {
@@ -2937,8 +2924,11 @@ input {
     height: 100%;
   }
 
-  .box {
-    position: absolute;
+  .final-wrap {
+    width: 370px;
+  }
+
+  .final-box {
     bottom: 15%;
     right: 0%;
   }
@@ -3043,6 +3033,7 @@ input {
   }
 
   .bonus-wrap {
+    width: 290px;
     margin-bottom: 25px;
   }
 
@@ -3062,5 +3053,13 @@ input {
 @media screen and (max-width: 768px) {
   .futures-list {
     align-self: flex-start;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .header {
+    background: no-repeat url("../../images/mob/blur@2x.png") top center;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 }
