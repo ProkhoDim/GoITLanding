@@ -15,8 +15,11 @@
   width: 280px;
   display: block;
   position: relative;
+  margin: 0 auto;
+  padding-top: 45px;
 
   &__probably {
+    display: flex;
     font-family: $main_font;
     font-size: 14px;
     font-weight: 900;
@@ -27,6 +30,7 @@
 
     &::before {
       content: '';
+      position: absolute;
       display: inline-block;
       background-color: $dark-main;
       width: 25px;
@@ -39,8 +43,8 @@
     display: block;
     position: absolute;
     content: 'YOU';
-    top: -130px;
-    left: -65px;
+    top: -70px;
+    left: -75px;
     width: 70px;
     height: 210px;
     color: $pe_color;
@@ -121,6 +125,7 @@
   color: $accent;
   text-align: center;
   max-width: 292px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -130,19 +135,57 @@
 
     &-content {
       display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 275px;
     }
 
     &-questions {
       max-width: 205px;
+      order: 2;
+      margin-bottom: 35px;
+    }
+
+    &-answers {
+      max-width: 225px;
+      order: 3;
+      padding-top: 0;
+      margin: 0;
+
+      &__title {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 0;
+      }
+
+      &__probably {
+        font-size: 10px;
+        width: 155px;
+        padding-left: 45px;
+      }
+
+      &__if-you {
+        margin-left: 0;
+      }
+
+      &__probably::before {
+        transform: translateX(-45px);
+      }
     }
   }
 
+  .afterword-box {
+    display: flex;
+    justify-content: flex-end;
+    width: 660px;
+  }
+
   .reason-answers__afterword {
-    align-self: flex-end;
     width: 180px;
     font-size: 10px;
     line-height: 14px;
     text-align: left;
+    margin: 0;
   }
 
   .reason-answers__list {
