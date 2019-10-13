@@ -1,5 +1,5 @@
 .block_doit {
-  padding: 14px 0 42px 0;
+  padding: 14px 42px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,4 +97,242 @@
 
 .choice__your {
   text-align: right;
+}
+
+@media (min-width: 768px) {
+  .page-container {
+    min-width: 660px;
+    width: 660px;
+  }
+
+  .block_doit {
+    padding: 55px 0 97px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .action {
+    display: block;
+    position: relative;
+    width: auto;
+    z-index: 10;
+    margin-right: 58px;
+
+    &__title {
+      display: block;
+      position: relative;
+      width: 310px;
+      font: {
+        size: 27px;
+        width: 700;
+      }
+      line-height: 34px;
+      margin-bottom: 22px;
+    }
+
+    &::before {
+      content: 'go';
+      width: 104px;
+      height: 215px;
+      top: -70px;
+      left: 230px;
+      font-size: 150px;
+    }
+
+    &__text {
+      display: block;
+      position: relative;
+      width: 250px;
+      padding-left: 30px;
+      margin-bottom: 30px;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: -10px;
+        width: 29px;
+        height: 4px;
+        background-color: $dark_main;
+      }
+    }
+
+    &__button {
+      border: none;
+      margin-bottom: 42px;
+      margin-left: 30px;
+    }
+  }
+
+  .choice {
+    display: block;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    width: 270px;
+    z-index: 10;
+
+    &__p-s {
+      display: block;
+      position: absolute;
+      top: -10px;
+      left: -70px;
+      color: $dark_main;
+      font: {
+        family: $main_font;
+        size: 20px;
+        weight: 900;
+      }
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    &__closed {
+      width: 250px;
+      font-size: 12px;
+      line-height: 13px;
+      margin-bottom: 14px;
+    }
+
+    &__bad-job {
+      font-size: 11px;
+      line-height: 12px;
+      letter-spacing: -0.51px;
+      margin-bottom: 24px;
+    }
+
+    &__way {
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 12px;
+      margin-bottom: 26px;
+
+      & span {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 12px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page-container {
+    min-width: 732px;
+    width: 732px;
+  }
+
+  .block_doit {
+    padding: 62px 0 125px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .action {
+    margin-right: 111px;
+
+    &__title {
+      display: block;
+      position: relative;
+      width: 350px;
+      font: {
+        size: 30px;
+        width: 900;
+      }
+      line-height: 38px;
+      margin-bottom: 28px;
+    }
+
+    &::before {
+      content: 'go';
+      width: 104px;
+      height: 215px;
+      top: -70px;
+      left: 230px;
+      font-size: 150px;
+    }
+
+    &__text {
+      display: block;
+      position: relative;
+      width: 250px;
+      padding-left: 30px;
+      margin-bottom: 30px;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: -10px;
+        width: 32px;
+        height: 5px;
+        background-color: $dark_main;
+      }
+    }
+
+    &__button {
+      border: none;
+      margin-bottom: 42px;
+      margin-left: 30px;
+    }
+  }
+
+  .choice {
+    display: block;
+    position: relative;
+    width: 270px;
+    z-index: 10;
+
+    &__p-s {
+      display: block;
+      position: absolute;
+      top: -10px;
+      left: -70px;
+      color: $dark_main;
+      font: {
+        family: $main_font;
+        size: 20px;
+        weight: 900;
+      }
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    &__closed {
+      width: 270px;
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 18px;
+    }
+
+    &__bad-job {
+      font-size: 11px;
+      line-height: 12px;
+      letter-spacing: -0.51px;
+      margin-bottom: 30px;
+    }
+
+    &__way {
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 12px;
+      margin-bottom: 26px;
+
+      & span {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 12px;
+        margin-bottom: 24px;
+      }
+    }
+  }
 }
