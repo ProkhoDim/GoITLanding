@@ -1263,6 +1263,8 @@ input {
   padding-left: 5px;
 }
 
+/*MEDIA*/
+
 .warnings {
   margin-bottom: 70px;
 }
@@ -2532,7 +2534,7 @@ input {
   }
 
   .container--l {
-    width: 335px;
+    width: 180px;
   }
 
   .container--xl {
@@ -2581,6 +2583,28 @@ input {
 
   .reason-answers__list-item::before {
     display: none;
+  }
+
+  .examples {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    margin-bottom: 98px;
+    height: 450px;
+  }
+
+  .examples__title {
+    margin-bottom: 25px;
+  }
+
+  .examples-box {
+    width: 420px;
+    height: 320px;
+    padding: 30px;
+  }
+
+  .examples-box__content {
+    overflow: inherit;
   }
 
   .because {
@@ -2895,7 +2919,7 @@ input {
   }
 
   .container--l {
-    width: 335px;
+    width: 190px;
   }
 
   .container--xl {
@@ -2941,6 +2965,14 @@ input {
     font-weight: 400;
     line-height: 13px;
     margin-bottom: 20px;
+  }
+
+  .examples {
+    margin-bottom: 135px;
+  }
+
+  .examples__title {
+    margin-bottom: 40px;
   }
 
   .many-people {
