@@ -1763,8 +1763,8 @@ input {
 
 .profession__title-descr {
   font-size: 13px;
-  line-height: 19px;
   font-weight: 500;
+  line-height: 19px;
   width: 260px;
   padding-left: 25px;
   color: black;
@@ -1790,6 +1790,8 @@ input {
 .profession__text-descr {
   width: 220px;
 }
+
+/*MEDIA*/
 
 .get-now {
   margin-bottom: 60px;
@@ -2551,6 +2553,10 @@ input {
     width: 315px;
   }
 
+  .container--xls {
+    width: 150px;
+  }
+
   .container--xxl {
     width: 260px;
   }
@@ -2699,6 +2705,35 @@ input {
     top: -30px;
     left: 0;
     transform: translateY(8px);
+  }
+
+  .profession {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .profession__title-wrap {
+    width: 255px;
+  }
+
+  .profession__title-descr {
+    width: 190px;
+    font-size: 9px;
+  }
+
+  .profession__text {
+    display: flex;
+    flex-flow: column;
+    width: 140px;
+  }
+
+  .profession__text-descr {
+    width: 140px;
+  }
+
+  .text--upper-bold {
+    font-size: 13px;
   }
 
   .final-result {
@@ -2978,6 +3013,10 @@ input {
     width: 354px;
   }
 
+  .container--xls {
+    width: 170px;
+  }
+
   .container--xxl {
     width: 340px;
   }
@@ -3053,6 +3092,18 @@ input {
 
   .career-web__descr {
     width: 220px;
+  }
+
+  .profession {
+    align-items: flex-start;
+  }
+
+  .profession__title-wrap {
+    width: 275px;
+  }
+
+  .profession__title-descr {
+    width: 210px;
   }
 
   .final-result {
