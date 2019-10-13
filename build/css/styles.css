@@ -591,7 +591,7 @@ input {
 .btn:focus {
   color: #ff6b08;
   background-color: white;
-  border: 2px solid #ff6b08;
+  outline: 2px solid #ff6b08;
 }
 
 .line-before {
@@ -786,6 +786,8 @@ input {
   width: 380px;
   background-color: palevioletred;
 }
+
+/*MEDIA*/
 
 .header {
   display: block;
@@ -1261,6 +1263,8 @@ input {
   padding-left: 5px;
 }
 
+/*MEDIA*/
+
 .warnings {
   margin-bottom: 70px;
 }
@@ -1303,7 +1307,7 @@ input {
   display: flex;
   flex-flow: row wrap;
   align-self: flex-start;
-  width: 170px;
+  width: 150px;
 }
 
 .because__title-lines {
@@ -1316,6 +1320,17 @@ input {
 
 .because__text:last-child {
   margin-bottom: 40px;
+}
+
+.however {
+  display: flex;
+  order: -1;
+}
+
+.text-wrap {
+  display: flex;
+  flex-flow: column;
+  width: 250px;
 }
 
 .many-people {
@@ -1345,6 +1360,14 @@ input {
   align-self: flex-start;
   margin-bottom: 20px;
   width: 200px;
+}
+
+.title-small {
+  text-transform: uppercase;
+  font-size: 27px;
+  color: #000;
+  font-weight: 900;
+  line-height: 34px;
 }
 
 .career-web {
@@ -1384,6 +1407,8 @@ input {
   left: 0;
   transform: translateY(8px);
 }
+
+/*MEDIA*/
 
 .steps {
   margin-bottom: 60px;
@@ -1738,8 +1763,8 @@ input {
 
 .profession__title-descr {
   font-size: 13px;
-  line-height: 19px;
   font-weight: 500;
+  line-height: 19px;
   width: 260px;
   padding-left: 25px;
   color: black;
@@ -1765,6 +1790,8 @@ input {
 .profession__text-descr {
   width: 220px;
 }
+
+/*MEDIA*/
 
 .get-now {
   margin-bottom: 60px;
@@ -2500,42 +2527,38 @@ input {
 
   .container--xxs {
     width: 180px;
-    background-color: red;
   }
 
   .container--xs {
-    width: 200px;
-    background-color: lime;
+    width: 240px;
   }
 
   .container--s {
     width: 260px;
-    background-color: yellow;
   }
 
   .container--sm {
     width: 270px;
-    background-color: green;
   }
 
   .container--m {
     width: 300px;
-    background-color: blue;
   }
 
   .container--l {
-    width: 335px;
-    background-color: blueviolet;
+    width: 180px;
   }
 
   .container--xl {
-    width: 360px;
-    background-color: skyblue;
+    width: 315px;
+  }
+
+  .container--xls {
+    width: 150px;
   }
 
   .container--xxl {
-    width: 380px;
-    background-color: palevioletred;
+    width: 260px;
   }
 
   .reason {
@@ -2576,6 +2599,141 @@ input {
 
   .reason-answers__list-item::before {
     display: none;
+  }
+
+  .examples {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    margin-bottom: 98px;
+    height: 450px;
+  }
+
+  .examples__title {
+    margin-bottom: 25px;
+  }
+
+  .examples-box {
+    width: 420px;
+    height: 320px;
+    padding: 30px;
+  }
+
+  .examples-box__content {
+    overflow: inherit;
+  }
+
+  .because {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .because__title-wrap {
+    width: 95px;
+  }
+
+  .because__text-wrap {
+    width: 178px;
+  }
+
+  .because__text:last-child {
+    margin-bottom: 15px;
+  }
+
+  .many-people {
+    width: 660px;
+    justify-content: space-between;
+  }
+
+  .half-2 {
+    width: 660px;
+    flex-direction: inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .however {
+    display: flex;
+    order: 1;
+  }
+
+  .but {
+    order: 1;
+  }
+
+  .But-if-you-dont {
+    width: 118px;
+  }
+
+  .career-web-box {
+    display: flex;
+    justify-content: space-between;
+    width: 660px;
+    margin-bottom: -35px;
+  }
+
+  .career-web__descr {
+    width: 210px;
+  }
+
+  .career-web__descr-wrap {
+    width: 200px;
+    margin-top: 60px;
+  }
+
+  .career-web__img {
+    order: 1;
+  }
+
+  .title-small {
+    font-size: 10px;
+    line-height: 15px;
+    margin-bottom: 15px;
+  }
+
+  .career-web__descr-title {
+    padding-left: 0;
+  }
+
+  .career-web__descr-title::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: #000;
+    width: 8px;
+    height: 8px;
+    top: -30px;
+    left: 0;
+    transform: translateY(8px);
+  }
+
+  .profession {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .profession__title-wrap {
+    width: 255px;
+  }
+
+  .profession__title-descr {
+    width: 190px;
+    font-size: 9px;
+  }
+
+  .profession__text {
+    display: flex;
+    flex-flow: column;
+    width: 140px;
+  }
+
+  .profession__text-descr {
+    width: 140px;
+  }
+
+  .text--upper-bold {
+    font-size: 13px;
   }
 
   .final-result {
@@ -2828,43 +2986,39 @@ input {
   }
 
   .container--xxs {
-    width: 180px;
-    background-color: red;
+    width: 200px;
   }
 
   .container--xs {
-    width: 200px;
-    background-color: lime;
+    width: 250px;
   }
 
   .container--s {
     width: 260px;
-    background-color: yellow;
   }
 
   .container--sm {
     width: 270px;
-    background-color: green;
   }
 
   .container--m {
     width: 300px;
-    background-color: blue;
   }
 
   .container--l {
-    width: 335px;
-    background-color: blueviolet;
+    width: 190px;
   }
 
   .container--xl {
-    width: 360px;
-    background-color: skyblue;
+    width: 354px;
+  }
+
+  .container--xls {
+    width: 170px;
   }
 
   .container--xxl {
-    width: 380px;
-    background-color: palevioletred;
+    width: 340px;
   }
 
   .reason {
@@ -2902,6 +3056,54 @@ input {
     font-weight: 400;
     line-height: 13px;
     margin-bottom: 20px;
+  }
+
+  .examples {
+    margin-bottom: 135px;
+  }
+
+  .examples__title {
+    margin-bottom: 40px;
+  }
+
+  .many-people {
+    width: 7140px;
+  }
+
+  .because__title-wrap {
+    width: 100px;
+  }
+
+  .because__text-wrap {
+    width: 198px;
+  }
+
+  .But-if-you-dont {
+    width: 130px;
+  }
+
+  .half-2 {
+    width: 734px;
+  }
+
+  .career-web-box {
+    width: 714px;
+  }
+
+  .career-web__descr {
+    width: 220px;
+  }
+
+  .profession {
+    align-items: flex-start;
+  }
+
+  .profession__title-wrap {
+    width: 275px;
+  }
+
+  .profession__title-descr {
+    width: 210px;
   }
 
   .final-result {
