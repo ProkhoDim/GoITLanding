@@ -965,10 +965,6 @@ input {
   margin-bottom: 25px;
 }
 
-.reason-questionss__photo {
-  margin-bottom: 45px;
-}
-
 .reason-answers {
   width: 280px;
   display: block;
@@ -986,6 +982,7 @@ input {
   margin-right: -20px;
   text-transform: uppercase;
   margin-bottom: 15px;
+  padding-left: 40px;
 }
 
 .reason-answers__probably::before {
@@ -996,6 +993,7 @@ input {
   width: 25px;
   height: 3px;
   margin: 3px 15px 3px 0;
+  transform: translateX(-45px);
 }
 
 .reason-answers::after {
@@ -2568,6 +2566,13 @@ input {
     margin: 0;
   }
 
+  .reason-answers::after {
+    font-size: 140px;
+    top: 35px;
+    left: -305px;
+    z-index: -1;
+  }
+
   .reason-answers__title {
     font-size: 25px;
     line-height: 35px;
@@ -2582,10 +2587,6 @@ input {
 
   .reason-answers__if-you {
     margin-left: 0;
-  }
-
-  .reason-answers__probably::before {
-    transform: translateX(-45px);
   }
 
   .afterword-box {
@@ -2604,7 +2605,7 @@ input {
 
   .reason-answers__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-flow: row wrap;
     max-width: 660px;
   }
@@ -2938,7 +2939,15 @@ input {
     display: flex;
   }
 
+  .reason-answers::after {
+    font-size: 156px;
+    top: 70px;
+    left: -390px;
+  }
+
   .reason-box {
+    position: relative;
+    margin-top: 75px;
     width: 732px;
     display: flex;
     justify-content: space-between;
@@ -2949,7 +2958,6 @@ input {
   }
 
   .reason-answers__afterword {
-    align-self: flex-end;
     width: 145px;
     font-size: 10px;
     line-height: 14px;
@@ -2957,9 +2965,11 @@ input {
 
   .reason-answers__list {
     display: flex;
-    justify-content: flex-start;
-    flex-flow: row wrap;
-    max-width: 530px;
+    width: 530px;
+    flex-direction: column;
+    height: 270px;
+    align-content: space-between;
+    justify-content: normal;
   }
 
   .reason-answers__list-item {
@@ -2968,6 +2978,15 @@ input {
     font-weight: 400;
     line-height: 13px;
     margin-bottom: 20px;
+  }
+
+  .reason-answers__list-item:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .afterword-box {
+    width: 730px;
+    transform: translateY(-70px);
   }
 
   .final-result {
