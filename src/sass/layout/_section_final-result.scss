@@ -36,6 +36,7 @@
 }
 
 .load-more {
+  width: 200px;
   font-size: 13px;
   line-height: 19px;
   position: relative;
@@ -111,11 +112,11 @@
     height: 100%;
   }
 
-  .wrap{
+  .final-wrap{
     position: relative;
   }
 
-  .box{
+  .final-box{
     position: absolute;
     bottom: 15%;
     right: -10%;

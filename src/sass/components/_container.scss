@@ -3,7 +3,6 @@
   width: 450px;
   margin: 0 auto;
   font-family: $main_font;
-
 }
 
 .container {
@@ -45,7 +44,7 @@
     width: 360px;
     background-color: skyblue;
   }
-
+  
   &--xxl {
     width: 380px;
     background-color: palevioletred;
@@ -65,42 +64,34 @@
 
     &--xxs {
       width: 180px;
-      background-color: red;
     }
 
     &--xs {
       width: 200px;
-      background-color: lime;
     }
 
     &--s {
       width: 260px;
-      background-color: yellow;
     }
 
     &--sm {
       width: 270px;
-      background-color: green;
     }
 
     &--m {
       width: 300px;
-      background-color: blue;
     }
 
     &--l {
       width: 335px;
-      background-color: blueviolet;
     }
 
     &--xl {
       width: 360px;
-      background-color: skyblue;
     }
 
     &--xxl {
       width: 380px;
-      background-color: palevioletred;
     }
   }
 }
@@ -118,42 +109,34 @@
 
     &--xxs {
       width: 180px;
-      background-color: red;
     }
 
     &--xs {
       width: 200px;
-      background-color: lime;
     }
 
     &--s {
       width: 260px;
-      background-color: yellow;
     }
 
     &--sm {
       width: 270px;
-      background-color: green;
     }
 
     &--m {
       width: 300px;
-      background-color: blue;
     }
 
     &--l {
       width: 335px;
-      background-color: blueviolet;
     }
 
     &--xl {
       width: 360px;
-      background-color: skyblue;
     }
 
     &--xxl {
-      width: 380px;
-      background-color: palevioletred;
+      width: 340px;
     }
   }
 }
