@@ -1,6 +1,42 @@
-.because__title {
-  padding: 3px 0;
-  align-self: flex-start;
+.because {
+  margin-bottom: 60px;
+
+  &__title {
+    margin-bottom: 15px;
+
+    &-wrap {
+      margin-bottom: 20px;
+      display: flex;
+      flex-flow: row wrap;
+      align-self: flex-start;
+      width: 150px;
+    }
+
+    &-lines {
+      padding: 0 3px;
+    }
+  }
+
+  &__text {
+    &:first-child {
+      margin-bottom: 15px;
+    }
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.however {
+  display: flex;
+  order: -1;
+}
+
+.text-wrap {
+  display: flex;
+  flex-flow: column;
+  width: 250px;
 }
 
 .many-people {
@@ -19,39 +55,85 @@
   display: none;
 }
 
+.because-pic {
+  padding-top: 30px;
+  margin-bottom: 15px;
+}
+
 .But-if-you-dont {
+  display: flex;
+  flex-flow: row wrap;
+  align-self: flex-start;
+  margin-bottom: 20px;
   width: 200px;
 }
 
-@media screen and(min-width: 768px) {
+@media screen and (min-width: 768px) {
   .because {
-    width: 630px;
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    align-items: flex-start;
+
+    &__title-wrap {
+      width: 95px;
+    }
+
+    &__text-wrap {
+      width: 178px;
+    }
+
+    &__text {
+      &:last-child {
+        margin-bottom: 15px;
+      }
+    }
   }
 
   .many-people {
-    flex-direction: row;
+    width: 660px;
+    justify-content: space-between;
   }
 
   .half-2 {
-    display: flex;
-    flex-direction: row;
+    width: 660px;
+    flex-direction: inherit;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  .picture-tab {
-    display: block;
-  }
-
-  .picture-mob {
-    display: none;
-  }
-
-  .however,
-  .but {
+  .however {
     display: flex;
-    flex-direction: row;
+    order: 1;
+  }
+
+  .but {
+    order: 1;
+  }
+
+  .But-if-you-dont {
+    width: 118px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .many-people {
+    width: 7140px;
+  }
+
+  .because {
+    &__title-wrap {
+      width: 100px;
+    }
+
+    &__text-wrap {
+      width: 198px;
+    }
+  }
+
+  .But-if-you-dont {
+    width: 130px;
+  }
+
+  .half-2 {
+    width: 734px;
   }
 }

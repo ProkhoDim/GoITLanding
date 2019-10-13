@@ -1,9 +1,18 @@
 .possibility {
+  margin-bottom: 80px;
+
   &-list {
+    margin-bottom: 50px;
+
+    &__item-title {
+      margin-bottom: 15px;
+    }
   }
+
   &__img {
-    margin: 20px auto;
+    margin-bottom: 20px;
   }
+
   &__instruction {
     width: 300px;
     margin-bottom: 30px;
@@ -11,11 +20,12 @@
     font-weight: 900;
     text-transform: uppercase;
   }
+
   &__advice {
     color: $accent;
     font-size: 14px;
     width: 340px;
-    margin-top: 50px;
+    margin-bottom: 36px;
   }
 }
 
@@ -34,16 +44,4 @@
 .btn-center {
   text-align: center;
 
-  .btn {
-    font-family: $main_font;
-    font-size: 11px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: $lite_main;
-    background-color: $accent;
-    border: 2px solid $accent;
-    box-shadow: 0 5px 5px $btn_shadow;
-    padding: 17px 34px;
-    margin: 35px auto;
-  }
 }
