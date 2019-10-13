@@ -1,10 +1,22 @@
 <header class="header">
   <div class="page-container page--header">
     <div class="page-nav">
-      <a class="page-logo" href="http://goit.ua">
+      <a class="page-logo" href="http://goit.ua" target="_blank">
         <picture>
-          <source media="(min-width: 768px)" srcset="images/tab/Logo.png 1x, images/tab/Logo@2x.png 2x" />
-          <img class="content-image" src="images/mob/Logo.png" alt="student photo" srcset="images/mob/Logo@2x.png 2x" />
+          <source
+            media="(min-width: 992px)"
+            srcset="images/desk/Logo.png 1x, images/desk/Logo@2x.png 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="images/tab/Logo.png 1x, images/tab/Logo@2x.png 2x"
+          />
+          <img
+            class="content-image"
+            src="images/mob/Logo.png"
+            alt="student photo"
+            srcset="images/mob/Logo@2x.png 2x"
+          />
         </picture>
       </a>
 
@@ -17,6 +29,14 @@
 
     <div class="page-wrap">
       <h1 class="page-title">GoIt</h1>
+        <div class="page-heading">
+          <h2 class="page-heading__title">[ Пошаговый Видео-курс_ ]</h2>
+          <p class="page-heading__text">
+            &laquo; Старт в карьере web-разработчика с 0 для тех, кто давно
+            хотел зарабатывать больше работая в IT, но не знал, где реализовать
+            себя
+          </p>
+        </div>
 
       <div class="page-heading">
         <h2 class="page-heading__title">[ Пошаговый Видео<br>
@@ -43,18 +63,20 @@
     <button class="btn-header" type="button">Приобрести курс</button>
 
     <ul class="page-socials">
-      <li class="page-socials__item">
-        <a href="https://www.facebook.com/goITclub">
-          <svg class="page-socials__item-icon">
-            <use href="/GoITLanding/build/images/sprite.svg#icon-facebook">рррр</use>
+
+      <li>
+        <a href="https://www.facebook.com/goITclub " target="_blank">
+          <svg>
+            <use href="../images/sprite.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
-
-      <li class="page-socials__item">
-        <a href="https://twitter.com/hashtag/codenewbie?src=rela">
-          <svg class="page-socials__item-icon">
-            <use href="/GoITLanding/build/images/sprite.svg#icon-twitter"></use>
+        <a
+          href="https://twitter.com/hashtag/codenewbie?src=rela "
+          target="_blank"
+        >
+          <svg>
+            <use href="../images/sprite.svg#icon-twitter.svg"></use>
           </svg>
         </a>
       </li>

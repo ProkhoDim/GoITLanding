@@ -1,83 +1,178 @@
-.bonus-list {
-  &__item {
-    &-title {
-      font-size: 13px;
-      line-height: 22px;
-      font-weight: 700;
-    }
+.bonus {
+  margin-bottom: 60px;
+
+  &__title {
+    margin-bottom: 20px;
 
     &-text {
-      font-size: 12px;
-      line-height: 18px;
-      color: $p_text;
+      margin-bottom: 55px;
     }
   }
-}
 
-.form-client {
-  width: 370px;
-  height: 350px;
-  box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
-  background-color: $lite_main;
-}
+  &-list {
+    &__item {
+      &:nth-last-of-type(n + 2) {
+        margin-bottom: 35px;
+      }
 
-.reg-info {
-  padding: 65px;
-  position: relative;
-}
+      &-title {
+        margin-bottom: 15px;
+        font-size: 13px;
+        line-height: 22px;
+        font-weight: 700;
+      }
 
-.form_name {
-  font-size: 8px;
-  color: $p_text;
-  font-weight: 700;
-  line-height: 12px;
-  margin-bottom: 13px;
-}
-
-.form_info {
-  font-size: 10px;
-  color: $dark_main;
-  font-weight: 400;
-  line-height: 12px;
-  margin-bottom: 20px;
-}
-
-.form_info::after {
-  height: 2px;
-  width: 246px;
-  margin-top: 8px;
-  color: $p_text;
-  position: absolute;
-  z-index: 1;
-}
-
-.btn {
-  font-size: 8px;
-  color: $lite_main;
-  font-weight: 900;
-  background-color: $accent;
-  box-shadow: 0px 5px 6px 0px $btn_shadow;
-  line-height: 12px;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  min-width: 176px;
-  min-height: 33px;
-  display: block;
-
-  &--small {
-    padding: 20px 10px;
+      &-text {
+        font-size: 12px;
+        line-height: 18px;
+        color: $p_text;
+      }
+    }
   }
 
-  &--middle {
-    padding: 28px 12px;
+  &-wrap {
+    margin-bottom: 25px;
   }
 
-  &--large {
-    padding: 40px 12px;
+  .form-client {
+    width: 370px;
+    height: 350px;
+    box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
+    background-color: $lite_main;
+  }
+  
+  .reg-info {
+    padding: 65px;
+    position: relative;
+  }
+  
+  .form_name {
+    font-size: 8px;
+    color: $p_text;
+    font-weight: 700;
+    line-height: 12px;
+    margin-bottom: 13px;
   }
 
-  &--header {
-    padding: 36px 19px;
+  .form_info {
+    width: 245px;
+    font-size: 10px;
+    color: $dark_main;
+    font-weight: 400;
+    line-height: 12px;
+    margin-bottom: 20px;
+    border-bottom: 1px;
+    border-bottom-color: $p_text;
+    border-bottom-width: 245px;
+  }
+
+  /*.form_info::after {
+    height: 2px;
+    width: 245px;
+    margin-top: 8px;
+    color: $p_text;
+    position: absolute;
+    z-index: 1;
+   }*/
+ 
+}
+
+@media (min-width: 768px) {
+  .bonus {
+    margin-bottom: 95px;
+
+    &__title {
+      width: 240px;
+      margin-bottom: 30px;
+
+      &-text {
+        width: 210px;
+        margin-bottom: 55px;
+      }
+    }
+
+    &-list {
+      width: 202px;
+
+      &__item {
+        &:nth-last-of-type(n + 2) {
+          margin-bottom: 35px;
+        }
+
+        &-title {
+          margin-bottom: 17px;
+          font-size: 13px;
+          line-height: 22px;
+          font-weight: 700;
+        }
+
+        &-text {
+          font-size: 12px;
+          line-height: 18px;
+          color: $p_text;
+        }
+      }
+    }
+
+    &-wrap {
+      margin-bottom: 25px;
+    }
+  }
+
+  .form-client {
+    width: 314px;
+    height: 295px;
+    box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
+    background-color: $lite_main;
+  }
+}
+
+@media (min-width: 992px) {
+  .bonus {
+    margin-bottom: 125px;
+
+    &__title {
+      width: 260px;
+      margin-bottom: 40px;
+
+      &-text {
+        width: 225px;
+        margin-bottom: 55px;
+      }
+    }
+
+    &-list {
+      width: 225px;
+
+      &__item {
+        &:nth-last-of-type(n + 2) {
+          margin-bottom: 35px;
+        }
+
+        &-title {
+          margin-bottom: 18px;
+          font-size: 13px;
+          line-height: 22px;
+          font-weight: 700;
+        }
+
+        &-text {
+          font-size: 12px;
+          line-height: 18px;
+          color: $p_text;
+        }
+      }
+    }
+
+    &-wrap {
+      margin-bottom: 25px;
+    }
+  }
+
+  .form-client {
+    width: 349px;
+    height: 328px;
+    box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
+    background-color: $lite_main;
   }
 }

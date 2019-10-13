@@ -1,21 +1,49 @@
 <section class="profession container">
   <div class="profession__title-wrap">
-    <h2 class="profession__title title">[ Он за руку введет тебя в профессию ]</h2>
+    <h2 class="profession__title title">
+      [ Он за руку введет тебя в профессию ]
+    </h2>
     <p class="profession__title-descr">
       И буквально «имплантирует» свои практические навыки в твой мозг, чтобы ты
       смог стартовать легко!
     </p>
   </div>
-  <img
-    class="section-image"
-    srcset="images/mob/Profession-10.png 446w images/mob/Profession-10.png@2x.png 890w"
-    src="images/mob/Profession-10.png"
-    alt="happy programmers"
-    height="210"
-  />
+  <picture>
+      <source
+      media="(min-width: 992px)"
+      srcset="
+        images/desk/Profession-10.png   1x,
+        images/desk/Profession-10@2.png 2x
+      "
+    />
+    <source
+      media="(min-width: 992px)"
+      srcset="
+        images/desk/Profession-10.png   1x,
+        images/desk/Profession-10@2.png 2x
+      "
+    />
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        images/tab/Profession-10.png   1x,
+        images/tab/Profession-10@2.png 2x
+      "
+    />
+    <img
+      class="img profession__img"
+      src="images/mob/Profession-10.png"
+      srcset="images/mob/Profession-10@2x.png 2x"
+      alt="happy programmers"
+    />
+  </picture>
   <div class="profession__text container">
-    <p class="profession__text-title text--upper-bold container--xs">У него ушло более 7 лет чтобы создать систему обучения</p>
-    <p class="text profession__text-descr">Простую понятную, легкую не для «математических гениев», а для обычных
-    людей, чтобы любой смог быстро начать карьеру в IT!</p>
+    <p class="profession__text-title text--upper-bold container--xls">
+      У него ушло более 7 лет чтобы создать систему обучения
+    </p>
+    <p class="text profession__text-descr">
+      Простую понятную, легкую не для «математических гениев», а для обычных
+      людей, чтобы любой смог быстро начать карьеру в IT!
+    </p>
   </div>
 </section>

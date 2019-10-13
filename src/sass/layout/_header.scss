@@ -6,12 +6,13 @@
     bottom: 38px;
   }
   width: 100%;
-  min-width: 480px;
+  min-width: 450px;
   min-height: 614px;
   height: 100%;
   background: no-repeat url('../images/mob/blur.png') center bottom;
   object-fit: cover;
   background-color: $bg_footer;
+  margin-bottom: 55px;
 }
 
 .page--header {
