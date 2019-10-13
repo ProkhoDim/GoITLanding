@@ -1362,6 +1362,14 @@ input {
   width: 200px;
 }
 
+.title-small {
+  text-transform: uppercase;
+  font-size: 27px;
+  color: #000;
+  font-weight: 900;
+  line-height: 34px;
+}
+
 .career-web {
   margin-bottom: 60px;
 }
@@ -1399,6 +1407,8 @@ input {
   left: 0;
   transform: translateY(8px);
 }
+
+/*MEDIA*/
 
 .steps {
   margin-bottom: 60px;
@@ -2518,7 +2528,7 @@ input {
   }
 
   .container--xs {
-    width: 200px;
+    width: 240px;
   }
 
   .container--s {
@@ -2647,6 +2657,48 @@ input {
 
   .But-if-you-dont {
     width: 118px;
+  }
+
+  .career-web-box {
+    display: flex;
+    justify-content: space-between;
+    width: 660px;
+    margin-bottom: -35px;
+  }
+
+  .career-web__descr {
+    width: 210px;
+  }
+
+  .career-web__descr-wrap {
+    width: 200px;
+    margin-top: 60px;
+  }
+
+  .career-web__img {
+    order: 1;
+  }
+
+  .title-small {
+    font-size: 10px;
+    line-height: 15px;
+    margin-bottom: 15px;
+  }
+
+  .career-web__descr-title {
+    padding-left: 0;
+  }
+
+  .career-web__descr-title::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: #000;
+    width: 8px;
+    height: 8px;
+    top: -30px;
+    left: 0;
+    transform: translateY(8px);
   }
 
   .final-result {
@@ -2903,7 +2955,7 @@ input {
   }
 
   .container--xs {
-    width: 200px;
+    width: 250px;
   }
 
   .container--s {
@@ -2993,6 +3045,14 @@ input {
 
   .half-2 {
     width: 734px;
+  }
+
+  .career-web-box {
+    width: 714px;
+  }
+
+  .career-web__descr {
+    width: 220px;
   }
 
   .final-result {
