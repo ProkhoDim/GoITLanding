@@ -37,3 +37,63 @@
 .logo__secondary-footer {
   @extend %link;
 }
+
+@media screen and (min-width: 768px) {
+  .page-container {
+    min-width: 660px;
+    width: 660px;
+  }
+
+  .block__secondary-footer {
+    padding: 9px 0;
+  }
+
+  .security {
+    display: flex;
+
+    &__item {
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      & a {
+        color: $law_info;
+        font-size: 7px;
+        line-height: 23px;
+        letter-spacing: 0.72px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page-container {
+    min-width: 732px;
+    width: 732px;
+  }
+
+  .block__secondary-footer {
+    padding: 14px 0 15px 0;
+  }
+
+  .security {
+    display: flex;
+
+    &__item {
+      margin-right: 14px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      & a {
+        color: $law_info;
+        font-size: 8px;
+        line-height: 26px;
+        letter-spacing: 0.72px;
+      }
+    }
+  }
+}
