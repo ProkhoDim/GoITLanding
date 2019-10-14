@@ -86,9 +86,9 @@
   display: none;
 }
 
-.page-button {
+.footer-button {
   display: inline-block;
-  // min-width: 141px;
+  min-width: 141px;
   padding: 2px 15px;
   color: $lite_main;
   background-color: transparent;
@@ -114,101 +114,73 @@
   .block-footer {
     padding: 56px 0px;
   }
-  
+
   .footer-address {
+    margin: 0;
     display: block;
-    margin-left: 20px;
-  
+
     &__title {
-      color: $lite_main;
-      font: {
-        family: $main_font;
-        size: 10px;
-        weight: 900;
-      }
-      line-height: 7.03px;
-      text-transform: uppercase;
-      letter-spacing: 2.56px;
-      margin-bottom: 11px;
+      font-size: 8px;
+      line-height: 12px;
+      letter-spacing: 1.4px;
+      margin-bottom: 8px;
     }
-  
+
     &__text {
-      width: 80px;
-      color: $contacts_footer;
+      width: 70px;
       font: {
-        family: $main_font;
-        size: 9px;
+        size: 8px;
         weight: 400;
       }
-      letter-spacing: 0.81px;
-      line-height: 13px;
+      line-height: 12px;
     }
   }
-  
+
   .footer-info {
     display: block;
-    width: 92px;
-    margin-left: 20px;
-    margin-right: 20px;
-  
+    width: 90px;
+    margin: 0;
+
     &__title {
-      color: $lite_main;
-      font: {
-        family: $main_font;
-        size: 10px;
-        weight: 900;
-      }
-      line-height: 7.03px;
-      text-transform: uppercase;
-      letter-spacing: 2.56px;
+      font-size: 8px;
+      line-height: 10px;
+      letter-spacing: 1.4px;
     }
-  
+
     &__mail {
-      color: $contacts_footer;
-      @extend %link;
-      font: {
-        family: $main_font;
-        size: 9px;
-        weight: 400;
-      }
+      font-size: 8px;
+      line-height: 10px;
+    }
+
+    &__tel {
+      font-size: 8px;
       letter-spacing: 0.81px;
       line-height: 10px;
     }
-  
-    &__tel {
-      @extend %link;
-      color: $contacts_footer;
+  }
+
+  .footer-socials {
+    display: block;
+    list-style-type: none;
+
+    &__item a {
+      text-decoration: none;
+      color: $lite_main;
       font: {
         family: $main_font;
         size: 9px;
-        weight: 400;
+        weight: 700;
       }
-      letter-spacing: 0.81px;
-      line-height: 13px;
+      line-height: 15px;
+      letter-spacing: 1.6px;
     }
   }
-  
-  .footer-socials {
-    display: none;
-  }
-  
+
   .page-button {
-    display: inline-block;
-    min-width: 141px;
-    padding: 2px 15px;
-    color: $lite_main;
-    background-color: transparent;
-    font: {
-      family: $main_font;
-      size: 9px;
-      weight: 900;
-    }
-    line-height: 23.42px;
-    text-transform: uppercase;
-    letter-spacing: 1.15px;
-    border: none;
-    outline: 1px solid $btn_border;
-    cursor: pointer;
+    padding: 12px 25px;
+    font-size: 7px;
+    line-height: 34px;
+    letter-spacing: 0.6px;
   }
 }
 
@@ -216,5 +188,64 @@
   .page-container {
     min-width: 732px;
     width: 732px;
+  }
+
+  .block-footer {
+    padding: 62px 0 86px 0;
+  }
+
+  .footer-address {
+    display: block;
+
+    &__title {
+      font-size: 9px;
+      line-height: 12px;
+      letter-spacing: 1.4px;
+      margin-bottom: 8px;
+    }
+
+    &__text {
+      width: 80px;
+      font-size: 9px;
+      line-height: 13px;
+    }
+  }
+
+  .footer-info {
+    display: block;
+    width: 90px;
+
+    &__title {
+      font-size: 9px;
+      line-height: 12px;
+      letter-spacing: 1.4px;
+    }
+
+    &__mail {
+      font-size: 9px;
+      line-height: 14px;
+    }
+
+    &__tel {
+      font-size: 9px;
+      line-height: 14px;
+    }
+  }
+
+  .footer-socials {
+    display: block;
+
+    &__item a {
+      font-size: 10px;
+      line-height: 17px;
+      letter-spacing: 1.6px;
+    }
+  }
+
+  .page-button {
+    padding: 12px 25px;
+    font-size: 7px;
+    line-height: 34px;
+    letter-spacing: 1.4px;
   }
 }

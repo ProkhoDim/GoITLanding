@@ -76,6 +76,7 @@
 .line-before {
   position: relative;
   padding-left: 36px;
+
   &::before {
     content: '';
     display: block;
@@ -126,6 +127,7 @@
 
 .o-list-orange {
   list-style-type: none;
+  
   &__item {
     position: relative;
     font-size: 14px;
