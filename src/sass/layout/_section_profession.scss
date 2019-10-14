@@ -1,7 +1,9 @@
 .profession {
   margin-bottom: 47px;
+
   &__title {
     margin-bottom: 20px;
+
     &-wrap {
       width: 220px;
       margin-bottom: 25px;
@@ -13,9 +15,11 @@
   }
 
   &__title-descr {
-    font-size: 13px;
+    font: {
+      size: 13px;
+      weight: 500;
+    }
     line-height: 19px;
-    font-weight: 500;
     width: 260px;
     padding-left: 25px;
     color: $dark_main;
@@ -41,6 +45,53 @@
 
     &-descr {
       width: 220px;
+    }
+  }
+}
+
+/*MEDIA*/
+
+@media screen and (min-width: 768px) {
+  .profession {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__title {
+      &-wrap {
+        width: 255px;
+      }
+
+      &-descr {
+        width: 190px;
+        font-size: 9px;
+      }
+    }
+
+    &__text {
+      display: flex;
+      flex-flow: column;
+      width: 140px;
+
+      &-descr {
+        width: 140px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .profession {
+    align-items: flex-start;
+
+    &__title {
+      &-wrap {
+        width: 275px;
+      }
+
+      &-descr {
+        width: 210px;
+      }
     }
   }
 }

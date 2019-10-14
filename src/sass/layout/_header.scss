@@ -3,13 +3,12 @@
   position: relative;
   padding: {
     top: 14px;
-    bottom: 38px;
   }
   width: 100%;
   min-width: 450px;
   min-height: 614px;
   height: 100%;
-  background: no-repeat url('../../images/mob/blur.png') top center;
+  background: no-repeat url('../images/mob/blur.png') center bottom;
   object-fit: cover;
   background-color: $bg_footer;
   margin-bottom: 55px;
@@ -69,7 +68,7 @@
   position: relative;
 
   &__title {
-    width: 250px;
+    width: 280px;
     margin-bottom: 40px;
     font: {
       size: 30px;
@@ -84,12 +83,12 @@
     display: block;
     position: relative;
     font-size: 14px;
-    width: 365px;
+    width: 380px;
     font-weight: 700;
     color: $lite_main;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 160px;
 
     &::before,
     &::after {
@@ -113,7 +112,7 @@
     }
 
     &::after {
-      bottom: 8px;
+      bottom: 6px;
       right: -18px;
       content: '/>';
     }
@@ -121,6 +120,10 @@
 }
 
 .page-title {
+  display: block;
+  position: absolute;
+  top: 254px;
+  left: 50px;
   color: $goit_color;
   font: {
     family: $main_font;
@@ -159,13 +162,8 @@
       weight: 400;
     }
     line-height: 20px;
-    text-align: left;
     margin-bottom: 36px;
   }
-}
-
-.realization {
-  display: none;
 }
 
 .page-button {
@@ -178,32 +176,294 @@
   display: none;
 }
 
-/* MEDIA RULES */
+.content-photo {
+  display: none;
+}
 
-@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-width: 768px) {
+  .page-container {
+    min-width: 660px;
+    width: 660px;
+  }
+
+  .page--header {
+    display: block;
+    position: relative;
+
+    &::before {
+      content: '01 _';
+      display: block;
+      position: absolute;
+      bottom: 35px;
+      left: 16px;
+      transform-origin: bottom left;
+      transform: rotateZ(-90deg);
+      color: $lite_main;
+      font: {
+        family: $main_font;
+        size: 16px;
+        weight: 500;
+      }
+      line-height: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
+  }
+
   .header {
-    background: no-repeat url('../../images/mob/blur@2x.png') top center;
+    display: block;
+    position: relative;
+    padding: {
+      top: 14px;
+    }
+    width: 100%;
+    min-width: 480px;
+    min-height: 475px;
+    height: 100%;
+    background: no-repeat url('../images/mob/blur.png') center center;
     object-fit: cover;
+    background-color: $bg_footer;
+    overflow: hidden;
+  }
+
+  .page-nav {
+    margin-bottom: 45px;
+  }
+
+  .page-wrap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-image: url('/images/tab/header.png');
+      background-size: contain;
+      width: 473px;
+      height: 475px;
+      display: block;
+      position: absolute;
+      z-index: 1;
+      right: -50px;
+      bottom: 0;
+    }
+  }
+
+  .page-heading {
+    z-index: 10;
+    width: 400px;
+    margin-right: 76px;
+
+    &__title {
+      display: block;
+      position: relative;
+      width: 390px;
+      font: {
+        size: 45px;
+        weight: 900;
+      }
+      line-height: 56px;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 150px;
+        bottom: 77px;
+        width: 46px;
+        height: 8px;
+        background-color: $lite_main;
+      }
+
+      &-text {
+        padding-left: 90px;
+
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: 22px;
+          width: 57px;
+          height: 8px;
+          background-color: $lite_main;
+        }
+      }
+    }
+
+    &__text {
+      width: 173px;
+      font-size: 8px;
+      font-weight: 700;
+      line-height: 13px;
+      text-align: left;
+    }
+  }
+
+  .page-title {
+    display: block;
+    position: absolute;
+    top: 164px;
+    left: 5px;
+    width: 623px;
+    color: $goit_color;
+    font-size: 236px;
+    line-height: 101px;
+  }
+
+  .page-chance {
+    display: inline-block;
+    width: 200px;
+    z-index: 10;
+
+    &__start {
+      font: {
+        size: 14px;
+        weight: 700;
+      }
+      color: $lite_main;
+      line-height: 20px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    &__income {
+      color: $header_text;
+      font: {
+        family: $main_font;
+        size: 14px;
+        weight: 400;
+      }
+      line-height: 20px;
+      text-align: left;
+      margin-bottom: 36px;
+    }
+  }
+
+  .btn-header {
+    display: inline-block;
+    position: absolute;
+    bottom: 100px;
+    left: 110px;
+    font-size: 7px;
+    line-height: 11px;
+    letter-spacing: 1.25px;
+    padding: 11px 15px;
+  }
+
+  .page-socials {
+    display: inline-flex;
+    position: absolute;
+    justify-content: space-between;
+    right: 0;
+    bottom: 180px;
+    width: 32px;
+    height: 11px;
+
+    &__item {
+      display: block;
+
+      &-icon {
+        display: block;
+        width: 10px;
+        height: 10px;
+        fill: $lite_main;
+      }
+    }
+  }
+
+  .content-photo {
+    display: block;
+    position: absolute;
+    bottom: -200px;
+    top: 100px;
+    right: 0;
   }
 }
 
-// @media (min-width: 768px) {
-//   .header {
-//     background: no-repeat url('../../images/tab/header.png') top center;
-//   }
+@media (min-width: 992px) {
+  .page-container {
+    min-width: 732px;
+    width: 732px;
+  }
 
-//   .container {
-//     width: 635px;
-//   }
-// }
+  .header {
+    display: block;
+    position: relative;
+    padding: {
+      top: 24px;
+    }
+    width: 100%;
+    min-width: 480px;
+    min-height: 475px;
+    height: 100%;
+    background: no-repeat url('../images/mob/blur.png') center center;
+    object-fit: cover;
+    background-color: $bg_footer;
+    overflow: hidden;
+  }
 
-// @media screen and (min-width: 992px) {
-//   .page-container {
-//     min-width: 1125px;
-//     width: 1125px;
-//   }
+  .page-wrap {
+    &::before {
+      background-image: url('/images/desk/header.png');
+    }
+  }
 
-//   .container {
-//     width: 715px;
-//   }
-// }
+  .page-logo {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -110px;
+  }
+
+  .page-menu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: -110px;
+  }
+
+  .page-socials {
+    display: flex;
+
+    &__item {
+      display: inline-block;
+      position: relative;
+
+      &-icon {
+        position: absolute;
+        right: -110px;
+        bottom: -150px;
+      }
+    }
+  }
+
+  .page--header {
+    display: block;
+    position: relative;
+
+    &::before {
+      left: -124px;
+      font: {
+        family: $main_font;
+        size: 16px;
+        weight: 500;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px), resolution and (min-resolutin: 192dpi) {
+  .page-wrap {
+    &::before {
+      background-image: url('/images/tab/header@2x.png');
+    }
+  }
+}
+
+@media screen and (min-width: 992px), resolution and (min-resolutin: 192dpi) {
+  .page-wrap {
+    &::before {
+      background-image: url('/images/desk/header@2x.png');
+    }
+  }
+}

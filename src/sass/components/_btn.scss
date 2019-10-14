@@ -27,8 +27,8 @@
   border: none;
   cursor: pointer;
   text-transform: uppercase;
-  min-width: 176px;
-  min-height: 33px;
+  // min-width: 176px;
+  // min-height: 33px;
   display: block;
 
   &--small {
@@ -51,7 +51,7 @@
   &:focus {
     color: $accent;
     background-color: $lite_main;
-    border: 2px solid $accent;
+    outline: 2px solid $accent;
   }
 
 }

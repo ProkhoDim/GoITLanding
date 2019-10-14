@@ -3,12 +3,13 @@
 
   &__title {
     margin-bottom: 15px;
+
     &-wrap {
       margin-bottom: 20px;
       display: flex;
       flex-flow: row wrap;
       align-self: flex-start;
-      width: 170px;
+      width: 150px;
     }
 
     &-lines {
@@ -25,6 +26,17 @@
       margin-bottom: 40px;
     }
   }
+}
+
+.however {
+  display: flex;
+  order: -1;
+}
+
+.text-wrap {
+  display: flex;
+  flex-flow: column;
+  width: 250px;
 }
 
 .many-people {
@@ -56,35 +68,72 @@
   width: 200px;
 }
 
-// @media screen and(min-width: 768px) {
-//   .because {
-//     width: 630px;
-//     display: flex;
-//     justify-content: space-between;
-//     flex-direction: column;
-//   }
+@media screen and (min-width: 768px) {
+  .because {
+    display: flex;
+    align-items: flex-start;
 
-//   .many-people {
-//     flex-direction: row;
-//   }
+    &__title-wrap {
+      width: 95px;
+    }
 
-//   .half-2 {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//   }
+    &__text-wrap {
+      width: 178px;
+    }
 
-//   .picture-tab {
-//     display: block;
-//   }
+    &__text {
+      &:last-child {
+        margin-bottom: 15px;
+      }
+    }
+  }
 
-//   .picture-mob {
-//     display: none;
-//   }
+  .many-people {
+    width: 660px;
+    justify-content: space-between;
+  }
 
-//   .however,
-//   .but {
-//     display: flex;
-//     flex-direction: row;
-//   }
-// }
+  .half-2 {
+    width: 660px;
+    flex-direction: inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .however {
+    display: flex;
+    order: 1;
+  }
+
+  .but {
+    order: 1;
+  }
+
+  .But-if-you-dont {
+    width: 118px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .many-people {
+    width: 7140px;
+  }
+
+  .because {
+    &__title-wrap {
+      width: 100px;
+    }
+
+    &__text-wrap {
+      width: 198px;
+    }
+  }
+
+  .But-if-you-dont {
+    width: 130px;
+  }
+
+  .half-2 {
+    width: 734px;
+  }
+}
