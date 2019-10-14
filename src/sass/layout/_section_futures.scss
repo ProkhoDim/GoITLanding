@@ -1,11 +1,32 @@
 .futures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 55px;
 }
 
 .full-future {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   &__title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    align-self: center;
+    align-items: flex-start;
     margin-bottom: 30px;
     padding-top: 35px;
+
+    &-line {
+      &:nth-last-of-type(n + 2) {
+        margin-bottom: 5px;
+      }
+    }
   }
   &__descr {
     margin-bottom: 10px;
@@ -20,11 +41,10 @@
 
 .futures {
   &__title {
-    text-align: center;
     margin-bottom: 20px;
   }
   &__facts {
-    margin: 0 auto 45px;
+    margin-bottom: 45px;
     position: relative;
     padding-left: 25px;
     width: 55%;
@@ -51,8 +71,75 @@
   }
 }
 
-@media screen and(max-width: 768px) {
+@media screen and(min-width: 768px) {
+  .futures {
+    height: 440px;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 55px;
+  }
+
+  .full-future {
+    width: 42%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+      font-size: 9px;
+      line-height: 12px;
+      width: 40%;
+      padding-right: 5%;
+      padding-top: 0;
+      align-self: baseline;
+
+      &-line {
+        &:nth-last-of-type(n + 2) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    &__text {
+      margin-bottom: 0;
+
+      &-wrap {
+        width: 60%;
+      }
+    }
+  }
+
+  .futures {
+    &__title {
+      margin-bottom: 20px;
+      width: 40%;
+    }
+    &__facts {
+      width: 40%;
+    }
+  }
+
   .futures-list {
-    align-self: flex-start;
+    width: 40%;
+    &__item:nth-last-of-type(n + 2) {
+      margin-bottom: 20px;
+    }
+    &__title {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media screen and(min-width: 992px) {
+  .futures {
+    height: 480px;
+  }
+
+  .futures {
+    &__facts {
+      width: 25%;
+    }
   }
 }

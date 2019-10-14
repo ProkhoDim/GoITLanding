@@ -1,4 +1,7 @@
 .course {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
   margin-bottom: 65px;
 
   &__title {
@@ -6,13 +9,11 @@
   }
 
   &__text {
-    font-size: 13px;
-    line-height: 19px;
-    width: 260px;
+    width: 60%;
     padding-left: 25px;
     color: $dark_main;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 
     &::before {
       content: '';
@@ -31,12 +32,55 @@
   }
 
   &-list {
-    &__item {
+    width: 60%;
+    &__item:nth-last-of-type(n+2) {
       margin-bottom: 30px;
     }
 
-    &__title {
-      margin-bottom: 10px;
+    &__text {
+      padding-top: 10px;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .course {
+    height: 400px;
+    flex-flow: column wrap;
+
+    &-list,
+    &__title,
+    &__text {
+      order: 2;
+      width: 33%;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &-list {
+      align-self: space-around;
+
+      &__item:nth-last-of-type(n+2) {
+        margin-bottom: 20px;
+      }
+
+      &__text {
+        padding-top: 5px;
+      }
+    }
+
+    &-author {
+      order: 1;
+      width: 50%;
+      align-self: flex-start;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .course {
+    height: 420px;
   }
 }
