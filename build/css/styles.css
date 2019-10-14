@@ -2551,7 +2551,9 @@ input {
 
   .reason {
     display: flex;
-    margin-bottom: 90px;
+    margin-bottom: 125px;
+    flex-flow: row wrap;
+    height: 620px;
   }
 
   .reason-content {

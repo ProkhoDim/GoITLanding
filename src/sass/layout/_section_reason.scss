@@ -129,7 +129,9 @@
 @media screen and (min-width: 768px) {
   .reason {
     display: flex;
-    margin-bottom: 90px;
+    margin-bottom: 125px;
+    flex-flow: row wrap;
+    height: 620px;
 
     &-content {
       display: flex;
@@ -213,6 +215,7 @@
   .reason {
     margin-bottom: 125px;
     display: flex;
+    
 
     &-answers::after {
       font-size: 156px;
