@@ -1,0 +1,141 @@
+.text {
+  font-size: 14px;
+  color: $p_text;
+  line-height: 20px;
+  
+  &--light {
+    font-weight: 300;
+  }
+
+  &--semi-bold {
+    color: $dark_main;
+    font-weight: 500;
+  }
+
+  &--bold {
+    color: $dark_main;
+    font-weight: 700;
+  }
+
+  &--negative {
+    color: $lite_main;
+    background-color: $dark_main;
+  }
+
+  &--accent {
+    color: $accent;
+    font-weight: 500;
+  }
+
+  &--upper-bold {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &--mark {
+    color: $dark_main;
+    font-weight: 500;
+    background-color: $marker;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    font-size: 9px;
+    color: $p_text;
+    line-height: 13px;
+    
+    &--light {
+      font-weight: 300;
+    }
+  
+
+    &--semi-bold {
+      color: $dark_main;
+      font-weight: 500;
+    }
+  
+    &--bold {
+      color: $dark_main;
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 14px;
+    }
+  
+    &--negative {
+      color: $lite_main;
+      background-color: $dark_main;
+      font-size: 10px;
+      line-height: 14px;
+    }
+  
+    &--accent {
+      color: $accent;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 14px;
+    }
+  
+    &--upper-bold {
+      text-transform: uppercase;
+      line-height: 15px;
+      font-weight: 700;
+    }
+    
+    &--mark {
+      color: $dark_main;
+      font-weight: 500;
+      background-color: $marker;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .text {
+    font-size: 10px;
+    color: $p_text;
+    line-height: 14px;
+    
+    &--light {
+      font-weight: 300;
+    }
+    
+    &--semi-bold {
+      color: $dark_main;
+      font-weight: 500;
+    }
+  
+    &--bold {
+      color: $dark_main;
+      font-weight: 700;
+      font-size: 11px;
+      line-height: 15px;
+    }
+  
+    &--negative {
+      color: $lite_main;
+      background-color: $dark_main;
+      font-size: 11px;
+      line-height: 16px;
+    }
+  
+    &--accent {
+      color: $accent;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 15px;
+    }
+  
+
+    &--upper-bold {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    
+    &--mark {
+      color: $dark_main;
+      font-weight: 500;
+      background-color: $marker;
+    }
+  }
+}

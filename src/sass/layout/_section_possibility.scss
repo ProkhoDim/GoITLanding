@@ -1,9 +1,45 @@
 .possibility {
+  margin-bottom: 80px;
+
+  &-bottom-half {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  &-title {
+    display: none;
+
+    &__descr {
+      width: 80%;
+      display: none;
+    }
+
+    &-wrap {
+      width: 42%;
+    }
+  }
+
   &-list {
+    margin-bottom: 50px;
+
+    &__item {
+      width: 300px;
+
+      &:nth-last-of-type(n + 2) {
+        margin-bottom: 30px;
+      }
+
+      &-title {
+        margin-bottom: 15px;
+      }
+    }
   }
+
   &__img {
-    margin: 20px auto;
+    margin-bottom: 20px;
   }
+
   &__instruction {
     width: 300px;
     margin-bottom: 30px;
@@ -11,39 +47,80 @@
     font-weight: 900;
     text-transform: uppercase;
   }
+
   &__advice {
-    color: $accent;
-    font-size: 14px;
     width: 340px;
-    margin-top: 50px;
+    margin-bottom: 36px;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 26px;
+      height: 2px;
+      background-color: $dark_main;
+      left: -30px;
+      top: 15px;
+      transform: rotateZ(-60deg);
+    }
   }
 }
 
-.accent-item {
-  width: 300px;
+@media screen and (min-width: 768px) {
+  .possibility {
+    &-top-half {
+      display: flex;
+      justify-content: space-between;
+    }
 
-  &:nth-last-of-type(n + 2) {
-    margin-bottom: 30px;
+    &-bottom-half {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+
+    &-list {
+      width: 75%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+
+      &__item {
+        width: 33%;
+
+        &-title {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &__instruction {
+      width: 25%;
+      font-size: 9px;
+      line-height: 17px;
+      padding-right: 5%;
+    }
+
+    &-title {
+      display: block;
+
+      &__descr {
+        display: block;
+      }
+    }
+
+    &__advice {
+      margin-bottom: 0;
+      width: 33%;
+      margin-right: auto;
+      order: 2;
+      align-self: center;
+    }
   }
 
-  &__title {
-    padding-bottom: 10px;
-  }
-}
-
-.btn-center {
-  text-align: center;
-
-  .btn {
-    font-family: $main_font;
-    font-size: 11px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: $lite_main;
-    background-color: $accent;
-    border: 2px solid $accent;
-    box-shadow: 0 5px 5px $btn_shadow;
-    padding: 17px 34px;
-    margin: 35px auto;
+  .possibility-btn {
+    width: 30%;
   }
 }

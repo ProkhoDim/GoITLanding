@@ -1,8 +1,12 @@
 <header class="header">
   <div class="page-container page--header">
     <div class="page-nav">
-      <a class="page-logo" href="http://goit.ua">
+      <a class="page-logo" href="http://goit.ua" target="_blank">
         <picture>
+          <source
+            media="(min-width: 992px)"
+            srcset="images/desk/Logo.png 1x, images/desk/Logo@2x.png 2x"
+          />
           <source
             media="(min-width: 768px)"
             srcset="images/tab/Logo.png 1x, images/tab/Logo@2x.png 2x"
@@ -23,32 +27,26 @@
       </div>
     </div>
 
-    <div class="main-wrap">
-      <div class="page-wrap">
-        <div class="page-heading">
-          <h2 class="page-heading__title">[ Пошаговый Видео-курс_ ]</h2>
-          <p class="page-heading__text">
-            &laquoСтарт в карьере web-разработчика с 0&raquo для тех, кто давно
-            хотел зарабатывать больше работая в IT, но не знал, где реализовать
-            себя
-          </p>
-        </div>
+    <div class="page-wrap">
+      <div class="page-heading">
+      <h1 class="page-title">GoIt</h1>
+        <h2 class="page-heading__title">[ Пошаговый Видео<br>
+          <span class="page-heading__title-text">курс_ ]</span>
+        </h2>
+        <p class="page-heading__text">
+          &laquoСтарт в карьере web-разработчика с 0&raquo для тех, кто давно
+          хотел зарабатывать больше работая в IT, но не знал, где реализовать
+          себя
+        </p>
+      </div>
 
-        <h1 class="page-title">GoIt</h1>
-
-        <div class="page-chance">
-          <p class="page-chance__start">
-            Открой для себя способ начать карьеру в сфере IT
-          </p>
-          <p class="page-chance__income">
-            / Без математического склада ума, работая в комфортных условиях по
-            приятному графику над интересными задачами и получая доход в $$$.
-          </p>
-        </div>
-
-        <p class="realization">
-          «Старт в карьере web-разработчика с 0» для тех, кто давно хотел
-          зарабатывать больше работая в IT, но не знал, где реализовать себя
+      <div class="page-chance">
+        <p class="page-chance__start">
+          Открой для себя способ начать карьеру в сфере IT
+        </p>
+        <p class="page-chance__income">
+          / Без математического склада ума, работая в комфортных условиях по
+          приятному графику над интересными задачами и получая доход в $$$.
         </p>
       </div>
     </div>
@@ -56,21 +54,29 @@
     <button class="btn-header" type="button">Приобрести курс</button>
 
     <ul class="page-socials">
-      <li>
-        <a href="https://www.facebook.com/goITclub">
-          <svg>
-            <use href="../images/sprite.svg#icon-facebook"></use>
+
+      <li class="page-socials__item">
+        <a href="https://www.facebook.com/goITclub " target="_blank">
+          <svg class="page-socials__item-icon">
+            <use href="images/sprite.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
-
-      <li>
-        <a href="https://twitter.com/hashtag/codenewbie?src=rela">
-          <svg>
-            <use href="../images/sprite.svg#icon-twitter.svg"></use>
+      <li class="page-socials__item">
+        <a
+          href="https://twitter.com/hashtag/codenewbie?src=rela "
+          target="_blank"
+        >
+          <svg class="page-socials__item-icon">
+            <use href="images/sprite.svg#icon-twitter"></use>
           </svg>
         </a>
       </li>
     </ul>
+
+    <!-- <picture>
+      <source media="(min-width: 768px)" srcset="images/tab/header.png 1x, images/tab/header@2x.png 2x" />
+      <img class="content-photo" src="images/mob/header.png" alt="student photo" srcset="images/mob/header@2x.png 2x" />
+    </picture> -->
   </div>
 </header>

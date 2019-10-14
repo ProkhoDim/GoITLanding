@@ -1,40 +1,89 @@
-.examples-box {
-  width: 300px;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
+.examples {
+  margin-bottom: 70px;
 
-  &__name {
-    width: 30%;
-    height: 30%;
-    font: {
-      family: 'Acrom', sans-serif;
-      size: 10px;
-      weight: 700;
-    }
-    color: $dark_main;
-    line-height: 10px;
-    text-transform: uppercase;
+  &__title {
+    margin-bottom: 40px;
   }
 
-  &__img {
-    margin-bottom: 10px;
-    width: 100%;
-    height: auto;
+  &__title-descr {
+    margin-bottom: 40px;
   }
 
-  &__content {
-    width: 65%;
-    font: {
-      family: 'Acrom', sans-serif;
-      size: 10px;
-      weight: 700;
+  &-box {
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
+
+    &__name {
+      width: 30%;
+      height: 30%;
+      font: {
+        family: 'Acrom', sans-serif;
+        size: 10px;
+        weight: 700;
+      }
+      color: $dark_main;
+      line-height: 10px;
+      text-transform: uppercase;
     }
-    color: $dark_main;
-    line-height: 10px;
-    height: 180px;
-    overflow-y: scroll;
-    padding-left: 5px;
+
+    &__img {
+      margin-bottom: 10px;
+      width: 100%;
+      height: auto;
+    }
+
+    &__content {
+      width: 65%;
+      font: {
+        family: 'Acrom', sans-serif;
+        size: 10px;
+        weight: 700;
+      }
+      color: $dark_main;
+      line-height: 10px;
+      height: 180px;
+      overflow-y: scroll;
+      padding-left: 5px;
+    }
+  }
+}
+
+/*MEDIA*/
+
+@media screen and (min-width: 768px) {
+  .examples {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    margin-bottom: 98px;
+    height: 450px;
+
+    &__title {
+      margin-bottom: 25px;
+    }
+
+    &-box {
+      width: 420px;
+      height: 320px;
+      padding: 30px;
+
+      &__content {
+        overflow: inherit;
+      }
+    }
+
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .examples {
+    margin-bottom: 135px;
+
+    &__title {
+      margin-bottom: 40px;
+    }
   }
 }

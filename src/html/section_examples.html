@@ -1,23 +1,31 @@
 <section class="examples container">
-  <h2 class="title container container--xs">
-    [ Смотри, как обычные люди ... ]
-  </h2>
-  <p class="text container--l line-before">
-    Которые даже в школе не изучали программирование, без гениальных навыков в
-    математике, невероятных талантов природных способностей и блата
-    <span class="text--negative">сделали свой прорыв в IT! </span>
-  </p>
-  <div class="examples-box wrap">
+  <div class="examples-wrap">
+    <h2 class="examples__title title container container--xs">
+      [ Смотри, как обычные люди... ]
+    </h2>
+    <p class="examples__title-descr text container--l line-before">
+      Которые даже в школе не изучали программирование, без гениальных навыков в
+      математике, невероятных талантов природных способностей и блата
+      <span class="text--negative">сделали свой прорыв в IT! </span>
+    </p>
+  </div>
+  <div class="examples-box">
     <div class="examples-box__name">
-      <img
-        class="examples-box__img"
-        srcset="
-          images/mob/avatar-slider.png     55w,
-          images/mob/avatar-slider@2x.png 109w
-        "
-        src="images/mob/avatar-slider.png"
-        alt="student photo"
-      />
+      <picture>
+        <source
+          media="(min-width: 992px)"
+          srcset="images/desk/avatar.png 1x, images/desk/avatar@2x.png 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="images/tab/avatar.png 1x, images/tab/avatar@2x.png 2x"
+        />
+        <img
+          src="images/mob/avatar-slider.png"
+          alt="student photo"
+          srcset="images/mob/avatar-slider@2x.png 2x"
+        />
+      </picture>
       <p>Nina Moroshnichenko</p>
     </div>
     <p class="examples-box__content">

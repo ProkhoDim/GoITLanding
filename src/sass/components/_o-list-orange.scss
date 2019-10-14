@@ -1,0 +1,38 @@
+.o-list-orange {
+  list-style-type: none;
+  &__item {
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 30px;
+    counter-increment: count-one;
+
+    &::before {
+      box-sizing: border-box;
+      position: absolute;
+      color: $lite_main;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 14px;
+      content: '[00' counter(count-one) ']';
+      background-color: $accent;
+      left: 0;
+      top: 40px;
+      transform-origin: top left;
+      transform: rotateZ(-90deg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .o-list-orange {
+    &__item {
+      padding-left: 25px;
+      &::before {
+        font-size: 6px;
+        line-height: 10px;
+        top: 20px;
+      }
+    }
+  }
+}

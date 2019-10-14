@@ -1,3 +1,90 @@
+.get-now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.more-facts {
+  font-size: 13px;
+  line-height: 19px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 5px;
+    left: -20px;
+    width: 20px;
+    height: 2px;
+    transform: rotateZ(-60deg);
+    background-color: $dark_main;
+    padding-right: 10px;
+  }
+}
+
+.get-now__img {
+  position: relative;
+
+  &::before {
+    content: 'IT';
+    display: block;
+    position: absolute;
+    top: -60px;
+    right: 50px;
+    transform: rotateZ(90deg);
+    width: 159px;
+    height: 230px;
+    z-index: -1;
+    color: $pe_color;
+    font: {
+      family: $main_font;
+      size: 240px;
+      weight: 900;
+    }
+  }
+}
+
+.getnow {
+  &__facts {
+    width: 330px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    width: 65%;
+    margin-bottom: 25px;
+
+    &-descr {
+      width: 65%;
+      margin-bottom: 55px;
+    }
+  }
+
+  &-list {
+    &__title {
+      width: 80%;
+      margin-bottom: 30px;
+    }
+
+    &__item {
+      &:nth-last-of-type(n + 2) {
+        margin-bottom: 30px;
+      }
+      &-title {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
 .getnow-list {
   width: 280px;
   &__item {
@@ -5,6 +92,52 @@
     }
 
     &-text {
+    }
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .get-now {
+    flex-flow: row wrap;
+
+    &__img {
+      width: 50%;
+    }
+
+    &__wrap {
+      width: 50%;
+    }
+  }
+
+  .getnow {
+    &__facts {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      width: 90%;
+    }
+
+    &-list {
+      width: 75%;
+      display: flex;
+      flex-flow: row wrap;
+
+      &__title {
+        width: 25%;
+        padding-right: 12%;
+        align-self: flex-start;
+
+        &-line {
+          display: block;
+        }
+      }
+
+      &__item {
+        width: 33%;
+        padding-right: 3%;
+      }
     }
   }
 }
