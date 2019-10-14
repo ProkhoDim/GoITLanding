@@ -4,10 +4,6 @@
   &-questions {
     max-width: 425px;
     margin-bottom: 25px;
-
-    &s__photo {
-      margin-bottom: 45px;
-    }
   }
 }
 
@@ -15,8 +11,11 @@
   width: 280px;
   display: block;
   position: relative;
+  margin: 0 auto;
+  padding-top: 45px;
 
   &__probably {
+    display: flex;
     font-family: $main_font;
     font-size: 14px;
     font-weight: 900;
@@ -24,14 +23,17 @@
     margin-right: -20px;
     text-transform: uppercase;
     margin-bottom: 15px;
+    padding-left: 40px;
 
     &::before {
       content: '';
+      position: absolute;
       display: inline-block;
       background-color: $dark-main;
       width: 25px;
       height: 3px;
       margin: 3px 15px 3px 0;
+      transform: translateX(-45px);
     }
   }
 
@@ -39,8 +41,8 @@
     display: block;
     position: absolute;
     content: 'YOU';
-    top: -130px;
-    left: -65px;
+    top: -70px;
+    left: -75px;
     width: 70px;
     height: 210px;
     color: $pe_color;
@@ -121,33 +123,77 @@
   color: $accent;
   text-align: center;
   max-width: 292px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
   .reason {
     display: flex;
-    margin-bottom: 90px;
+    margin-bottom: 125px;
+    flex-flow: row wrap;
+    height: 620px;
 
     &-content {
       display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 275px;
     }
 
     &-questions {
       max-width: 205px;
+      order: 2;
+      margin-bottom: 35px;
+    }
+
+    &-answers {
+      max-width: 225px;
+      order: 3;
+      padding-top: 0;
+      margin: 0;
+
+      &::after {
+        font-size: 140px;
+        top: 35px;
+        left: -305px;
+        z-index: -1;
+      }
+
+      &__title {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 0;
+      }
+
+      &__probably {
+        font-size: 10px;
+        width: 155px;
+        padding-left: 45px;
+      }
+
+      &__if-you {
+        margin-left: 0;
+      }
     }
   }
 
+  .afterword-box {
+    display: flex;
+    justify-content: flex-end;
+    width: 660px;
+  }
+
   .reason-answers__afterword {
-    align-self: flex-end;
     width: 180px;
     font-size: 10px;
     line-height: 14px;
     text-align: left;
+    margin: 0;
   }
 
   .reason-answers__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-flow: row wrap;
     max-width: 660px;
 
@@ -169,8 +215,17 @@
   .reason {
     margin-bottom: 125px;
     display: flex;
+    
+
+    &-answers::after {
+      font-size: 156px;
+      top: 70px;
+      left: -390px;
+    }
 
     &-box {
+      position: relative;
+      margin-top: 75px;
       width: 732px;
       display: flex;
       justify-content: space-between;
@@ -182,7 +237,6 @@
   }
 
   .reason-answers__afterword {
-    align-self: flex-end;
     width: 145px;
     font-size: 10px;
     line-height: 14px;
@@ -190,9 +244,11 @@
 
   .reason-answers__list {
     display: flex;
-    justify-content: flex-start;
-    flex-flow: row wrap;
-    max-width: 530px;
+    width: 530px;
+    flex-direction: column;
+    height: 270px;
+    align-content: space-between;
+    justify-content: normal;
 
     &-item {
       width: 165px;
@@ -200,6 +256,16 @@
       font-weight: 400;
       line-height: 13px;
       margin-bottom: 20px;
+
+      &:nth-child(3){
+        margin-bottom: 0;
+      }
     }
   }
+
+  .afterword-box {
+    width: 730px;
+    transform: translateY(-70px);
+  }
 }
+

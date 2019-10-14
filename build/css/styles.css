@@ -966,17 +966,16 @@ input {
   margin-bottom: 25px;
 }
 
-.reason-questionss__photo {
-  margin-bottom: 45px;
-}
-
 .reason-answers {
   width: 280px;
   display: block;
   position: relative;
+  margin: 0 auto;
+  padding-top: 45px;
 }
 
 .reason-answers__probably {
+  display: flex;
   font-family: "Acrom", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 900;
@@ -984,23 +983,26 @@ input {
   margin-right: -20px;
   text-transform: uppercase;
   margin-bottom: 15px;
+  padding-left: 40px;
 }
 
 .reason-answers__probably::before {
   content: '';
+  position: absolute;
   display: inline-block;
   background-color: black;
   width: 25px;
   height: 3px;
   margin: 3px 15px 3px 0;
+  transform: translateX(-45px);
 }
 
 .reason-answers::after {
   display: block;
   position: absolute;
   content: 'YOU';
-  top: -130px;
-  left: -65px;
+  top: -70px;
+  left: -75px;
   width: 70px;
   height: 210px;
   color: rgba(0, 0, 0, 0.05);
@@ -1078,10 +1080,11 @@ input {
   color: #ff6b08;
   text-align: center;
   max-width: 292px;
+  margin: 0 auto;
 }
 
 .facts {
-  margin-bottom: 30px;
+  margin-bottom: 125px;
 }
 
 .facts-title {
@@ -1158,6 +1161,14 @@ input {
 
 .facts-list__text-description {
   margin-bottom: 25px;
+}
+
+.position-3 {
+  order: 1;
+}
+
+.position-4 {
+  order: 2;
 }
 
 .futures {
@@ -2728,28 +2739,71 @@ input {
 
   .reason {
     display: flex;
-    margin-bottom: 90px;
+    margin-bottom: 125px;
+    flex-flow: row wrap;
+    height: 620px;
   }
 
   .reason-content {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 275px;
   }
 
   .reason-questions {
     max-width: 205px;
+    order: 2;
+    margin-bottom: 35px;
+  }
+
+  .reason-answers {
+    max-width: 225px;
+    order: 3;
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .reason-answers::after {
+    font-size: 140px;
+    top: 35px;
+    left: -305px;
+    z-index: -1;
+  }
+
+  .reason-answers__title {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 0;
+  }
+
+  .reason-answers__probably {
+    font-size: 10px;
+    width: 155px;
+    padding-left: 45px;
+  }
+
+  .reason-answers__if-you {
+    margin-left: 0;
+  }
+
+  .afterword-box {
+    display: flex;
+    justify-content: flex-end;
+    width: 660px;
   }
 
   .reason-answers__afterword {
-    align-self: flex-end;
     width: 180px;
     font-size: 10px;
     line-height: 14px;
     text-align: left;
+    margin: 0;
   }
 
   .reason-answers__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-flow: row wrap;
     max-width: 660px;
   }
@@ -2765,6 +2819,7 @@ input {
   .reason-answers__list-item::before {
     display: none;
   }
+
 
   .futures {
     height: 440px;
@@ -3657,6 +3712,20 @@ input {
     right: 0;
   }
 
+  .page-container {
+    min-width: 660px;
+    width: 660px;
+  }
+
+  .page-container {
+    min-width: 642px;
+    width: 642px;
+  }
+
+  .container {
+    width: 635px;
+  }
+
   .steps {
     margin-bottom: 90px;
   }
@@ -3995,12 +4064,29 @@ input {
     width: 340px;
   }
 
+  .page-container {
+    min-width: 1125px;
+    width: 1125px;
+  }
+
+  .container {
+    width: 715px;
+  }
+
   .reason {
     margin-bottom: 125px;
     display: flex;
   }
 
+  .reason-answers::after {
+    font-size: 156px;
+    top: 70px;
+    left: -390px;
+  }
+
   .reason-box {
+    position: relative;
+    margin-top: 75px;
     width: 732px;
     display: flex;
     justify-content: space-between;
@@ -4011,7 +4097,6 @@ input {
   }
 
   .reason-answers__afterword {
-    align-self: flex-end;
     width: 145px;
     font-size: 10px;
     line-height: 14px;
@@ -4019,9 +4104,11 @@ input {
 
   .reason-answers__list {
     display: flex;
-    justify-content: flex-start;
-    flex-flow: row wrap;
-    max-width: 530px;
+    width: 530px;
+    flex-direction: column;
+    height: 270px;
+    align-content: space-between;
+    justify-content: normal;
   }
 
   .reason-answers__list-item {
@@ -4505,6 +4592,11 @@ input {
     font-family: "Acrom", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 500;
+  }
+
+  .page-container {
+    min-width: 732px;
+    width: 732px;
   }
 
   .bonus {
