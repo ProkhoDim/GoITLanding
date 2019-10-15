@@ -9,10 +9,12 @@
   color: $dark_main;
   text-transform: uppercase;
   margin-bottom: 43px;
+  width: 60%;
 
   &__text {
     position: relative;
     margin-bottom: 45px;
+    width: 60%;
 
     &::before {
       content: '';
@@ -78,11 +80,17 @@
   margin-bottom: 25px;
 }
 
+.title-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 768px) {
   .title-box {
-    width: 225px;
+    width: 35%;
     flex-direction: column;
-    align-self: flex-start;
+    align-items: flex-start;
   }
 
   .facts {
@@ -105,6 +113,7 @@
   .facts-title {
     margin-bottom: 30px;
     font-size: 30px;
+    width: 100%;
 
     &__text {
       padding-left: 50px;

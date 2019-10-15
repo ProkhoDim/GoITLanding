@@ -746,46 +746,6 @@ input {
   align-items: center;
 }
 
-.container--xxs {
-  width: 180px;
-  background-color: red;
-}
-
-.container--xs {
-  width: 200px;
-  background-color: lime;
-}
-
-.container--s {
-  width: 260px;
-  background-color: yellow;
-}
-
-.container--sm {
-  width: 270px;
-  background-color: green;
-}
-
-.container--m {
-  width: 300px;
-  background-color: blue;
-}
-
-.container--l {
-  width: 335px;
-  background-color: blueviolet;
-}
-
-.container--xl {
-  width: 360px;
-  background-color: skyblue;
-}
-
-.container--xxl {
-  width: 380px;
-  background-color: palevioletred;
-}
-
 /*MEDIA*/
 
 .header {
@@ -1095,11 +1055,13 @@ input {
   color: black;
   text-transform: uppercase;
   margin-bottom: 43px;
+  width: 60%;
 }
 
 .facts-title__text {
   position: relative;
   margin-bottom: 45px;
+  width: 60%;
 }
 
 .facts-title__text::before {
@@ -1162,6 +1124,12 @@ input {
 
 .facts-list__text-description {
   margin-bottom: 25px;
+}
+
+.title-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .position-3 {
@@ -1358,6 +1326,9 @@ input {
 }
 
 .because__title {
+  width: 60%;
+  padding-left: 10%;
+  align-self: flex-start;
   margin-bottom: 15px;
 }
 
@@ -1378,6 +1349,7 @@ input {
 }
 
 .however {
+  width: 75%;
   display: flex;
   order: -1;
 }
@@ -1385,7 +1357,7 @@ input {
 .text-wrap {
   display: flex;
   flex-flow: column;
-  width: 250px;
+  width: 80%;
 }
 
 .many-people {
@@ -1417,6 +1389,10 @@ input {
   width: 200px;
 }
 
+.but {
+  width: 75%;
+}
+
 .title-small {
   text-transform: uppercase;
   font-size: 27px;
@@ -1429,12 +1405,22 @@ input {
   margin-bottom: 60px;
 }
 
+.career-web-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .career-web__title {
   margin-bottom: 36px;
 }
 
 .career-web__title-image {
   margin-bottom: 10px;
+}
+
+.career-web__text {
+  width: 66%;
 }
 
 .career-web__image {
@@ -1463,6 +1449,16 @@ input {
   transform: translateY(8px);
 }
 
+.career-web__descr-wrap {
+  width: 66%;
+}
+
+.examples-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 /*MEDIA*/
 
 .steps {
@@ -1474,6 +1470,58 @@ input {
   position: relative;
   margin: 0 auto;
   padding-bottom: 20px;
+}
+
+.steps__title::before {
+  content: '4';
+  display: block;
+  position: absolute;
+  top: 0.13em;
+  left: -0.2em;
+  z-index: -1;
+  width: 170px;
+  height: 230px;
+  color: #f7f7f7;
+  font-family: "Acrom", "Arial", sans-serif;
+  font-size: 210px;
+  font-weight: 900;
+  line-height: 132px;
+  text-transform: uppercase;
+}
+
+.steps__title::after {
+  content: 'stap';
+  display: block;
+  position: absolute;
+  top: -1em;
+  right: 1.5em;
+  width: 70px;
+  height: 230px;
+  z-index: -1;
+  color: #f7f7f7;
+  font-family: "Acrom", "Arial", sans-serif;
+  font-size: 56px;
+  font-weight: 900;
+  transform: rotateZ(90deg);
+  line-height: 200px;
+  text-transform: uppercase;
+}
+
+.steps__title-descr {
+  width: 60%;
+}
+
+.steps-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.steps-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .steps-title {
@@ -1507,11 +1555,12 @@ input {
 
 .steps-list {
   margin-bottom: 40px;
-  width: 300px;
+  width: 66%;
 }
 
 .steps-list__item {
   align-self: flex-start;
+  margin-bottom: 30px;
 }
 
 .steps-list__item-title {
@@ -1902,6 +1951,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .more-facts {
@@ -1955,15 +2005,10 @@ input {
 
 .getnow__title-descr {
   width: 65%;
-  margin-bottom: 55px;
 }
 
 .getnow-list__title {
   width: 80%;
-  margin-bottom: 30px;
-}
-
-.getnow-list__item:nth-last-of-type(n + 2) {
   margin-bottom: 30px;
 }
 
@@ -2032,7 +2077,6 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto 60px;
 }
 
 .d-flex {
@@ -2047,18 +2091,37 @@ input {
 }
 
 .video-course {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 50px;
+}
+
+.video-course__top-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-course__bottom-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .video-course__img {
   margin-bottom: 20px;
 }
 
+.video-course__img-approval {
+  display: none;
+}
+
 .video-course__subtitle-wrap {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
-  width: 230px;
+  width: 70%;
   margin-bottom: 15px;
 }
 
@@ -2074,18 +2137,14 @@ input {
   margin-bottom: 35px;
 }
 
-.video-course__text:first-child {
-  margin-bottom: 25px;
-}
-
-.video-course__text:last-child {
-  margin-bottom: 40px;
+.video-course__title-wrap {
+  width: 60%;
 }
 
 .price {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-end;
 }
 
 .price__arrows {
@@ -2095,7 +2154,6 @@ input {
 
 .price__cost {
   position: relative;
-  bottom: -30px;
 }
 
 .price__cost::before {
@@ -2103,9 +2161,9 @@ input {
   content: '1 300 грн';
   text-decoration: line-through;
   font-size: 17px;
+  top: -2em;
   font-weight: 900;
   color: #3f4144;
-  top: -40px;
 }
 
 .price__title {
@@ -2114,6 +2172,11 @@ input {
 
 .price__title--uah {
   font-size: 19px;
+}
+
+.video-approval {
+  width: 66%;
+  margin-bottom: 40px;
 }
 
 .arrows {
@@ -2125,10 +2188,12 @@ input {
 }
 
 .vc-list {
+  width: 67%;
   margin-bottom: 70px;
 }
 
 .vc-list__title {
+  width: 85%;
   margin-bottom: 30px;
 }
 
@@ -2140,22 +2205,31 @@ input {
   margin-bottom: 15px;
 }
 
+.final-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .bonus {
   margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bonus__title {
-  width: 270px;
+  width: 60%;
   margin-bottom: 20px;
 }
 
 .bonus__title-text {
-  width: 260px;
+  width: 60%;
   margin-bottom: 55px;
 }
 
 .bonus-list {
-  width: 270px;
+  width: 60%;
 }
 
 .bonus-list__item:nth-last-of-type(n + 2) {
@@ -2170,26 +2244,29 @@ input {
 }
 
 .bonus-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 25px;
 }
 
-.bonus .form-client {
-  width: 360px;
+.form-client {
+  width: 80%;
   height: 330px;
   box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
   background-color: white;
 }
 
-.bonus .reg-info {
+.reg-info {
   padding: 60px;
 }
 
-.bonus .form_name {
+.form_name {
   font-weight: 700;
   margin-bottom: 13px;
 }
 
-.bonus .form_info {
+.form_info {
   width: 245px;
   font-size: 10px;
   color: black;
@@ -2201,58 +2278,61 @@ input {
   border-bottom-width: 1px;
 }
 
-.bonus:focus::-webkit-input-placeholder {
+.form_info:focus::-webkit-input-placeholder {
   content: '';
   opacity: 0;
 }
 
-.bonus:focus::-moz-placeholder {
+.form_info:focus::-moz-placeholder {
   content: '';
   opacity: 0;
 }
 
-.bonus:focus:-ms-input-placeholder {
+.form_info:focus:-ms-input-placeholder {
   content: '';
   opacity: 0;
 }
 
-.bonus:focus::-ms-input-placeholder {
+.form_info:focus::-ms-input-placeholder {
   content: '';
   opacity: 0;
 }
 
-.bonus:focus::placeholder {
+.form_info:focus::placeholder {
   content: '';
   opacity: 0;
 }
 
-.bonus::-webkit-input-placeholder {
+.form_info::-webkit-input-placeholder {
   color: black;
   font-weight: 700;
 }
 
-.bonus::-moz-placeholder {
+.form_info::-moz-placeholder {
   color: black;
   font-weight: 700;
 }
 
-.bonus:-ms-input-placeholder {
+.form_info:-ms-input-placeholder {
   color: black;
   font-weight: 700;
 }
 
-.bonus::-ms-input-placeholder {
+.form_info::-ms-input-placeholder {
   color: black;
   font-weight: 700;
 }
 
-.bonus::placeholder {
+.form_info::placeholder {
   color: black;
   font-weight: 700;
+}
+
+.important {
+  margin-bottom: 80px;
 }
 
 .important-block {
-  padding: 18px 0 66px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2289,7 +2369,8 @@ input {
 }
 
 .value-wrap {
-  display: flex;
+  width: 60%;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 28px;
@@ -2307,7 +2388,6 @@ input {
 .important__value-price {
   display: block;
   position: relative;
-  padding-left: 45px;
   color: white;
   font-family: "Acrom", "Arial", sans-serif;
   font-size: 14px;
@@ -2317,17 +2397,16 @@ input {
 }
 
 .important__value-price::before {
-  display: block;
-  position: absolute;
-  top: 15px;
-  left: 2px;
+  display: inline-flex;
   content: '';
-  width: 37px;
-  height: 0;
-  border: 1px solid white;
+  width: 30px;
+  transform: translate(-1em, -0.3em);
+  height: 1px;
+  border: 1px solid #fff;
 }
 
 .today-wrap {
+  width: 60%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -2335,7 +2414,7 @@ input {
 
 .today__price {
   display: block;
-  width: 63px;
+  width: 40%;
 }
 
 .today__price span {
@@ -2356,7 +2435,7 @@ input {
   text-transform: uppercase;
 }
 
-.today__price-total span {
+.today__price-total--uah {
   font-size: 13px;
 }
 
@@ -2415,8 +2494,11 @@ input {
   font-size: 10px !important;
 }
 
+.do-it {
+  margin-bottom: 50px;
+}
+
 .block_doit {
-  padding: 14px 42px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2425,7 +2507,8 @@ input {
 .action {
   display: block;
   position: relative;
-  width: 218px;
+  width: 50%;
+  margin-bottom: 40px;
 }
 
 .action__title {
@@ -2440,6 +2523,7 @@ input {
   height: 150px;
   display: block;
   position: absolute;
+  z-index: -1;
   top: -50px;
   left: -75px;
   transform: rotateZ(90deg);
@@ -2453,8 +2537,9 @@ input {
 
 .action__text {
   display: block;
+  width: 80%;
   position: relative;
-  padding-left: 20px;
+  padding-left: 30px;
   margin-bottom: 33px;
 }
 
@@ -2463,16 +2548,10 @@ input {
   display: block;
   position: absolute;
   top: 10px;
-  left: -20px;
+  left: 0px;
   width: 17px;
   height: 4px;
   background-color: black;
-}
-
-.action__button {
-  width: 100%;
-  border: none;
-  margin-bottom: 42px;
 }
 
 .choice {
@@ -2716,42 +2795,6 @@ input {
     align-items: center;
   }
 
-  .container--xxs {
-    width: 180px;
-  }
-
-  .container--xs {
-    width: 240px;
-  }
-
-  .container--s {
-    width: 260px;
-  }
-
-  .container--sm {
-    width: 270px;
-  }
-
-  .container--m {
-    width: 300px;
-  }
-
-  .container--l {
-    width: 180px;
-  }
-
-  .container--xl {
-    width: 315px;
-  }
-
-  .container--xls {
-    width: 150px;
-  }
-
-  .container--xxl {
-    width: 260px;
-  }
-
   .reason {
     display: flex;
     margin-bottom: 125px;
@@ -2835,9 +2878,9 @@ input {
   }
 
   .title-box {
-    width: 225px;
+    width: 35%;
     flex-direction: column;
-    align-self: flex-start;
+    align-items: flex-start;
   }
 
   .facts {
@@ -2860,6 +2903,7 @@ input {
   .facts-title {
     margin-bottom: 30px;
     font-size: 30px;
+    width: 100%;
   }
 
   .facts-title__text {
@@ -2918,7 +2962,7 @@ input {
     flex-flow: column wrap;
     align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 55px;
+    margin-bottom: 90px;
   }
 
   .full-future {
@@ -3013,7 +3057,7 @@ input {
   .warnings {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
   }
 
   .warnings-left-half {
@@ -3054,6 +3098,7 @@ input {
   .because {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 90px;
   }
 
   .because-title {
@@ -3062,6 +3107,10 @@ input {
 
   .because-title-descr {
     width: 37%;
+  }
+
+  .because__title {
+    width: 100%;
   }
 
   .because__title-wrap {
@@ -3103,9 +3152,19 @@ input {
     width: 118px;
   }
 
+  .text-wrap {
+    width: 35%;
+  }
+
+  .career-web {
+    margin-bottom: 90px;
+  }
+
   .career-web-box {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
     width: 660px;
   }
 
@@ -3217,6 +3276,7 @@ input {
   }
 
   .steps-list__item {
+    margin-bottom: 0;
     width: 155px;
   }
 
@@ -3256,9 +3316,18 @@ input {
     padding-right: 10px;
   }
 
+  .possibility {
+    margin-bottom: 90px;
+  }
+
+  .possibility__img {
+    margin-bottom: 0;
+  }
+
   .possibility-top-half {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 55px;
   }
 
   .possibility-bottom-half {
@@ -3273,6 +3342,7 @@ input {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    margin-bottom: 25px;
   }
 
   .possibility-list__item {
@@ -3292,6 +3362,7 @@ input {
 
   .possibility-title {
     display: block;
+    margin-bottom: 25px;
   }
 
   .possibility-title__descr {
@@ -3452,6 +3523,7 @@ input {
   .course {
     height: 400px;
     flex-flow: column wrap;
+    margin-bottom: 90px;
   }
 
   .course-list,
@@ -3463,10 +3535,6 @@ input {
 
   .course__title {
     margin-bottom: 20px;
-  }
-
-  .course-list {
-    align-self: space-around;
   }
 
   .course-list__item:nth-last-of-type(n+2) {
@@ -3487,6 +3555,7 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 90px;
   }
 
   .profession__title-wrap {
@@ -3510,6 +3579,7 @@ input {
 
   .get-now {
     flex-flow: row wrap;
+    margin-bottom: 90px;
   }
 
   .get-now__img {
@@ -3527,6 +3597,10 @@ input {
 
   .getnow__title {
     width: 90%;
+  }
+
+  .getnow__title-descr {
+    margin-bottom: 50px;
   }
 
   .getnow-list {
@@ -3550,6 +3624,14 @@ input {
     padding-right: 3%;
   }
 
+  .getnow-list__item:nth-last-of-type(n + 4) {
+    margin-bottom: 25px;
+  }
+
+  .get-now {
+    margin-bottom: 125px;
+  }
+
   .final-result {
     display: flex;
     margin-bottom: 90px;
@@ -3565,6 +3647,7 @@ input {
     justify-content: space-between;
     flex-flow: row wrap;
     width: 100%;
+    margin-bottom: 0;
   }
 
   .final-list__item {
@@ -3618,28 +3701,147 @@ input {
     width: 50%;
   }
 
+  .video-course {
+    margin-bottom: 90px;
+  }
+
+  .video-course__top-wrap {
+    flex-flow: row wrap;
+    margin-bottom: 45px;
+  }
+
+  .video-course__bottom-wrap {
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+
+  .video-course__title {
+    width: 66%;
+  }
+
+  .video-course__title-descr {
+    width: 66%;
+    margin-bottom: 0;
+  }
+
+  .video-course__title-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    order: 2;
+  }
+
+  .video-course__img {
+    margin-bottom: 0;
+  }
+
+  .video-course__img-approval {
+    display: block;
+  }
+
+  .video-approval {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 50px;
+  }
+
+  .video-approval__text-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 55%;
+  }
+
+  .video-course__subtitle-wrap {
+    width: 35%;
+    padding-right: 5%;
+  }
+
+  .video-course__text {
+    width: 50%;
+  }
+
+  .vc-list {
+    display: flex;
+    width: 75%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .vc-list__title {
+    width: 25%;
+    padding-right: 5%;
+  }
+
+  .vc-list__item {
+    width: 30%;
+  }
+
+  .vc-list__item:nth-of-type(n + 4) {
+    margin-bottom: 0;
+  }
+
+  .price {
+    width: 30%;
+  }
+
+  .price__title {
+    font-size: 17px !important;
+  }
+
+  .price__title--uah {
+    font-size: 12px !important;
+  }
+
+  .price__cost::before {
+    font-size: 12px;
+  }
+
+  .important {
+    margin-bottom: 90px;
+  }
+
+  .important {
+    margin-bottom: 125px;
+  }
+
   .important-block {
     display: flex;
     position: relative;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 57px 0;
+    flex-wrap: wrap;
+    height: 260px;
+    justify-content: center;
   }
 
   .important-title {
     display: block;
     position: absolute;
-    top: 40px;
+    top: 0;
     right: 53px;
     font-size: 27px;
     line-height: 34px;
   }
 
   .important-wrap {
+    align-self: flex-start;
     width: 258px;
     height: 192px;
     box-shadow: 0 11px 22px rgba(0, 0, 0, 0.15);
     margin-bottom: 0;
+  }
+
+  .important__value {
+    width: 40%;
+    font-size: 9px;
+    line-height: 13px;
+  }
+
+  .important__value-price {
+    font-size: 10px;
   }
 
   .value-wrap__value {
@@ -3662,8 +3864,6 @@ input {
 
   .today__price {
     display: block;
-    width: 44px;
-    margin-right: 23px;
   }
 
   .today__price span {
@@ -3673,12 +3873,14 @@ input {
   }
 
   .today__price-total {
-    font-size: 39px;
+    font-size: 27px;
     line-height: 20px;
+    display: inline-flex;
+    align-items: baseline;
   }
 
-  .today__price-total span {
-    font-size: 17px;
+  .today__price-total--uah {
+    font-size: 13px;
   }
 
   .present-wrap {
@@ -3729,6 +3931,14 @@ input {
   .present__button {
     border: none;
     font-size: 7px;
+  }
+
+  .do-it {
+    margin-bottom: 90px;
+  }
+
+  .do-it {
+    margin-bottom: 125px;
   }
 
   .block__secondary-footer {
@@ -3825,6 +4035,7 @@ input {
     object-fit: cover;
     background-color: #181c27;
     overflow: hidden;
+    margin-bottom: 90px;
   }
 
   .page-nav {
@@ -3962,6 +4173,8 @@ input {
   }
 
   .bonus {
+    flex-flow: row wrap;
+    justify-content: space-between;
     margin-bottom: 95px;
   }
 
@@ -4007,8 +4220,11 @@ input {
     color: black;
   }
 
+  .form-client {
+    width: 50%;
+  }
+
   .block_doit {
-    padding: 55px 0 97px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -4016,11 +4232,11 @@ input {
   }
 
   .action {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     position: relative;
-    width: auto;
-    z-index: 10;
-    margin-right: 58px;
+    width: 45%;
   }
 
   .action__title {
@@ -4028,7 +4244,6 @@ input {
     position: relative;
     width: 310px;
     font-size: 27px;
-    font-width: 700;
     line-height: 34px;
     margin-bottom: 22px;
   }
@@ -4042,29 +4257,8 @@ input {
     font-size: 150px;
   }
 
-  .action__text {
-    display: block;
-    position: relative;
-    width: 250px;
-    padding-left: 30px;
-    margin-bottom: 30px;
-  }
-
-  .action__text::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: -10px;
-    width: 29px;
-    height: 4px;
-    background-color: black;
-  }
-
   .action__button {
-    border: none;
-    margin-bottom: 42px;
-    margin-left: 30px;
+    align-self: center;
   }
 
   .choice {
@@ -4073,7 +4267,6 @@ input {
     align-items: flex-start;
     position: relative;
     width: 270px;
-    z-index: 10;
   }
 
   .choice__p-s {
@@ -4187,7 +4380,7 @@ input {
   }
 }
 
-@media screen and (min-width: 768px), resolution and (min-resolutin: 192dpi) {
+@media screen and (min-width: 768px), (min-resolutin: 192dpi) {
   .page--header::after {
     background-image: url("/images/tab/header@2x.png");
   }
@@ -4227,42 +4420,6 @@ input {
     justify-content: space-between;
     flex-flow: row wrap;
     align-items: center;
-  }
-
-  .container--xxs {
-    width: 200px;
-  }
-
-  .container--xs {
-    width: 250px;
-  }
-
-  .container--s {
-    width: 260px;
-  }
-
-  .container--sm {
-    width: 270px;
-  }
-
-  .container--m {
-    width: 300px;
-  }
-
-  .container--l {
-    width: 190px;
-  }
-
-  .container--xl {
-    width: 354px;
-  }
-
-  .container--xls {
-    width: 170px;
-  }
-
-  .container--xxl {
-    width: 340px;
   }
 
   .reason {
@@ -4329,6 +4486,7 @@ input {
 
   .futures {
     height: 480px;
+    margin-bottom: 125px;
   }
 
   .futures__facts {
@@ -4349,6 +4507,14 @@ input {
 
   .examples-box__name {
     height: 45%;
+  }
+
+  .warnings {
+    margin-bottom: 125px;
+  }
+
+  .because {
+    margin-bottom: 125px;
   }
 
   .many-people {
@@ -4375,12 +4541,16 @@ input {
     width: 714px;
   }
 
+  .career-web {
+    margin-bottom: 125px;
+  }
+
   .career-web__descr {
     width: 220px;
   }
 
   .steps {
-    margin-bottom: 90px;
+    margin-bottom: 125px;
   }
 
   .steps__title {
@@ -4475,15 +4645,25 @@ input {
     padding-right: 10px;
   }
 
+  .possibility {
+    margin-bottom: 125px;
+  }
+
+  .awards {
+    margin-bottom: 125px;
+  }
+
   .awards-top-half {
     height: 255px;
   }
 
   .course {
     height: 420px;
+    margin-bottom: 125px;
   }
 
   .profession {
+    margin-bottom: 125px;
     align-items: flex-start;
   }
 
@@ -4556,14 +4736,14 @@ input {
     right: 0%;
   }
 
-  .important-block {
-    padding: 63px 0;
+  .video-course {
+    margin-bottom: 125px;
   }
 
   .important-title {
     display: block;
     position: absolute;
-    top: 40px;
+    top: -0.7em;
     right: 60px;
     font-size: 30px;
     line-height: 38px;
@@ -4595,8 +4775,6 @@ input {
 
   .today__price {
     display: block;
-    width: 49px;
-    margin-right: 23px;
   }
 
   .today__price span {
@@ -4609,7 +4787,7 @@ input {
     line-height: 19px;
   }
 
-  .today__price-total span {
+  .today__price-total--uah {
     font-size: 19px;
   }
 
@@ -4660,7 +4838,6 @@ input {
   }
 
   .block_doit {
-    padding: 62px 0 125px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -4676,7 +4853,6 @@ input {
     position: relative;
     width: 350px;
     font-size: 30px;
-    font-width: 900;
     line-height: 38px;
     margin-bottom: 28px;
   }
@@ -4690,36 +4866,15 @@ input {
     font-size: 150px;
   }
 
-  .action__text {
-    display: block;
-    position: relative;
-    width: 250px;
-    padding-left: 30px;
-    margin-bottom: 30px;
-  }
-
-  .action__text::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: -10px;
-    width: 32px;
-    height: 5px;
-    background-color: black;
-  }
-
   .action__button {
-    border: none;
-    margin-bottom: 42px;
-    margin-left: 30px;
+    display: flex;
+    align-self: center;
   }
 
   .choice {
     display: block;
     position: relative;
     width: 270px;
-    z-index: 10;
   }
 
   .choice__p-s {
@@ -4870,6 +5025,7 @@ input {
     object-fit: cover;
     background-color: #181c27;
     overflow: hidden;
+    margin-bottom: 125px;
   }
 
   .page-logo {
@@ -5023,7 +5179,7 @@ input {
   }
 }
 
-@media screen and (min-width: 992px), resolution and (min-resolutin: 192dpi) {
+@media screen and (min-width: 992px), (min-resolutin: 192dpi) {
   .page--header::after {
     background-image: url("/images/desk/header@2x.png");
   }
@@ -5042,6 +5198,16 @@ input {
 
   .best-edu16::before {
     background-image: url("/images/desk/award-3@2x.png");
+  }
+}
+
+@media screen and (max-width: 768px) {
+  -list__item:nth-last-of-type(n + 2) {
+    margin-bottom: 30px;
+  }
+
+  .video-course__text:nth-last-of-type(n + 2) {
+    margin-bottom: 30px;
   }
 }
 

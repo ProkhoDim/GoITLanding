@@ -69,9 +69,16 @@
 
 @media screen and (min-width: 768px) {
   .possibility {
+    margin-bottom: 90px;
+
+    &__img {
+      margin-bottom: 0;
+    }
+
     &-top-half {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 55px;
     }
 
     &-bottom-half {
@@ -86,6 +93,7 @@
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
+      margin-bottom: 25px;
 
       &__item {
         width: 33%;
@@ -105,6 +113,7 @@
 
     &-title {
       display: block;
+      margin-bottom: 25px;
 
       &__descr {
         display: block;
@@ -122,5 +131,11 @@
 
   .possibility-btn {
     width: 30%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .possibility {
+    margin-bottom: 125px;
   }
 }

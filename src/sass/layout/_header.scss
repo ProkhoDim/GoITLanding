@@ -23,7 +23,7 @@
 
 .page-nav {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .page-menu {
@@ -185,7 +185,6 @@
   .page--header {
     display: block;
     position: relative;
-
     &::before {
       content: '01 _';
       display: block;
@@ -233,6 +232,7 @@
     object-fit: cover;
     background-color: $bg_footer;
     overflow: hidden;
+    margin-bottom: 90px;
   }
 
   .page-nav {
@@ -391,6 +391,7 @@
     object-fit: cover;
     background-color: $bg_footer;
     overflow: hidden;
+    margin-bottom: 125px;
   }
 
   .page-logo {
@@ -440,7 +441,7 @@
   }
 }
 
-@media screen and (min-width: 768px), resolution and (min-resolutin: 192dpi) {
+@media screen and (min-width: 768px), (min-resolutin: 192dpi) {
   .page--header {
     &::after {
       background-image: url('/images/tab/header@2x.png');
@@ -448,7 +449,7 @@
   }
 }
 
-@media screen and (min-width: 992px), resolution and (min-resolutin: 192dpi) {
+@media screen and (min-width: 992px), (min-resolutin: 192dpi) {
   .page--header {
     &::after {
       background-image: url('/images/desk/header@2x.png');

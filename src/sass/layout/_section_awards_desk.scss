@@ -1,9 +1,13 @@
 @media screen and (min-width: 992px) {
+  .awards {
+    margin-bottom: 125px;
+  }
+
   .awards-top-half {
     height: 255px;
   }
 }
-@media screen and (min-width: 992px), resolution and (min-resolutin: 192dpi) {
+@media screen and (min-width: 992px), (min-resolutin: 192dpi) {
   .oon-logo::before {
     background-image: url('/images/desk/emblem@2x.png');
   }

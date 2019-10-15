@@ -47,7 +47,7 @@
   .warnings {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
 
     &-left-half {
       position: relative;
@@ -83,5 +83,11 @@
     &-list {
       width: 85%;
     }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .warnings {
+    margin-bottom: 125px;
   }
 }

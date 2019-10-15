@@ -47,6 +47,7 @@
   .course {
     height: 400px;
     flex-flow: column wrap;
+    margin-bottom: 90px;
 
     &-list,
     &__title,
@@ -60,7 +61,6 @@
     }
 
     &-list {
-      align-self: space-around;
 
       &__item:nth-last-of-type(n+2) {
         margin-bottom: 20px;
@@ -82,5 +82,6 @@
 @media screen and (min-width: 992px) {
   .course {
     height: 420px;
+    margin-bottom: 125px;
   }
 }

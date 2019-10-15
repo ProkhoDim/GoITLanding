@@ -136,7 +136,7 @@
   }
 }
 
-@media screen and (min-width: 768px), resolution and (min-resolutin: 192dpi) {
+@media screen and (min-width: 768px), (min-resolutin: 192dpi) {
   .oon-logo::before {
     background-image: url('/images/tab/emblem@2x.png');
   }

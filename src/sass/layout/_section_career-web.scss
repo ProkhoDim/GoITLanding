@@ -9,12 +9,22 @@
 .career-web {
   margin-bottom: 60px;
 
+  &-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
   &__title {
     margin-bottom: 36px;
 
     &-image {
       margin-bottom: 10px;
     }
+  }
+
+  &__text {
+    width: 66%;
   }
 
   &__image {
@@ -41,15 +51,31 @@
         transform: translateY(8px);
       }
     }
+
+    &-wrap {
+      width: 66%;
+    }
   }
+}
+
+.examples-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*MEDIA*/
 
 @media screen and (min-width: 768px) {
+  .career-web {
+    margin-bottom: 90px;
+  }
+
   .career-web-box {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
     width: 660px;
   }
 
@@ -107,6 +133,7 @@
   }
 
   .career-web {
+    margin-bottom: 125px;
     &__descr {
       width: 220px;
     }

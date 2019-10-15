@@ -2,6 +2,9 @@
   margin-bottom: 60px;
 
   &__title {
+    width: 60%;
+    padding-left: 10%;
+    align-self: flex-start;
     margin-bottom: 15px;
 
     &-wrap {
@@ -25,6 +28,7 @@
 }
 
 .however {
+  width: 75%;
   display: flex;
   order: -1;
 }
@@ -32,7 +36,7 @@
 .text-wrap {
   display: flex;
   flex-flow: column;
-  width: 250px;
+  width: 80%;
 }
 
 .many-people {
@@ -64,10 +68,15 @@
   width: 200px;
 }
 
+.but {
+  width: 75%;
+}
+
 @media screen and (min-width: 768px) {
   .because {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 90px;
 
     &-title {
       width: 27%;
@@ -75,6 +84,10 @@
       &-descr {
         width: 37%;
       }
+    }
+
+    &__title {
+      width: 100%;
     }
 
     &__title-wrap {
@@ -118,9 +131,17 @@
   .But-if-you-dont {
     width: 118px;
   }
+
+  .text-wrap {
+    width: 35%;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .because {
+    margin-bottom: 125px;
+  }
+
   .many-people {
     width: 714px;
   }
