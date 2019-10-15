@@ -2892,7 +2892,7 @@ input {
   .facts::after {
     content: '';
     position: absolute;
-    background-image: url("/images/tab/graph.png");
+    background-image: url("../images/tab/graph.png");
     width: 235px;
     height: 108px;
     z-index: -1;
@@ -4386,6 +4386,10 @@ input {
     background-image: url("../images/tab/header@2x.png");
   }
 
+  .facts::after {
+    background-image: url("../images/tab/graph@2x.png");
+  }
+
   .oon-logo::before {
     background-image: url("../images/tab/emblem@2x.png");
   }
@@ -4486,7 +4490,7 @@ input {
   }
 
   .facts::after {
-    background-image: url("/images/desk/graph.png");
+    background-image: url("../images/tab/graph.png");
   }
 
   .futures {
@@ -5187,6 +5191,10 @@ input {
 @media screen and (min-width: 992px), (min-resolutin: 192dpi) {
   .page--header::after {
     background-image: url("../images/desk/header@2x.png");
+  }
+
+  .facts::after {
+    background-image: url("../images/tab/graph@2x.png");
   }
 
   .oon-logo::before {
