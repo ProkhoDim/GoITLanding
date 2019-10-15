@@ -9,7 +9,7 @@
   min-width: 450px;
   min-height: 614px;
   height: 100%;
-  background: no-repeat url('../images/mob/blur.png') center bottom;
+  background: no-repeat url('images/mob/blur.png') center bottom;
   object-fit: cover;
   background-color: $bg_footer;
   margin-bottom: 55px;
@@ -206,7 +206,7 @@
 
     &::after {
       content: '';
-      background-image: url('../images/tab/header.png');
+      background-image: url('images/tab/header.png');
       background-size: contain;
       width: 473px;
       height: 475px;
@@ -228,7 +228,7 @@
     min-width: 480px;
     min-height: 475px;
     height: 100%;
-    background: no-repeat url('../images/mob/blur.png') center center;
+    background: no-repeat url('images/mob/blur.png') center center;
     object-fit: cover;
     background-color: $bg_footer;
     overflow: hidden;
@@ -388,7 +388,7 @@
     min-width: 480px;
     min-height: 475px;
     height: 100%;
-    background: no-repeat url('../images/mob/blur.png') center center;
+    background: no-repeat url('images/mob/blur.png') center center;
     object-fit: cover;
     background-color: $bg_footer;
     overflow: hidden;
@@ -437,7 +437,7 @@
       }
     }
     &::after {
-      background-image: url('../images/desk/header.png');
+      background-image: url('images/desk/header.png');
     }
   }
 }
@@ -445,7 +445,7 @@
 @media screen and (min-width: 768px), (min-resolutin: 192dpi) {
   .page--header {
     &::after {
-      background-image: url('../images/tab/header@2x.png');
+      background-image: url('images/tab/header@2x.png');
     }
   }
 }
@@ -453,7 +453,7 @@
 @media screen and (min-width: 992px), (min-resolutin: 192dpi) {
   .page--header {
     &::after {
-      background-image: url('../images/desk/header@2x.png');
+      background-image: url('images/desk/header@2x.png');
     }
   }
 }
