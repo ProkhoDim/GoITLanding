@@ -7,47 +7,34 @@
     margin: 0 auto;
     padding-bottom: 20px;
 
-    &::before {
-      content: '4';
-      display: block;
-      position: absolute;
-      top: 77px;
-      left: -70px;
-      width: 115px;
-      height: 146px;
-      color: $bg_text;
-      font: {
-        family: $main_font;
-        size: 208px;
-        weight: 900;
-      }
-      line-height: 83px;
-      text-transform: uppercase;
-    }
+.steps-title {
+  display: block;
+  width: 210px;
+  margin: 0 auto;
+  position: relative;
 
-    &::after {
-      content: 'stap';
-      display: block;
-      position: absolute;
-      top: -5px;
-      right: 75px;
-      width: 41px;
-      height: 143px;
-      color: $bg_text;
-      font: {
-        family: $main_font;
-        size: 55px;
-        weight: 900;
-      }
-      transform: rotateZ(90deg);
-      line-height: 200px;
-      text-transform: uppercase;
+  &::before {
+    content: '4';
+    display: block;
+    position: absolute;
+    top: 72px;
+    left: -70px;
+    width: 115px;
+    height: 146px;
+    color: $bg_text;
+    font: {
+      family: $main_font;
+      size: 208px;
+      weight: 900;
     }
 
     &-descr {
       width: 335px;
       margin-bottom: 60px;
     }
+    transform: rotateZ(90deg);
+    line-height: 200px;
+    text-transform: uppercase;
   }
 }
 
@@ -57,10 +44,6 @@
 
   &__item {
     align-self: flex-start;
-
-    &:nth-last-of-type(n + 2) {
-      margin-bottom: 30px;
-    }
 
     &-title {
       text-transform: uppercase;

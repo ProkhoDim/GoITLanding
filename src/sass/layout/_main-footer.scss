@@ -86,7 +86,7 @@
   display: none;
 }
 
-.page-button {
+.footer-button {
   display: inline-block;
   min-width: 141px;
   padding: 2px 15px;
@@ -103,4 +103,139 @@
   border: none;
   outline: 1px solid $btn_border;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .block-footer {
+    padding: 56px 0px;
+  }
+
+  .footer-address {
+    margin: 0;
+    display: block;
+
+    &__title {
+      font-size: 8px;
+      line-height: 12px;
+      letter-spacing: 1.4px;
+      margin-bottom: 8px;
+    }
+
+    &__text {
+      width: 70px;
+      font: {
+        size: 8px;
+        weight: 400;
+      }
+      line-height: 12px;
+    }
+  }
+
+  .footer-info {
+    display: block;
+    width: 90px;
+    margin: 0;
+
+    &__title {
+      font-size: 8px;
+      line-height: 10px;
+      letter-spacing: 1.4px;
+    }
+
+    &__mail {
+      font-size: 8px;
+      line-height: 10px;
+    }
+
+    &__tel {
+      font-size: 8px;
+      letter-spacing: 0.81px;
+      line-height: 10px;
+    }
+  }
+
+  .footer-socials {
+    display: block;
+    list-style-type: none;
+
+    &__item a {
+      text-decoration: none;
+      color: $lite_main;
+      font: {
+        family: $main_font;
+        size: 9px;
+        weight: 700;
+      }
+      line-height: 15px;
+      letter-spacing: 1.6px;
+    }
+  }
+
+  .page-button {
+    padding: 12px 25px;
+    font-size: 7px;
+    line-height: 34px;
+    letter-spacing: 0.6px;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-footer {
+    padding: 62px 0 86px 0;
+  }
+
+  .footer-address {
+    display: block;
+
+    &__title {
+      font-size: 9px;
+      line-height: 12px;
+      letter-spacing: 1.4px;
+      margin-bottom: 8px;
+    }
+
+    &__text {
+      width: 80px;
+      font-size: 9px;
+      line-height: 13px;
+    }
+  }
+
+  .footer-info {
+    display: block;
+    width: 90px;
+
+    &__title {
+      font-size: 9px;
+      line-height: 12px;
+      letter-spacing: 1.4px;
+    }
+
+    &__mail {
+      font-size: 9px;
+      line-height: 14px;
+    }
+
+    &__tel {
+      font-size: 9px;
+      line-height: 14px;
+    }
+  }
+
+  .footer-socials {
+    display: block;
+
+    &__item a {
+      font-size: 10px;
+      line-height: 17px;
+      letter-spacing: 1.6px;
+    }
+  }
+
+  .page-button {
+    padding: 12px 25px;
+    font-size: 7px;
+    line-height: 34px;
+    letter-spacing: 1.4px;
+  }
 }

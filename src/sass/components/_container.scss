@@ -3,12 +3,103 @@
   width: 450px;
   margin: 0 auto;
   font-family: $main_font;
+
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--xxs {
+    width: 180px;
+    background-color: red;
+  }
+
+  &--xs {
+    width: 200px;
+    background-color: lime;
+  }
+
+  &--s {
+    width: 260px;
+    background-color: yellow;
+  }
+
+  &--sm {
+    width: 270px;
+    background-color: green;
+  }
+
+  &--m {
+    width: 300px;
+    background-color: blue;
+  }
+
+  &--l {
+    width: 335px;
+    background-color: blueviolet;
+  }
+
+  &--xl {
+    width: 360px;
+    background-color: skyblue;
+  }
+
+  &--xxl {
+    width: 380px;
+    background-color: palevioletred;
+  }
+}
+
+/*MEDIA*/
 
 @media screen and (min-width: 768px) {
   .page-container {
     min-width: 660px;
     width: 660px;
+  }
+
+  .container {
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+
+    &--xxs {
+      width: 180px;
+    }
+
+    &--xs {
+      width: 240px;
+    }
+
+    &--s {
+      width: 260px;
+    }
+
+    &--sm {
+      width: 270px;
+    }
+
+    &--m {
+      width: 300px;
+    }
+
+    &--l {
+      width: 180px;
+    }
+
+    &--xl {
+      width: 315px;
+    }
+
+    &--xls {
+      width: 150px;
+    }
+
+    &--xxl {
+      width: 260px;
+    }
   }
 }
 
@@ -16,5 +107,48 @@
   .page-container {
     min-width: 732px;
     width: 732px;
+  }
+
+  .container {
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+
+    &--xxs {
+      width: 200px;
+    }
+
+    &--xs {
+      width: 250px;
+    }
+
+    &--s {
+      width: 260px;
+    }
+
+    &--sm {
+      width: 270px;
+    }
+
+    &--m {
+      width: 300px;
+    }
+
+    &--l {
+      width: 190px;
+    }
+
+    &--xl {
+      width: 354px;
+    }
+
+    &--xls {
+      width: 170px;
+    }
+
+
+    &--xxl {
+      width: 340px;
+    }
   }
 }
