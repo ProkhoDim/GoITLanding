@@ -6,7 +6,7 @@
     position: relative;
     margin: 0 auto;
     padding-bottom: 20px;
-  
+
     &::before {
       content: '4';
       display: block;
@@ -43,14 +43,13 @@
       line-height: 200px;
       text-transform: uppercase;
     }
-  
+
     &-descr {
       width: 335px;
       margin-bottom: 60px;
     }
   }
 }
-
 
 .steps-list {
   margin-bottom: 40px;
@@ -95,10 +94,15 @@
   }
 }
 
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (min-width: 768px) {
   .steps {
     margin-bottom: 90px;
-
 
     &__title {
       width: 260px;
@@ -206,6 +210,12 @@
   }
 }
 
+.d-flex {
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
 @media screen and (min-width: 992px) {
   .steps {
     margin-bottom: 90px;
@@ -251,7 +261,6 @@
         line-height: 200px;
         text-transform: uppercase;
       }
-    
 
       &-descr {
         width: 200px;
