@@ -112,25 +112,25 @@
   }
 
   .oon-logo::before {
-    background-image: url('../images/tab/emblem.png');
+    background-image: url("../images/tab/emblem.png");
     height: 50px;
     width: 58px;
   }
 
   .it-awards::before {
-    background-image: url('../images/tab/award-1.png');
+    background-image: url("../images/tab/award-1.png");
     width: 47px;
     height: 102px;
   }
 
   .best-edu15::before {
-    background-image: url('../images/tab/award-2.png');
+    background-image: url("../images/tab/award-2.png");
     width: 57px;
     height: 82px;
   }
 
   .best-edu16::before {
-    background-image: url('../images/tab/award-3.png');
+    background-image: url("../images/tab/award-3.png");
     width: 57px;
     height: 82px;
   }
@@ -138,18 +138,18 @@
 
 @media screen and (min-width: 768px), (min-resolutin: 192dpi) {
   .oon-logo::before {
-    background-image: url('../images/tab/emblem@2x.png');
+    background-image: url("../images/tab/emblem@2x.png");
   }
 
   .it-awards::before {
-    background-image: url('../images/tab/award-1@2x.png');
+    background-image: url("../images/tab/award-1@2x.png");
   }
 
   .best-edu15::before {
-    background-image: url('../images/tab/award-2@2x.png');
+    background-image: url("../images/tab/award-2@2x.png");
   }
 
   .best-edu16::before {
-    background-image: url('../images/tab/award-3@2x.png');
+    background-image: url("../images/tab/award-3@2x.png");
   }
 }

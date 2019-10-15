@@ -101,7 +101,7 @@
     &::after {
       content: '';
       position: absolute;
-      background-image: url(/images/tab/graph.png);
+      background-image: url("/images/tab/graph.png");
       width: 235px;
       height: 108px;
       z-index: -1;
