@@ -51,10 +51,15 @@
     display: flex;
     justify-content: space-between;
     width: 660px;
-    margin-bottom: -35px;
   }
 
   .career-web {
+    &__title {
+      width: 80%;
+    }
+    &__text {
+      width: 70%;
+    }
     &__descr {
       width: 210px;
 
