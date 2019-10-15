@@ -1,5 +1,20 @@
+.important {
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .important {
+    margin-bottom: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .important {
+    margin-bottom: 125px;
+  }
+}
+
 .important-block {
-  padding: 18px 0 66px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +55,8 @@
 }
 
 .value-wrap {
-  display: flex;
+  width: 60%;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 28px;
@@ -59,7 +75,6 @@
   &-price {
     display: block;
     position: relative;
-    padding-left: 45px;
     color: $lite_main;
     font: {
       family: $main_font;
@@ -70,19 +85,18 @@
     text-transform: uppercase;
 
     &::before {
-      display: block;
-      position: absolute;
-      top: 15px;
-      left: 2px;
+      display: inline-flex;
       content: '';
-      width: 37px;
-      height: 0;
-      border: 1px solid $lite_main;
+      width: 30px;
+      transform: translate(-1em, -0.3em);
+      height: 1px;
+      border: 1px solid #fff;
     }
   }
 }
 
 .today-wrap {
+  width: 60%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -90,7 +104,7 @@
 
 .today__price {
   display: block;
-  width: 63px;
+  width: 40%;
 
   & span {
     color: $dark_main;
@@ -114,7 +128,7 @@
   line-height: 19px;
   text-transform: uppercase;
 
-  & span {
+  &--uah {
     font-size: 13px;
     // margin-left: 5px;
   }
@@ -182,28 +196,41 @@
 }
 
 @media screen and (min-width: 768px) {
-  .important-block {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 57px 0;
-  }
+  .important {
+    &-block {
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      height: 260px;
+      justify-content: center;
+    }
 
-  .important-title {
-    display: block;
-    position: absolute;
-    top: 40px;
-    right: 53px;
-    font-size: 27px;
-    line-height: 34px;
-  }
+    &-title {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 53px;
+      font-size: 27px;
+      line-height: 34px;
+    }
 
-  .important-wrap {
-    width: 258px;
-    height: 192px;
-    box-shadow: 0 11px 22px $bs-banner;
-    margin-bottom: 0;
+    &-wrap {
+      align-self: flex-start;
+      width: 258px;
+      height: 192px;
+      box-shadow: 0 11px 22px $bs-banner;
+      margin-bottom: 0;
+    }
+
+    &__value {
+      width: 40%;
+      font-size: 9px;
+      line-height: 13px;
+
+      &-price {
+        font-size: 10px;
+      }
+    }
   }
 
   .value-wrap {
@@ -232,8 +259,6 @@
 
   .today__price {
     display: block;
-    width: 44px;
-    margin-right: 23px;
 
     & span {
       font: {
@@ -245,11 +270,13 @@
   }
 
   .today__price-total {
-    font-size: 39px;
+    font-size: 27px;
     line-height: 20px;
+    display: inline-flex;
+    align-items: baseline;
 
-    & span {
-      font-size: 17px;
+    &--uah {
+      font-size: 13px;
     }
   }
 
@@ -311,24 +338,25 @@
 }
 
 @media screen and (min-width: 992px) {
-  .important-block {
-    padding: 63px 0;
-  }
+  .important {
+    &-block {
+    }
 
-  .important-title {
-    display: block;
-    position: absolute;
-    top: 40px;
-    right: 60px;
-    font-size: 30px;
-    line-height: 38px;
-  }
+    &-title {
+      display: block;
+      position: absolute;
+      top: -0.7em;
+      right: 60px;
+      font-size: 30px;
+      line-height: 38px;
+    }
 
-  .important-wrap {
-    width: 288px;
-    height: 214px;
-    box-shadow: 0 14px 27px $bs-banner;
-    margin-bottom: 0;
+    &-wrap {
+      width: 288px;
+      height: 214px;
+      box-shadow: 0 14px 27px $bs-banner;
+      margin-bottom: 0;
+    }
   }
 
   .value-wrap {
@@ -354,8 +382,6 @@
 
   .today__price {
     display: block;
-    width: 49px;
-    margin-right: 23px;
 
     & span {
       font-size: 10px;
@@ -367,7 +393,7 @@
     font-size: 30px;
     line-height: 19px;
 
-    & span {
+    &--uah {
       font-size: 19px;
     }
   }

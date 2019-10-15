@@ -1,5 +1,18 @@
+.do-it {
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .do-it {
+    margin-bottom: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .do-it {
+    margin-bottom: 125px;
+  }
+}
 .block_doit {
-  padding: 14px 42px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +21,8 @@
 .action {
   display: block;
   position: relative;
-  width: 218px;
+  width: 50%;
+  margin-bottom: 40px;
 
   &__title {
     margin-bottom: 18px;
@@ -22,6 +36,7 @@
     height: 150px;
     display: block;
     position: absolute;
+    z-index: -1;
     top: -50px;
     left: -75px;
     transform: rotateZ(90deg);
@@ -37,8 +52,9 @@
 
   &__text {
     display: block;
+    width: 80%;
     position: relative;
-    padding-left: 20px;
+    padding-left: 30px;
     margin-bottom: 33px;
 
     &::before {
@@ -46,17 +62,11 @@
       display: block;
       position: absolute;
       top: 10px;
-      left: -20px;
+      left: 0px;
       width: 17px;
       height: 4px;
       background-color: $dark_main;
     }
-  }
-
-  &__button {
-    width: 100%;
-    border: none;
-    margin-bottom: 42px;
   }
 }
 
@@ -102,7 +112,6 @@
 
 @media (min-width: 768px) {
   .block_doit {
-    padding: 55px 0 97px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -110,11 +119,11 @@
   }
 
   .action {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     position: relative;
-    width: auto;
-    z-index: 10;
-    margin-right: 58px;
+    width: 45%;
 
     &__title {
       display: block;
@@ -137,29 +146,8 @@
       font-size: 150px;
     }
 
-    &__text {
-      display: block;
-      position: relative;
-      width: 250px;
-      padding-left: 30px;
-      margin-bottom: 30px;
-
-      &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 10px;
-        left: -10px;
-        width: 29px;
-        height: 4px;
-        background-color: $dark_main;
-      }
-    }
-
     &__button {
-      border: none;
-      margin-bottom: 42px;
-      margin-left: 30px;
+      align-self: center;
     }
   }
 
@@ -169,7 +157,6 @@
     align-items: flex-start;
     position: relative;
     width: 270px;
-    z-index: 10;
 
     &__p-s {
       display: block;
@@ -219,7 +206,6 @@
 
 @media screen and (min-width: 992px) {
   .block_doit {
-    padding: 62px 0 125px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -250,29 +236,10 @@
       font-size: 150px;
     }
 
-    &__text {
-      display: block;
-      position: relative;
-      width: 250px;
-      padding-left: 30px;
-      margin-bottom: 30px;
-
-      &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 10px;
-        left: -10px;
-        width: 32px;
-        height: 5px;
-        background-color: $dark_main;
-      }
-    }
-
     &__button {
-      border: none;
-      margin-bottom: 42px;
-      margin-left: 30px;
+      display: flex;
+
+      align-self: center;
     }
   }
 
@@ -280,7 +247,6 @@
     display: block;
     position: relative;
     width: 270px;
-    z-index: 10;
 
     &__p-s {
       display: block;

@@ -75,9 +75,6 @@
     }
 
     &__item {
-      &:nth-last-of-type(n + 2) {
-        margin-bottom: 30px;
-      }
       &-title {
         margin-bottom: 15px;
       }
@@ -92,6 +89,16 @@
     }
 
     &-text {
+    }
+  }
+}
+
+@media screen and(max-width: 768px) {
+  &-list {
+    &__item {
+      &:nth-last-of-type(n + 2) {
+        margin-bottom: 30px;
+      }
     }
   }
 }
@@ -137,6 +144,10 @@
       &__item {
         width: 33%;
         padding-right: 3%;
+
+        &:nth-last-of-type(n + 4) {
+          margin-bottom: 25px;
+        }
       }
     }
   }
