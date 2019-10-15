@@ -99,7 +99,7 @@
 .oon-logo::before {
   content: '';
   position: absolute;
-  background-image: url('../images/mob/emblem.png');
+  background-image: url('images/mob/emblem.png');
   background-size: cover;
   height: 68px;
   width: 80px;
@@ -136,7 +136,7 @@
 .it-awards::before {
   content: '';
   position: absolute;
-  background-image: url('../images/mob/award-1@1x.png');
+  background-image: url('images/mob/award-1@1x.png');
   background-size: cover;
   background-repeat: no-repeat;
   width: 60px;
@@ -161,9 +161,9 @@
 }
 
 .best-edu15::before {
-  background-image: url('../images/mob/award-2@1x.png');
+  background-image: url('images/mob/award-2@1x.png');
 }
 
 .best-edu16::before {
-  background-image: url('../images/mob/award-3@1x.png');
+  background-image: url('images/mob/award-3@1x.png');
 }

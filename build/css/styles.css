@@ -757,7 +757,7 @@ input {
   min-width: 450px;
   min-height: 614px;
   height: 100%;
-  background: no-repeat url("../images/mob/blur.png") center bottom;
+  background: no-repeat url("images/mob/blur.png") center bottom;
   -o-object-fit: cover;
   object-fit: cover;
   background-color: #181c27;
@@ -1778,7 +1778,7 @@ input {
 .oon-logo::before {
   content: '';
   position: absolute;
-  background-image: url("/images/mob/emblem.png");
+  background-image: url("images/mob/emblem.png");
   background-size: cover;
   height: 68px;
   width: 80px;
@@ -1813,7 +1813,7 @@ input {
 .it-awards::before {
   content: '';
   position: absolute;
-  background-image: url("/images/mob/award-1@1x.png");
+  background-image: url("images/mob/award-1@1x.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 60px;
@@ -1838,11 +1838,11 @@ input {
 }
 
 .best-edu15::before {
-  background-image: url("/images/mob/award-2@1x.png");
+  background-image: url("images/mob/award-2@1x.png");
 }
 
 .best-edu16::before {
-  background-image: url("/images/mob/award-3@1x.png");
+  background-image: url("images/mob/award-3@1x.png");
 }
 
 .course {
@@ -3497,25 +3497,25 @@ input {
   }
 
   .oon-logo::before {
-    background-image: url("/images/tab/emblem.png");
+    background-image: url("images/tab/emblem.png");
     height: 50px;
     width: 58px;
   }
 
   .it-awards::before {
-    background-image: url("/images/tab/award-1.png");
+    background-image: url("images/tab/award-1.png");
     width: 47px;
     height: 102px;
   }
 
   .best-edu15::before {
-    background-image: url("/images/tab/award-2.png");
+    background-image: url("images/tab/award-2.png");
     width: 57px;
     height: 82px;
   }
 
   .best-edu16::before {
-    background-image: url("/images/tab/award-3.png");
+    background-image: url("images/tab/award-3.png");
     width: 57px;
     height: 82px;
   }
@@ -4011,7 +4011,7 @@ input {
 
   .page--header::after {
     content: '';
-    background-image: url("/images/tab/header.png");
+    background-image: url("images/tab/header.png");
     background-size: contain;
     width: 473px;
     height: 475px;
@@ -4030,7 +4030,7 @@ input {
     min-width: 480px;
     min-height: 475px;
     height: 100%;
-    background: no-repeat url("../images/mob/blur.png") center center;
+    background: no-repeat url("images/mob/blur.png") center center;
     -o-object-fit: cover;
     object-fit: cover;
     background-color: #181c27;
@@ -4383,23 +4383,23 @@ input {
 
 @media screen and (min-width: 768px), (min-resolutin: 192dpi) {
   .page--header::after {
-    background-image: url("/images/tab/header@2x.png");
+    background-image: url("images/tab/header@2x.png");
   }
 
   .oon-logo::before {
-    background-image: url("/images/tab/emblem@2x.png");
+    background-image: url("images/tab/emblem@2x.png");
   }
 
   .it-awards::before {
-    background-image: url("/images/tab/award-1@2x.png");
+    background-image: url("images/tab/award-1@2x.png");
   }
 
   .best-edu15::before {
-    background-image: url("/images/tab/award-2@2x.png");
+    background-image: url("images/tab/award-2@2x.png");
   }
 
   .best-edu16::before {
-    background-image: url("/images/tab/award-3@2x.png");
+    background-image: url("images/tab/award-3@2x.png");
   }
 }
 
@@ -5021,7 +5021,7 @@ input {
     min-width: 480px;
     min-height: 475px;
     height: 100%;
-    background: no-repeat url("../images/mob/blur.png") center center;
+    background: no-repeat url("images/mob/blur.png") center center;
     -o-object-fit: cover;
     object-fit: cover;
     background-color: #181c27;
@@ -5071,7 +5071,7 @@ input {
   }
 
   .page--header::after {
-    background-image: url("/images/desk/header.png");
+    background-image: url("images/desk/header.png");
   }
 
   .bonus {
@@ -5182,23 +5182,23 @@ input {
 
 @media screen and (min-width: 992px), (min-resolutin: 192dpi) {
   .page--header::after {
-    background-image: url("/images/desk/header@2x.png");
+    background-image: url("images/desk/header@2x.png");
   }
 
   .oon-logo::before {
-    background-image: url("/images/desk/emblem@2x.png");
+    background-image: url("images/desk/emblem@2x.png");
   }
 
   .it-awards::before {
-    background-image: url("/images/desk/award-1@2x.png");
+    background-image: url("images/desk/award-1@2x.png");
   }
 
   .best-edu15::before {
-    background-image: url("/images/desk/award-2@2x.png");
+    background-image: url("images/desk/award-2@2x.png");
   }
 
   .best-edu16::before {
-    background-image: url("/images/desk/award-3@2x.png");
+    background-image: url("images/desk/award-3@2x.png");
   }
 }
 
