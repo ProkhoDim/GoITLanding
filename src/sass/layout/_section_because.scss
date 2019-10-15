@@ -21,10 +21,6 @@
     &:first-child {
       margin-bottom: 15px;
     }
-
-    &:last-child {
-      margin-bottom: 40px;
-    }
   }
 }
 
@@ -73,6 +69,14 @@
     display: flex;
     align-items: flex-start;
 
+    &-title {
+      width: 27%;
+
+      &-descr {
+        width: 37%;
+      }
+    }
+
     &__title-wrap {
       width: 95px;
     }
@@ -95,18 +99,20 @@
 
   .half-2 {
     width: 660px;
-    flex-direction: inherit;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-flow: column wrap;
+    align-content: space-between;
+    height: 306px;
   }
 
   .however {
     display: flex;
     order: 1;
+    width: 47%;
   }
 
   .but {
     order: 1;
+    width: 47%;
   }
 
   .But-if-you-dont {
@@ -116,7 +122,7 @@
 
 @media screen and (min-width: 992px) {
   .many-people {
-    width: 7140px;
+    width: 714px;
   }
 
   .because {
