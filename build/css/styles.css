@@ -4485,6 +4485,10 @@ input {
     justify-content: flex-start;
   }
 
+  .facts::after {
+    background-image: url("/images/desk/graph.png");
+  }
+
   .futures {
     height: 480px;
     margin-bottom: 125px;
