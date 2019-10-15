@@ -86,7 +86,7 @@
 
 .reason-answers__list {
   list-style-type: none;
-  max-width: 390px;
+  width: 90%;
 
   &-item {
     position: relative;
@@ -131,13 +131,13 @@
     display: flex;
     margin-bottom: 125px;
     flex-flow: row wrap;
-    height: 620px;
 
     &-content {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      height: 275px;
+      height: 250px;
+      margin-bottom: 65px;
     }
 
     &-questions {
@@ -180,7 +180,7 @@
   .afterword-box {
     display: flex;
     justify-content: flex-end;
-    width: 660px;
+    width: 100%;
   }
 
   .reason-answers__afterword {
@@ -195,17 +195,26 @@
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    max-width: 660px;
+    width: 100%;
 
     &-item {
       width: 144px;
       font-size: 8px;
-      font-weight: 400;
       line-height: 13px;
-      margin-bottom: 30px;
+      margin-bottom: 0;
 
       &::before {
         display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .reason-answers__list {
+    &-item {
+      &:nth-last-of-type(n + 5) {
+        margin-bottom: 30px;
       }
     }
   }
@@ -215,7 +224,10 @@
   .reason {
     margin-bottom: 125px;
     display: flex;
-    
+
+    &-content {
+      height: 275px;
+    }
 
     &-answers::after {
       font-size: 156px;
@@ -225,8 +237,7 @@
 
     &-box {
       position: relative;
-      margin-top: 75px;
-      width: 732px;
+      width: 100%;
       display: flex;
       justify-content: space-between;
     }
@@ -244,28 +255,27 @@
 
   .reason-answers__list {
     display: flex;
-    width: 530px;
+    width: 75%;
     flex-direction: column;
-    height: 270px;
+    height: 250px;
     align-content: space-between;
     justify-content: normal;
 
     &-item {
       width: 165px;
       font-size: 9px;
-      font-weight: 400;
-      line-height: 13px;
       margin-bottom: 20px;
 
-      &:nth-child(3){
+      &:nth-child(3) {
         margin-bottom: 0;
       }
     }
   }
 
   .afterword-box {
-    width: 730px;
-    transform: translateY(-70px);
+    height: 50%;
+    width: 33%;
+    justify-content: left;
+    align-items: flex-end;
   }
 }
-

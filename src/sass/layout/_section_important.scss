@@ -178,15 +178,10 @@
 }
 
 .present__button {
-  font-size: 10px!important;
+  font-size: 10px !important;
 }
 
 @media screen and (min-width: 768px) {
-  .page-container {
-    min-width: 660px;
-    width: 660px;
-  }
-
   .important-block {
     display: flex;
     position: relative;
@@ -316,11 +311,6 @@
 }
 
 @media screen and (min-width: 992px) {
-  .page-container {
-    min-width: 732px;
-    width: 732px;
-  }
-
   .important-block {
     padding: 63px 0;
   }

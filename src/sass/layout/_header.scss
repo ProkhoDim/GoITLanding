@@ -17,6 +17,7 @@
 .page--header {
   display: block;
   position: relative;
+  padding-bottom: 40px;
 }
 
 .page-nav {
@@ -181,11 +182,6 @@
 }
 
 @media (min-width: 768px) {
-  .page-container {
-    min-width: 660px;
-    width: 660px;
-  }
-
   .page--header {
     display: block;
     position: relative;
@@ -207,6 +203,19 @@
       line-height: 18px;
       text-transform: uppercase;
       letter-spacing: 1.2px;
+    }
+
+    &::after {
+      content: '';
+      background-image: url('/images/tab/header.png');
+      background-size: contain;
+      width: 473px;
+      height: 475px;
+      display: block;
+      position: absolute;
+      z-index: 1;
+      right: -50px;
+      bottom: 0;
     }
   }
 
@@ -234,19 +243,6 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-
-    &::before {
-      content: '';
-      background-image: url('/images/tab/header.png');
-      background-size: contain;
-      width: 473px;
-      height: 475px;
-      display: block;
-      position: absolute;
-      z-index: 1;
-      right: -50px;
-      bottom: 0;
-    }
   }
 
   .page-heading {
@@ -381,11 +377,6 @@
 }
 
 @media (min-width: 992px) {
-  .page-container {
-    min-width: 732px;
-    width: 732px;
-  }
-
   .header {
     display: block;
     position: relative;
@@ -400,12 +391,6 @@
     object-fit: cover;
     background-color: $bg_footer;
     overflow: hidden;
-  }
-
-  .page-wrap {
-    &::before {
-      background-image: url('/images/desk/header.png');
-    }
   }
 
   .page-logo {
@@ -442,27 +427,30 @@
     position: relative;
 
     &::before {
-      left: -124px;
+      left: -98px;
       font: {
         family: $main_font;
         size: 16px;
         weight: 500;
       }
     }
+    &::after {
+      background-image: url('/images/desk/header.png');
+    }
   }
 }
 
 @media screen and (min-width: 768px), resolution and (min-resolutin: 192dpi) {
-  .page-wrap {
-    &::before {
+  .page--header {
+    &::after {
       background-image: url('/images/tab/header@2x.png');
     }
   }
 }
 
 @media screen and (min-width: 992px), resolution and (min-resolutin: 192dpi) {
-  .page-wrap {
-    &::before {
+  .page--header {
+    &::after {
       background-image: url('/images/desk/header@2x.png');
     }
   }
