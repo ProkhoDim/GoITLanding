@@ -178,7 +178,6 @@
 }
 
 .present__button {
-  border: none;
   font-size: 10px;
 }
 
@@ -190,6 +189,7 @@
 
   .important-block {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     flex-direction: row;
     justify-content: space-between;
@@ -198,9 +198,6 @@
 
   .important-title {
     display: block;
-    position: absolute;
-    top: 40px;
-    right: 53px;
     font-size: 27px;
     line-height: 34px;
   }
@@ -210,6 +207,7 @@
     height: 192px;
     box-shadow: 0 11px 22px $bs-banner;
     margin-bottom: 0;
+    margin-right: 140px;
   }
 
   .value-wrap {
@@ -238,7 +236,7 @@
 
   .today__price {
     display: block;
-    width: 44px;
+    width: 48px;
     margin-right: 23px;
 
     & span {
@@ -260,6 +258,7 @@
   }
 
   .present-wrap {
+    display: block;
     margin-top: 30px;
     width: 204px;
   }
@@ -310,7 +309,11 @@
     }
   }
 
-  .present__button {
+  .important__button {
+    display: flex;
+    margin-left: auto;
+    // order: 2;
+    padding: 11px 30px;
     border: none;
     font-size: 7px;
   }
