@@ -4133,6 +4133,7 @@ input {
   }
 
   .btn-header {
+    cursor: pointer;
     display: inline-block;
     position: absolute;
     bottom: 100px;
