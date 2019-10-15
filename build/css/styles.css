@@ -4486,7 +4486,7 @@ input {
   }
 
   .facts::after {
-    background-image: url("/images/tab/graph.png");
+    background-image: url("/images/desk/graph.png");
   }
 
   .futures {

@@ -184,10 +184,28 @@
   .facts {
 
     &::after {
-      background-image: url("/images/tab/graph.png");
+      background-image: url("/images/desk/graph.png");
     }
   }
 
   .facts-list__item {
+  }
+}
+
+@media screen and (min-width: 768px), (min-resolutin: 192dpi) {
+  .facts {
+
+    &::after {
+      background-image: url("/images/tab/graph@2x.png");
+    }
+  }
+}
+
+@media screen and (min-width: 992px), (min-resolutin: 192dpi) {
+  .facts {
+
+    &::after {
+      background-image: url("/images/desk/graph@2x.png");
+    }
   }
 }
