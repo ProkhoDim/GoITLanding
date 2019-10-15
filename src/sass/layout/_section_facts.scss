@@ -101,7 +101,7 @@
     &::after {
       content: '';
       position: absolute;
-      background-image: url("/images/tab/graph.png");
+      background-image: url("../images/tab/graph.png");
       width: 235px;
       height: 108px;
       z-index: -1;
@@ -184,7 +184,7 @@
   .facts {
 
     &::after {
-      background-image: url("/images/desk/graph.png");
+      background-image: url("../images/desk/graph.png");
     }
   }
 
@@ -196,7 +196,7 @@
   .facts {
 
     &::after {
-      background-image: url("/images/tab/graph@2x.png");
+      background-image: url("../images/tab/graph@2x.png");
     }
   }
 }
@@ -205,7 +205,7 @@
   .facts {
 
     &::after {
-      background-image: url("/images/desk/graph@2x.png");
+      background-image: url("../images/desk/graph@2x.png");
     }
   }
 }
