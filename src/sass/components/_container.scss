@@ -6,40 +6,35 @@
 }
 
 .container {
-  // margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  &--xxs {
-    width: 180px;
+/*MEDIA*/
+
+@media screen and (min-width: 768px) {
+  .page-container {
+    min-width: 660px;
+    width: 660px;
   }
 
-  &--xs {
-    width: 200px;
+  .container {
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page-container {
+    min-width: 732px;
+    width: 732px;
   }
 
-  &--s {
-    width: 260px;
-  }
-
-  &--sm {
-    width: 270px;
-  }
-
-  &--m {
-    width: 300px;
-  }
-
-  &--l {
-    width: 335px;
-  }
-
-  &--xl {
-    width: 360px;
-  }
-
-  &--xxl {
-    width: 380px;
+  .container {
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
   }
 }

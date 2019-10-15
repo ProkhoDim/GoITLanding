@@ -1,7 +1,27 @@
 .video-course {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 50px;
+
+  &__top-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__bottom-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__img {
     margin-bottom: 20px;
+
+    &-approval {
+      display: none;
+    }
   }
 
   &__subtitle {
@@ -9,7 +29,7 @@
       display: flex;
       flex-flow: row wrap;
       align-items: flex-start;
-      width: 230px;
+      width: 70%;
       margin-bottom: 15px;
     }
 
@@ -24,15 +44,9 @@
     &-descr {
       margin-bottom: 35px;
     }
-  }
 
-  &__text {
-    &:first-child {
-      margin-bottom: 25px;
-    }
-
-    &:last-child {
-      margin-bottom: 40px;
+    &-wrap {
+      width: 60%;
     }
   }
 }
@@ -40,30 +54,39 @@
 .price {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-end;
+
   &__arrows {
     display: block;
     margin-bottom: 6px;
   }
+
   &__cost {
     position: relative;
-    bottom: -30px;
+
     &::before {
       position: absolute;
       content: '1 300 грн';
       text-decoration: line-through;
       font-size: 17px;
+      top: -2em;
       font-weight: 900;
       color: $p_text;
-      top: -40px;
     }
   }
+
   &__title {
     font-size: 36px;
+
     &--uah {
       font-size: 19px;
     }
   }
+}
+
+.video-approval {
+  width: 66%;
+  margin-bottom: 40px;
 }
 
 .arrows {
@@ -75,8 +98,11 @@
 }
 
 .vc-list {
+  width: 67%;
   margin-bottom: 70px;
+
   &__title {
+    width: 85%;
     margin-bottom: 30px;
   }
 
@@ -88,5 +114,132 @@
     &-title {
       margin-bottom: 15px;
     }
+  }
+}
+
+.final-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .video-course {
+    &__text {
+      &:nth-last-of-type(n + 2) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .video-course {
+    margin-bottom: 90px;
+    &__top-wrap {
+      flex-flow: row wrap;
+      margin-bottom: 45px;
+    }
+
+    &__bottom-wrap {
+      flex-flow: row wrap;
+      align-items: flex-start;
+    }
+
+    &__title {
+      width: 66%;
+
+      &-descr {
+        width: 66%;
+        margin-bottom: 0;
+      }
+
+      &-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        order: 2;
+      }
+    }
+
+    &__img {
+      margin-bottom: 0;
+    }
+
+    &__img-approval {
+      display: block;
+    }
+  }
+
+  .video-approval {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 50px;
+
+    &__text-wrap {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 55%;
+    }
+  }
+
+  .video-course {
+    &__subtitle-wrap {
+      width: 35%;
+      padding-right: 5%;
+    }
+
+    &__text {
+      width: 50%;
+    }
+  }
+
+  .vc-list {
+    display: flex;
+    width: 75%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 0;
+
+    &__title {
+      width: 25%;
+      padding-right: 5%;
+    }
+
+    &__item {
+      width: 30%;
+
+      &:nth-of-type(n + 4) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .price {
+    width: 30%;
+
+    &__title {
+      font-size: 17px !important;
+
+      &--uah {
+        font-size: 12px !important;
+      }
+    }
+
+    &__cost {
+      &::before {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .video-course {
+    margin-bottom: 125px;
   }
 }

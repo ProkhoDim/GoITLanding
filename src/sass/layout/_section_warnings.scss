@@ -1,22 +1,37 @@
 .warnings {
+  // width: 335px;
   margin-bottom: 70px;
 
+  &-left-half {
+    width: 50%;
+    display: none;
+  }
+
+  &-right-half {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
   &__title {
+    width: 50%;
     margin-bottom: 20px;
   }
 
   &__text {
+    width: 60%;
     margin-bottom: 35px;
   }
 }
 
 .warnings-list {
-  width: 335px;
+  width: 70%;
 
   &__item {
     &:nth-last-of-type(n + 2) {
       margin-bottom: 15px;
     }
+
     &-title {
       margin-bottom: 10px;
     }
@@ -25,5 +40,54 @@
       font-size: 13px;
       line-height: 19px;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .warnings {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+
+    &-left-half {
+      position: relative;
+      display: block;
+
+      &::before {
+        position: absolute;
+        content: 'hard';
+        text-transform: uppercase;
+        color: $pe_color;
+        font-size: 140px;
+        font-family: $main_font;
+        font-weight: 900;
+        top: 0;
+        left: 85%;
+        transform-origin: 0 0;
+        transform: rotate(90deg);
+      }
+    }
+
+    &-right-half {
+      width: 50%;
+      display: flex;
+      flex-flow: column;
+      align-items: flex-start;
+    }
+
+    &__title {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    &-list {
+      width: 85%;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .warnings {
+    margin-bottom: 125px;
   }
 }

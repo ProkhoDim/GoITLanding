@@ -1,0 +1,26 @@
+@media screen and (min-width: 992px) {
+  .awards {
+    margin-bottom: 125px;
+  }
+
+  .awards-top-half {
+    height: 255px;
+  }
+}
+@media screen and (min-width: 992px), (min-resolutin: 192dpi) {
+  .oon-logo::before {
+    background-image: url('/images/desk/emblem@2x.png');
+  }
+
+  .it-awards::before {
+    background-image: url('/images/desk/award-1@2x.png');
+  }
+
+  .best-edu15::before {
+    background-image: url('/images/desk/award-2@2x.png');
+  }
+
+  .best-edu16::before {
+    background-image: url('/images/desk/award-3@2x.png');
+  }
+}

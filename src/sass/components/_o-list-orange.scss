@@ -16,9 +16,23 @@
       line-height: 14px;
       content: '[00' counter(count-one) ']';
       background-color: $accent;
-      left: -11px;
-      top: 17px;
+      left: 0;
+      top: 40px;
+      transform-origin: top left;
       transform: rotateZ(-90deg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .o-list-orange {
+    &__item {
+      padding-left: 25px;
+      &::before {
+        font-size: 6px;
+        line-height: 10px;
+        top: 20px;
+      }
     }
   }
 }

@@ -1,26 +1,28 @@
 .steps {
-  margin-bottom: 55px;
+  margin-bottom: 60px;
+
   &__title {
-    margin-bottom: 20px;
     width: 210px;
-    margin: 0 auto;
     position: relative;
+    margin: 0 auto;
+    padding-bottom: 20px;
 
     &::before {
       content: '4';
       display: block;
       position: absolute;
-      top: 77px;
-      left: -70px;
-      width: 115px;
-      height: 146px;
+      top: 0.13em;
+      left: -0.2em;
+      z-index: -1;
+      width: 170px;
+      height: 230px;
       color: $bg_text;
       font: {
         family: $main_font;
-        size: 208px;
+        size: 210px;
         weight: 900;
       }
-      line-height: 83px;
+      line-height: 132px;
       text-transform: uppercase;
     }
 
@@ -28,35 +30,79 @@
       content: 'stap';
       display: block;
       position: absolute;
-      top: -5px;
-      right: 75px;
-      width: 41px;
-      height: 143px;
+      top: -1em;
+      right: 1.5em;
+      width: 70px;
+      height: 230px;
+      z-index: -1;
       color: $bg_text;
       font: {
         family: $main_font;
-        size: 55px;
+        size: 56px;
         weight: 900;
       }
       transform: rotateZ(90deg);
       line-height: 200px;
       text-transform: uppercase;
     }
+
     &-descr {
-      margin-bottom: 60px;
+      width: 60%;
     }
+  }
+
+  &-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  &-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.steps-title {
+  display: block;
+  width: 210px;
+  margin: 0 auto;
+  position: relative;
+
+  &::before {
+    content: '4';
+    display: block;
+    position: absolute;
+    top: 72px;
+    left: -70px;
+    width: 115px;
+    height: 146px;
+    color: $bg_text;
+    font: {
+      family: $main_font;
+      size: 208px;
+      weight: 900;
+    }
+    transform: rotateZ(90deg);
+    line-height: 200px;
+    text-transform: uppercase;
+  }
+
+  &-descr {
+    width: 335px;
+    margin-bottom: 60px;
   }
 }
 
 .steps-list {
   margin-bottom: 40px;
+  width: 66%;
 
   &__item {
     align-self: flex-start;
-
-    &:nth-last-of-type(n + 2) {
-      margin-bottom: 30px;
-    }
+    margin-bottom: 30px;
 
     &-title {
       text-transform: uppercase;
@@ -66,19 +112,16 @@
       font-size: 13px;
       margin-bottom: 15px;
     }
-
-    &-text {
-      font-size: 13px;
-      line-height: 19px;
-    }
   }
 }
 
 .and-more {
+  width: 335px;
   font-size: 15px;
   line-height: 19px;
   position: relative;
   font-weight: 500;
+
   &::before {
     content: '';
     position: absolute;
@@ -90,5 +133,230 @@
     transform: rotateZ(-60deg);
     background-color: $dark_main;
     padding-right: 10px;
+  }
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .steps {
+    margin-bottom: 90px;
+
+    &__title {
+      width: 260px;
+      padding-bottom: 40px;
+      position: relative;
+
+      &::before {
+        content: '4';
+        display: block;
+        position: absolute;
+        top: 40px;
+        left: 90px;
+        width: 170px;
+        height: 230px;
+        color: $bg_text;
+        font: {
+          family: $main_font;
+          size: 300px;
+          weight: 900;
+        }
+        line-height: 120px;
+        text-transform: uppercase;
+      }
+
+      &::after {
+        content: 'stap';
+        display: block;
+        position: absolute;
+        top: -80px;
+        right: -50px;
+        width: 57px;
+        height: 205px;
+        color: $bg_text;
+        font: {
+          family: $main_font;
+          size: 82px;
+          weight: 900;
+        }
+        transform: rotateZ(90deg);
+        line-height: 200px;
+        text-transform: uppercase;
+      }
+
+      &-descr {
+        width: 200px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .joint {
+    display: inline-block;
+  }
+
+  .pos {
+    position: relative;
+  }
+
+  .steps-list {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 330px;
+    margin-bottom: 25px;
+
+    &__item {
+      margin-bottom: 0;
+      width: 155px;
+
+      &:nth-last-of-type(n + 2) {
+        margin-bottom: 20px;
+      }
+
+      &-title {
+        text-transform: uppercase;
+        color: $dark_main;
+        font-weight: 700;
+        line-height: 14px;
+        font-size: 9px;
+        margin-bottom: 10px;
+      }
+
+      &-text {
+        font-size: 9px;
+      }
+    }
+  }
+
+  .and-more {
+    padding-left: 35px;
+    width: 290px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 12px;
+      left: 0px;
+      width: 27px;
+      height: 2px;
+      transform: rotateZ(-60deg);
+      background-color: $dark_main;
+      padding-right: 10px;
+    }
+  }
+}
+
+.d-flex {
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+  .steps {
+    margin-bottom: 125px;
+
+    &__title {
+      width: 260px;
+      padding-bottom: 40px;
+      position: relative;
+
+      &::before {
+        content: '4';
+        display: block;
+        position: absolute;
+        top: 45px;
+        left: 140px;
+        width: 170px;
+        height: 230px;
+        color: $bg_text;
+        font: {
+          family: $main_font;
+          size: 333px;
+          weight: 900;
+        }
+        line-height: 132px;
+        text-transform: uppercase;
+      }
+
+      &::after {
+        content: 'stap';
+        display: block;
+        position: absolute;
+        top: -90px;
+        right: -110px;
+        width: 70px;
+        height: 230px;
+        color: $bg_text;
+        font: {
+          family: $main_font;
+          size: 90px;
+          weight: 900;
+        }
+        transform: rotateZ(90deg);
+        line-height: 200px;
+        text-transform: uppercase;
+      }
+
+      &-descr {
+        width: 200px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .steps-list {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 330px;
+    margin-bottom: 25px;
+
+    &__item {
+      width: 155px;
+
+      &:nth-last-of-type(n + 2) {
+        margin-bottom: 20px;
+      }
+
+      &-title {
+        text-transform: uppercase;
+        color: $dark_main;
+        font-weight: 700;
+        line-height: 13px;
+        font-size: 10px;
+        margin-bottom: 10px;
+      }
+
+      &-text {
+        font-size: 8px;
+      }
+    }
+  }
+
+  .and-more {
+    padding-left: 35px;
+    width: 320px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 12px;
+      left: 0px;
+      width: 27px;
+      height: 2px;
+      transform: rotateZ(-60deg);
+      background-color: $dark_main;
+      padding-right: 10px;
+    }
   }
 }
