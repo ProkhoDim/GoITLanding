@@ -13,7 +13,7 @@
 
   &-list {
     width: 270px;
-    
+
     &__item {
       &:nth-last-of-type(n + 2) {
         margin-bottom: 35px;
@@ -60,16 +60,14 @@
     border-bottom-width: 1px;
   }
 
+  &:focus::placeholder {
+    content: '';
+    opacity: 0;
+  }
 
-    &:focus::placeholder {
-      content: '';
-      opacity: 0;
-    }
-
-    &::placeholder {
-      color: $dark_main;
-      font-weight: 700;
-    }
+  &::placeholder {
+    color: $dark_main;
+    font-weight: 700;
   }
 }
 
@@ -103,7 +101,6 @@
         }
 
         &-text {
-         
         }
       }
     }
@@ -157,7 +154,6 @@
         }
 
         &-text {
-         
         }
       }
     }
@@ -180,4 +176,3 @@
     color: $dark_main;
   }
 }
-

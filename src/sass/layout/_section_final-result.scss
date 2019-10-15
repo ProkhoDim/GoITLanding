@@ -76,13 +76,12 @@
 
   .final-list {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-flow: row wrap;
     width: 100%;
 
     &__item {
       width: 46%;
-      margin-right: 10px;
 
       &:nth-last-of-type(n + 2) {
         margin-bottom: 23px;
@@ -114,7 +113,7 @@
       position: absolute;
       display: block;
       top: 50%;
-      left: -40%;
+      left: -30%;
       width: 20px;
       height: 2px;
       transform: rotateZ(-60deg);
@@ -142,7 +141,7 @@
 
 .last-item {
   align-self: flex-start;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 @media screen and (min-width: 992px) {

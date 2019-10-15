@@ -6,6 +6,8 @@
     position: relative;
     margin: 0 auto;
     padding-bottom: 20px;
+  }
+}
 
 .steps-title {
   display: block;
@@ -27,14 +29,14 @@
       size: 208px;
       weight: 900;
     }
-
-    &-descr {
-      width: 335px;
-      margin-bottom: 60px;
-    }
     transform: rotateZ(90deg);
     line-height: 200px;
     text-transform: uppercase;
+  }
+
+  &-descr {
+    width: 335px;
+    margin-bottom: 60px;
   }
 }
 
